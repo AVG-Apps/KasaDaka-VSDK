@@ -21,6 +21,7 @@ version="2.0">
 
   	<!-- Welcome message in English -->
   	<audio src = "https://django-static.vps.abaart.nl/group3/django/give-crop-and-weather-english.wav"/>
-
-</menu>
+    <choice next = "#fertilizersEN"/>
+    <choice next = "ma-moissonFR.xml"/>
+    </menu>
 </vxml>
