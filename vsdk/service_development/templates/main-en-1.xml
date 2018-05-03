@@ -6,6 +6,7 @@ version="2.0">
 
   <menu id="main" dtmf="true">
     hello this is a test
+    <audio src = "http://django-static.vps.abaart.nl/group3/django/welcome-english.wav"/>
     <choice next = "ma-moissonFR.xml"/>
   </menu>
 </vxml>
