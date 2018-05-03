@@ -16,11 +16,11 @@ version="2.0">
   </menu>
     <!--Fertilizer form in English-->
 
-    <form id="fertilizersEN">
+    <menu id="fertilizersEN" dtmf="true">
  		<!-- DTMF grammar and field that holds the value for crop-->
 
   	<!-- Welcome message in English -->
   	<audio src = "https://django-static.vps.abaart.nl/group3/django/give-crop-and-weather-english.wav"/>
-      
-</form>
+
+</menu>
 </vxml>
