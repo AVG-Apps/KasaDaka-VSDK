@@ -67,4 +67,3 @@ def record(request, element_id, session_id):
     context['url'] = request.get_full_path(False)
 
     return render(request, 'record.xml', context, content_type='text/xml')
-

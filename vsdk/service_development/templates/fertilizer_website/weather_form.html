@@ -1,9 +1,9 @@
 <html>
 
 <header>
-    {% load static %}
+    <!--{% load static %}-->
 
-    <link rel="stylesheet" type="text/css" href="{% static 'fertilizerapp/style.css' %}" />
+    <!--<link rel="stylesheet" type="text/css" href="{% static 'fertilizerapp/style.css' %}" />-->
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </header>
@@ -25,7 +25,7 @@
 
                 <div class="form-group row">
                     {{form.weather_condition.errors}}
-                    <label for="{{ form.weather_condition.id_for_label }}">Weather condition </label>
+                    <!--<label for="{{ form.weather_condition.id_for_label }}">Weather</label>-->
                     {{ form.weather_condition }}
                 </div>
 

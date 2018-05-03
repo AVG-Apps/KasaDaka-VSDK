@@ -188,7 +188,6 @@ class SpokenUserInputAdmin(admin.ModelAdmin):
 
 
 # Register your models here.
-
 admin.site.register(VoiceService, VoiceServiceAdmin)
 admin.site.register(MessagePresentation, MessagePresentationAdmin)
 admin.site.register(Choice, ChoiceAdmin)

@@ -1,4 +1,5 @@
 from django.db import models
+from .voicelabel import VoiceLabel
 
 #Crop model with all attributes
 class Crop(models.Model):
