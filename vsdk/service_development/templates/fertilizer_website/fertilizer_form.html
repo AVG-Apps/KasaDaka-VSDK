@@ -56,6 +56,13 @@
 
                     </div>
 
+                    <div class="field_wrapper">
+                        {{form.weather_condition_list.errors}}
+                        <label for="{{ form.weather_condition_list.id_for_label}}">Weather Condition</label>
+                        {{ form.weather_condition_list }}
+
+                    </div>
+
                 <input type="submit" class="btn btn-success" value="Save">
             </form>
             <a href="/vxml/fertilizer/"><button class="btn btn-info"> Go Back</button></a>

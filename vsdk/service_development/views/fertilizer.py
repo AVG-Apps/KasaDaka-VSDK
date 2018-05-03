@@ -9,19 +9,27 @@ from ..models.models import Fertilizer
 
 from . import base
 
-#Index page
+#Render the Index page
 def main_page(request):
     latest_fertilizer_list = Fertilizer.objects.all()
     context = {'latest_fertilizer_list': latest_fertilizer_list}
     return render(request, 'fertilizer_website/main_page.html', context)
 
-#Fertilizer page
+#Render the Fertilizer page
 def fertilizer(request, id=id):
     fertilizer = Fertilizer.objects.get(id=id)
     return render(request, 'fertilizer_website/detail.html', {'fertilizer': fertilizer})
 
 
-#add new fertilizer
+#Render the Fertilizer page
+
+def voice_app(request):
+    latest_fertilizer_list = Fertilizer.objects.all()
+    context = {'latest_fertilizer_list': latest_fertilizer_list}
+    return render(request, 'main-en-1.xml', context,  content_type='text/xml')
+
+
+#add new fertilizer to the the index page
 def add_fertilizer(request):
     if request.method == "POST":
         form = FertilizerForm(request.POST)
@@ -33,7 +41,7 @@ def add_fertilizer(request):
         form = FertilizerForm()
     return render(request, 'fertilizer_website/fertilizer_form.html', {'form':form})
 
-#edit fertilizer
+#edit the fertilizer on the detail page
 def edit_fertilizer(request, id=None):
     item = get_object_or_404(Fertilizer, id=id)
     form = FertilizerForm(request.POST or None, instance=item)

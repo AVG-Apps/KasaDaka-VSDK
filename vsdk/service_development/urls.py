@@ -20,5 +20,8 @@ urlpatterns = [
     url(r'^fertilizer/(?P<id>\d+)/edit/$', views.edit_fertilizer, name='edit_fertilizer'),
     url(r'^fertilizer/(?P<id>\d+)/$', views.fertilizer, name='fertilizer'),
     url(r'^fertilizer/', views.main_page, name='main_page'),
+
+    url(r'^voice_app/', views.voice_app, name='voice_app'),
+
 ]
 
