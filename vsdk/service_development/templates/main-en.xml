@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vxml version="2.1">
+  
+<menu id="main" dtmf="true">
+   <!--Welcome to ma-moisson, please select your language-->
+   <audio src = "https://django-static.vps.abaart.nl/group3/django/for-english-press-1.wav/" />
+   <audio src = "https://django-static.vps.abaart.nl/group3/django/appuyez-sur-2-pour-francais.wav/" />
+   <choice next = "#fertilizersEN"/>
+   <choice next = "ma-moissonFR.xml"/>
+</menu>
+    <!--Fertilizer form in English-->
+<form id="fertilizersEN">
+    <!-- DTMF grammar and field that holds the value for crop-->
+   <field name="crop">
+  <!-- Welcome message in English -->
+  <audio src = "https://django-static.vps.abaart.nl/group3/django/welcome-english.wav"/>
+
+  <audio src = "https://django-static.vps.abaart.nl/group3/django/give-crop-and-weather-english.wav"/>
+  <!-- For corn press 1, for cotton, press 2, for cocoa, press 3-->
+  <audio src = "https://django-static.vps.abaart.nl/group3/django/corn-english.wav"/>
+        <audio src = "https://django-static.vps.abaart.nl/group3/django/press.wav"/>
+        <audio src = "https://django-static.vps.abaart.nl/group3/django/1-english.wav"/>
+        <audio src = "https://django-static.vps.abaart.nl/group3/django/cotton-english.wav"/>
+        <audio src = "https://django-static.vps.abaart.nl/group3/django/press.wav"/>
+        <audio src = "https://django-static.vps.abaart.nl/group3/django/2-english.wav"/>
+        <audio src = "https://django-static.vps.abaart.nl/group3/django/cocoa-english.wav"/>
+        <audio src = "https://django-static.vps.abaart.nl/group3/django/press.wav"/>
+        <audio src = "https://django-static.vps.abaart.nl/group3/django/3-english.wav"/>
+        
+  <grammar xml:lang="en-US" root = "CROP" mode="dtmf">
+     <rule id="CROP">
+          <one-of>
+            <item>1<tag>out.crop="Corn"</tag></item>
+            <item>2<tag>out.crop="Cocoa"</tag></item>
+            <item>3<tag>out.crop="Cotton"</tag></item>
+          </one-of>
+     </rule>
+        <!-- Error handling -->
+        <catch event="noinput nomatch" count="1">
+        <!-- Sorry..audio-->
+        </catch>
+        <catch event="noinput nomatch" count="2">
+        <!-- Help audio file -->
+        </catch>
+    </grammar>
+     </field>
+
+  
+    <!--DTMF grammar and field that holds the value for weather-->
+    <field name="weather">
+    <!-- For wet press 1, for dry press 2 -->
+    <audio src = "https://django-static.vps.abaart.nl/group3/django/wet-english.wav"/>
+  <audio src = "https://django-static.vps.abaart.nl/group3/django/press.wav"/>
+  <audio src = "https://django-static.vps.abaart.nl/group3/django/1-english.wav"/>
+    <audio src = "https://django-static.vps.abaart.nl/group3/django/dry-english.wav"/>
+    <audio src = "https://django-static.vps.abaart.nl/group3/django/press.wav"/>
+    <audio src = "https://django-static.vps.abaart.nl/group3/django/2-english.wav"/>
+      <grammar xml:lang="en-US" root = "WEATHER" mode="dtmf">
+          <rule id="WEATHER">
+            <one-of>
+              <item>1<tag>out.weather="Wet"</tag></item>
+              <item>2<tag>out.weather="Dry"</tag></item>
+            </one-of>
+          </rule>
+       </grammar>
+    </field>
+
+      <!-- Error handling -->
+      <catch event="noinput nomatch" count="1">
+      <!-- Sorry..audio-->
+      </catch>
+      <catch event="noinput nomatch" count="2">
+      <!-- Help audio file -->
+      </catch>
+   
+   <!-- Fertilizer conditional logic -->
+   <filled mode="all" namelist="crop weather">
+    <!-- Audio file: Thank you. The crop you are harvesting is <value expr="crop"/> and the weather is in a <value expr="weather"/> condition -->
+      <if cond = "crop == 'Cocoa' &amp;&amp; weather == 'Wet'">
+        <!-- Audio file -->
+        <elseif cond = "crop == 'Cocoa' &amp;&amp; weather == 'Dry'"/>
+        <!-- Audio file -->
+        <elseif cond = "crop == 'Corn' &amp;&amp; weather == 'Wet'"/>
+        <!-- Audio file -->
+        <elseif cond = "crop == 'Corn' &amp;&amp; weather == 'Dry'"/>
+        <!-- Audio file -->
+        <elseif cond = "crop == 'Cotton' &amp;&amp; weather == 'Wet'"/>
+        <!-- Audio file -->
+        <elseif cond = "crop == 'Cotton' &amp;&amp; weather == 'Dry'"/>
+        <!-- Audio file -->
+        </if>
+  </filled>
+</form>
+</vxml>
