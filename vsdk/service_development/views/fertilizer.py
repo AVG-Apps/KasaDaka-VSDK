@@ -21,8 +21,7 @@ def fertilizer(request, id=id):
     return render(request, 'fertilizer_website/detail.html', {'fertilizer': fertilizer})
 
 
-#Render the Fertilizer page
-
+#Render the voice XML application
 def voice_app(request):
     latest_fertilizer_list = Fertilizer.objects.all()
     context = {'latest_fertilizer_list': latest_fertilizer_list}
