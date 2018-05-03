@@ -11,8 +11,8 @@ version="2.0">
    <!--Welcome to ma-moisson, please select your language-->
     <audio src = "https://django-static.vps.abaart.nl/group3/django/for-english-press-1.wav/" />
     <audio src = "https://django-static.vps.abaart.nl/group3/django/appuyez-sur-2-pour-francais.wav/" />
-    <choice next = "#fertilizersEN"/>
-    <choice next = "ma-moissonFR.xml"/>
+    <choice dtmf="'1" next = "#fertilizersEN"/>
+    <choice dtmf="'2" next = "ma-moissonFR.xml"/>
   </menu>
     <!--Fertilizer form in English-->
 
