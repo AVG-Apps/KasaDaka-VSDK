@@ -2,12 +2,7 @@
 <vxml version="2.1">
   
   <menu id="main" dtmf="true">
-
-    <audio src = "http://django-static.vps.abaart.nl/group3/django/welcome-english.wav"/>
-    <audio src = "http://django-static.vps.abaart.nl/group3/django/welcome-french.wav"/>
-    <audio src = "http://django-static.vps.abaart.nl/group3/django/for-english-press-1.wav/" />
-    <audio src = "http://django-static.vps.abaart.nl/group3/django/appuyez-sur-2-pour-francais.wav/" />
-    <choice next = "#fertilizersEN"/>
+    hello this is a test
     <choice next = "ma-moissonFR.xml"/>
   </menu>
 </vxml>
