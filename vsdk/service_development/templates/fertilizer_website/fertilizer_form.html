@@ -42,26 +42,25 @@
                         {{ form.description }}
                     </div>
 
+                <div class="field_wrapper">
+                        {{form.fertilizer_audio_url.errors}}
+                        <label for="{{ form.fertilizer_audio_url.id_for_label }}">Fertilzer URL audio</label>
+                        {{ form.fertilizer_audio_url }}
+                    </div>
+
                     <div class="field_wrapper">
                         {{form.crop_list.errors}}
                         <label for="{{ form.crop_list.id_for_label}}">Crop</label>
                         {{ form.crop_list }}
-
                     </div>
 
                     <div class="field_wrapper">
                         {{form.weather_condition_list.errors}}
                         <label for="{{ form.weather_condition_list.id_for_label}}">Weather Condition</label>
                         {{ form.weather_condition_list }}
-
                     </div>
 
-                    <div class="field_wrapper">
-                        {{form.weather_condition_list.errors}}
-                        <label for="{{ form.weather_condition_list.id_for_label}}">Weather Condition</label>
-                        {{ form.weather_condition_list }}
 
-                    </div>
 
                 <input type="submit" class="btn btn-success" value="Save">
             </form>

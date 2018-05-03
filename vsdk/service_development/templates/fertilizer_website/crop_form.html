@@ -34,6 +34,12 @@
                     <label for="{{ form.crop_img_url.id_for_label }}">Image URL</label>
                     {{ form.crop_img_url }}
                 </div>
+
+                <div class="field_wrapper">
+                    {{form.crop_audio_url.errors}}
+                    <label for="{{ form.crop_audio_url.id_for_label }}">Crop URL audio</label>
+                    {{ form.crop_audio_url }}
+                </div>
                 <input type="submit" class="btn btn-success" value="Save">
             </form>
 
