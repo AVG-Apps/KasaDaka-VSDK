@@ -14,7 +14,6 @@
    <field name="crop">
   <!-- Welcome message in English -->
   <audio src = "https://django-static.vps.abaart.nl/group3/django/welcome-english.wav"/>
-
   <audio src = "https://django-static.vps.abaart.nl/group3/django/give-crop-and-weather-english.wav"/>
   <!-- For corn press 1, for cotton, press 2, for cocoa, press 3-->
   <audio src = "https://django-static.vps.abaart.nl/group3/django/corn-english.wav"/>
@@ -43,7 +42,8 @@
         <!-- Help audio file -->
         </catch>
     </grammar>
-     </field>
+		
+  </field>
 
   
     <!--DTMF grammar and field that holds the value for weather-->
@@ -62,7 +62,7 @@
               <item>2<tag>out.weather="Dry"</tag></item>
             </one-of>
           </rule>
-       </grammar>
+			</grammar>
     </field>
 
       <!-- Error handling -->

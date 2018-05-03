@@ -25,9 +25,29 @@
                               <li class="list-group-item"><strong>Fertilizer:</strong> {{ fertilizer.fertilizer_name|capfirst }}</li>
                               <!--Crop-->
                                 <li class="list-group-item"><strong>Crop:</strong> {{ fertilizer.crop_list|capfirst }}</li>
+
                               <!--Weather Conditions-->
                                 <li class="list-group-item"><strong>Weather condition:</strong> {{ fertilizer.weather_condition_list.weather_condition|capfirst }}</li>
                         </ul>
+
+                         <ul id="playlist">
+                             <li class="active musicBox">
+									<a href="https://django-static.vps.abaart.nl/group3/django/select-crop-english.wav">
+										<strong>Crop: {{ fertilizer.crop_list|capfirst }}</strong>
+									</a>
+							</li>
+							<li class="active musicBox">
+									<a href="https://django-static.vps.abaart.nl/group3/django/select-crop-english.wav">
+										<strong>Crop: {{ fertilizer.crop_list|capfirst }}</strong>
+									</a>
+							</li>
+                             <li class="active musicBox">
+									<a href="https://django-static.vps.abaart.nl/group3/django/dry-english.wav">
+										<strong>Weather condition: {{ fertilizer.weather_condition_list.weather_condition|capfirst }}</strong>
+									</a>
+							</li>
+                         </ul>
+
                      </div>
                         <p class="card-text">{{ fertilizer.description }}</p>
 
