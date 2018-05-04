@@ -104,7 +104,39 @@ version="2.0">
             <prompt>The weather condition you have chosen is <value expr="weather"/>.</prompt>
           </filled>
         </field>
-    
+
+
+		<block name="fertilizer">
+		<script>
+        <![CDATA[
+						function chooseFertilizer(crop, weather) {
+
+								var fertilizer = '';
+
+								dict = [{'crop': 'cocoa', 'weather':'wet', 'fertilizer':'fertilizer one'},
+												{'crop': 'cocoa', 'weather':'dry',  'fertilizer':'fertilizer two'},
+												{'crop': 'corn', 'weather':'wet', 'fertilizer':'fertilizer three'},
+												{'crop': 'corn', 'weather':'dry',  'fertilizer':'fertilizer four'},
+												{'crop': 'cotton', 'weather':'wet', 'fertilizer':'fertilizer five'},
+												{'crop': 'cotton', 'weather':'dry',  'fertilizer':'fertilizer six'},
+												];
+
+
+							for (var i = 0; i < dict.length; i++){
+								if (crop == dict[i]['crop'] && weather == dict[i]["weather"]){
+									return fertilizer = dict[i]['fertilizer']}
+
+							}
+
+									return fertilizer;
+						}
+        ]]>
+    </script>
+			<prompt bargein="true">
+				You have chosen for the options <value expr="crop" /> and <value expr="weather" />,
+				so the best fertilizer you can use is <value expr="chooseFertilizer(crop, weather)" />
+			</prompt>
+		</block>
 
 </form>
 </vxml>
