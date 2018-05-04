@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!--- <vxml version = "2.1" > -->
 <!DOCTYPE vxml SYSTEM "http://www.w3.org/TR/voicexml21/vxml.dtd">
@@ -6,12 +7,10 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.w3.org/2001/vxml
   http://www.w3.org/TR/2007/REC-voicexml21-20070619/vxml.xsd">
-    <!--Fertilizer form in English-->
-    <!-- DTMF grammar and field that holds the value for crop-->
+<property name="inputmodes" value="dtmf" />
 
-  <!-- For corn press 1, for cotton, press 2, for cocoa, press 3-->
-    <prompt>
-    hello this is a test.
+<!-- Kasadaka VoiceXML File -->
+    
+    <prompt>hello this is a test</prompt>
 
-    </prompt>
 </vxml>
