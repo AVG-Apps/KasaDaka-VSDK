@@ -66,13 +66,13 @@ version="2.0">
     <!-- For wet press 1, for dry press 2 -->
 		<audio src = "https://django-static.vps.abaart.nl/group3/django/select-weather-french.wav"/>
 		<audio src = "https://django-static.vps.abaart.nl/group3/django/pour.wav"/>
-    <audio src = "https://django-static.vps.abaart.nl/group3/django/wet-french.wav"/>
-  	<audio src = "https://django-static.vps.abaart.nl/group3/django/pour.wav"/>
-  	<audio src = "https://django-static.vps.abaart.nl/group3/django/1-french.wav"/>
-    <audio src = "https://django-static.vps.abaart.nl/group3/django/pour.wav"/>
-    <audio src = "https://django-static.vps.abaart.nl/group3/django/dry-french.wav"/>
-    <audio src = "https://django-static.vps.abaart.nl/group3/django/pour.wav"/>
-    <audio src = "https://django-static.vps.abaart.nl/group3/django/2-french.wav"/>
+        <audio src = "https://django-static.vps.abaart.nl/group3/django/wet-french.wav"/>
+        <audio src = "https://django-static.vps.abaart.nl/group3/django/pour.wav"/>
+        <audio src = "https://django-static.vps.abaart.nl/group3/django/1-french.wav"/>
+        <audio src = "https://django-static.vps.abaart.nl/group3/django/pour.wav"/>
+        <audio src = "https://django-static.vps.abaart.nl/group3/django/dry-french.wav"/>
+        <audio src = "https://django-static.vps.abaart.nl/group3/django/pour.wav"/>
+        <audio src = "https://django-static.vps.abaart.nl/group3/django/2-french.wav"/>
         
       <grammar xml:lang="en-US" root = "WEATHER_MENU" mode="dtmf">
         <rule id="WEATHER_MENU" scope = "public">
@@ -104,39 +104,7 @@ version="2.0">
             <prompt>The weather condition you have chosen is <value expr="weather"/>.</prompt>
           </filled>
         </field>
-		
-		
-		<block name="fertilizer">
-		<script>
-        <![CDATA[
-						function chooseFertilizer(crop, weather) {
-
-								var fertilizer = '';
-
-								dict = [{'crop': 'cocoa', 'weather':'wet', 'fertilizer':'fertilizer one'},
-												{'crop': 'cocoa', 'weather':'dry',  'fertilizer':'fertilizer two'},
-												{'crop': 'corn', 'weather':'wet', 'fertilizer':'fertilizer three'},
-												{'crop': 'corn', 'weather':'dry',  'fertilizer':'fertilizer four'},
-												{'crop': 'cotton', 'weather':'wet', 'fertilizer':'fertilizer five'},
-												{'crop': 'cotton', 'weather':'dry',  'fertilizer':'fertilizer six'},
-												];
-
-
-							for (var i = 0; i < dict.length; i++){
-								if (crop == dict[i]['crop'] && weather == dict[i]["weather"]){
-									return fertilizer = dict[i]['fertilizer']}
-
-							}
-
-									return fertilizer;
-						}
-        ]]>
-    </script>	
-			<prompt bargein="true">
-				You have chosen for the options <value expr="crop" /> and <value expr="weather" />,
-				so the best fertilizer you can use is <value expr="chooseFertilizer(crop, weather)" />
-			</prompt>
-		</block>
+    
 
 </form>
 </vxml>
