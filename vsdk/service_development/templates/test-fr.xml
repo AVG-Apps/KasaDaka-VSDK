@@ -25,9 +25,5 @@ version="2.0">
       <audio src = "https://django-static.vps.abaart.nl/group3/django/appuyez-sur.wav"/>
       <audio src = "https://django-static.vps.abaart.nl/group3/django/3-french.wav"/>
 
-
-
-
-
 </form>
 </vxml>
