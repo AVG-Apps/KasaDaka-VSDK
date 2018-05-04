@@ -8,14 +8,13 @@
   http://www.w3.org/TR/2007/REC-voicexml21-20070619/vxml.xsd">
     <property name="inputmodes" value="dtmf" />
     <!-- Kasadaka VoiceXML File -->
-    <form id="language_form">
+    <form id="crop_form">
         <field name="language_field">
             <prompt>
               <!-- Welcome message in English -->
               <audio src = "http://django-static.vps.abaart.nl/group3/django/give-crop-and-weather-english.wav"/>
 
               <!-- For corn press 1, for cotton, press 2, for cocoa, press 3-->
-
                 <audio src = "http://django-static.vps.abaart.nl/group3/django/select-crop-english.wav"/>
                 <audio src = "http://django-static.vps.abaart.nl/group3/django/for.wav"/>
                 <audio src = "http://django-static.vps.abaart.nl/group3/django/corn-english.wav"/>
@@ -30,22 +29,34 @@
                 <audio src = "http://django-static.vps.abaart.nl/group3/django/press.wav"/>
                 <audio src = "http://django-static.vps.abaart.nl/group3/django/3-english.wav"/>
             </prompt>
-          
+
             <grammar xml:lang="en-US" root = "MYRULE" mode="dtmf">
                 <rule id="MYRULE" scope = "public">
                     <one-of>
                         <item>1</item>
                         <item>2</item>
+                        <item>3</item>
                     </one-of>
                 </rule>
             </grammar>
             <filled>
                 <if cond="language_field == '1'">
                     <assign name="language_id" expr="'2'"/>
-                    <elseif cond="language_field == '2'" />
+                    <assign name="audio_url_crop" expr="'http://django-static.vps.abaart.nl/group3/django/corn-english.wav'"/>
+
+                <elseif cond="language_field == '2'" />
                     <assign name="language_id" expr="'3'"/>
+                    <assign name="audio_url_crop" expr="'http://django-static.vps.abaart.nl/group3/django/corn-english.wav'"/>
+                    <else/>
+                <elseif cond="language_field == '3'" />
+                    <assign name="language_id" expr="'4'"/>
+                    <assign name="audio_url_crop" expr="'http://django-static.vps.abaart.nl/group3/django/corn-english.wav'"/>
                     <else/>
                 </if>
+              <prompt>
+                you have chosen for the option <value expr="audio_url_crop"/>
+              </prompt>
+
                 <goto next="#submit_form"/>
             </filled>
         </field>
