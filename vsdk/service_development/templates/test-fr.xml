@@ -14,3 +14,23 @@
     <prompt>hello this is a test</prompt>
 
 </vxml>
+
+
+
+
+              <!-- Welcome message in English -->
+              <audio src = "http://django-static.vps.abaart.nl/group3/django/give-crop-and-weather-english.wav"/>
+              <!-- For corn press 1, for cotton, press 2, for cocoa, press 3-->
+                <audio src = "http://django-static.vps.abaart.nl/group3/django/select-crop-english.wav"/>
+                <audio src = "http://django-static.vps.abaart.nl/group3/django/for.wav"/>
+                <audio src = "http://django-static.vps.abaart.nl/group3/django/corn-english.wav"/>
+                <audio src = "http://django-static.vps.abaart.nl/group3/django/press.wav"/>
+                <audio src = "http://django-static.vps.abaart.nl/group3/django/1-english.wav"/>
+                <audio src = "http://django-static.vps.abaart.nl/group3/django/for.wav"/>
+                <audio src = "http://django-static.vps.abaart.nl/group3/django/cotton-english.wav"/>
+                <audio src = "http://django-static.vps.abaart.nl/group3/django/press.wav"/>
+                <audio src = "http://django-static.vps.abaart.nl/group3/django/2-english.wav"/>
+                <audio src = "http://django-static.vps.abaart.nl/group3/django/for.wav"/>
+                <audio src = "http://django-static.vps.abaart.nl/group3/django/cocoa-english.wav"/>
+                <audio src = "http://django-static.vps.abaart.nl/group3/django/press.wav"/>
+                <audio src = "http://django-static.vps.abaart.nl/group3/django/3-english.wav"/>
