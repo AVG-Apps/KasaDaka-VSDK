@@ -3,11 +3,11 @@
 xsi:schemaLocation="http://www.w3.org/2001/vxml
 http://www.w3.org/TR/voicexml20/vxml.xsd"
 version="2.0">
-  
+
     <!--Fertilizer form in English-->
   <form id="fertilizersFR">
     <!-- DTMF grammar and field that holds the value for crop-->
-    <field name="get_crop">  
+    <field name="get_crop">
 
       <audio src = "https://django-static.vps.abaart.nl/group3/django/give-crop-and-weather-french.wav"/>
   <!-- For corn press 1, for cotton, press 2, for cocoa, press 3-->
@@ -25,9 +25,9 @@ version="2.0">
       <audio src = "https://django-static.vps.abaart.nl/group3/django/cocoa-french.wav"/>
       <audio src = "https://django-static.vps.abaart.nl/group3/django/appuyez-sur.wav"/>
       <audio src = "https://django-static.vps.abaart.nl/group3/django/3-french.wav"/>
-        
-      <grammar xml:lang="en-US" root = "CROP_MENU" mode="dtmf">
-        <rule id="CROP_MENU" scope = "public">
+
+      <grammar xml:lang="en-US" root = "MY_RULE" mode="dtmf">
+        <rule id="MY_RULE" scope = "public">
           <one-of>
             <item>1</item>
             <item>2</item>
@@ -35,7 +35,7 @@ version="2.0">
           </one-of>
         </rule>
       </grammar>
-      
+
       <!-- Error handling -->
       <noinput>
         <audio src = "https://django-static.vps.abaart.nl/group3/django/sorry-french.wav"/>
@@ -59,9 +59,9 @@ version="2.0">
             <prompt>The crop you have chosen is <value expr="crop"/>.</prompt>
           </filled>
         </field>
-		
-		
-		<field name="get_weather">  
+
+
+		<field name="get_weather">
 
     <!-- For wet press 1, for dry press 2 -->
 		<audio src = "https://django-static.vps.abaart.nl/group3/django/select-weather-french.wav"/>
@@ -73,16 +73,16 @@ version="2.0">
         <audio src = "https://django-static.vps.abaart.nl/group3/django/dry-french.wav"/>
         <audio src = "https://django-static.vps.abaart.nl/group3/django/pour.wav"/>
         <audio src = "https://django-static.vps.abaart.nl/group3/django/2-french.wav"/>
-        
-      <grammar xml:lang="en-US" root = "WEATHER_MENU" mode="dtmf">
-        <rule id="WEATHER_MENU" scope = "public">
+
+      <grammar xml:lang="en-US" root = "MY_RULE" mode="dtmf">
+        <rule id="MY_RULE" scope = "public">
           <one-of>
             <item>1</item>
             <item>2</item>
           </one-of>
         </rule>
       </grammar>
-      
+
       <!-- Error handling -->
       <noinput>
         <audio src = "https://django-static.vps.abaart.nl/group3/django/please-try-again-french.wav"/>
