@@ -31,3 +31,6 @@ class Fertilizer(models.Model):
 
     def __str__(self):
         return self.fertilizer_name
+
+class widget_tweaks(models.Model):
+    pass
