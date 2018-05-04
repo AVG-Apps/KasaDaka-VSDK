@@ -56,31 +56,32 @@
                 </div>
                 <div class="col-lg-4">
                     <h2  class="display-4">{{ fertilizer.fertilizer_name|capfirst }}</h2>
+                    <p class="card-text">{{ fertilizer.description }}</p>
+
                      <div class="card-body">
                          <ul class="list-group">
                              <!--Fertilizer-->
                               <li class="list-group-item"><strong>Fertilizer:</strong> {{ fertilizer.fertilizer_name|capfirst }}
 									<audio preload="auto" tabindex="0" controls="" >
-									<source src="https://django-static.vps.abaart.nl/group3/django/select-crop-english.wav">
+									<source src="{{ fertilizer.fertilizer_audio_url}}">
 									</audio>
                               </li>
                               <!--Crop-->
                               <li class="list-group-item"><strong>Crop:</strong> {{ fertilizer.crop_list.crop_name|capfirst }}
                                     <audio preload="auto" tabindex="0" controls="" >
-									<source src="https://django-static.vps.abaart.nl/group3/django/select-crop-english.wav">
+									<source src="{{ fertilizer.crop_list.crop_audio_url }}">
 									</audio>
                                 </li>
 
                               <!--Weather Conditions-->
                                 <li class="list-group-item"><strong>Weather condition:</strong> {{ fertilizer.weather_condition_list.weather_condition|capfirst }}
                                     <audio preload="auto" tabindex="0" controls="" >
-									<source src="https://django-static.vps.abaart.nl/group3/django/select-crop-english.wav">
+									<source src="{{ fertilizer.weather_condition_list.weather_audio_url }}">
 									</audio>
                                 </li>
                         </ul>
 
                      </div>
-                        <p class="card-text">{{ fertilizer.description }}</p>
 
                 </div>
               </div>
