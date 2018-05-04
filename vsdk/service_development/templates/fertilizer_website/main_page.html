@@ -1,39 +1,16 @@
 <html>
 
 <header>
-    <!--{% load static %}-->
-
-    <!--<link rel="stylesheet" type="text/css" href="{% static 'fertilizerapp/style.css' %}" />-->
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
 
-    <style>
-        .pagination {
-            display: inline-block;
-            margin-left: 40%;
-
-            margin-top: 3%;
-        }
-
-        .pagination a {
-            color: black;
-            float: left;
-            padding: 8px 16px;
-            text-decoration: none;
-        }
-
-        .pagination a.active {
-            background-color: #4CAF50;
-            color: white;
-        }
-
-        .pagination a:hover:not(.active) {background-color: #ddd;}
-
-    }
-
-
-    </style>
 
 </header>
 
@@ -43,7 +20,7 @@
       <div class="container">
         <h1 class="display-4">MaMoisson</h1>
         <p class="lead">On this website you can add information about fertilizers for farmers who will be using the MaMoisson Voice Application.</p>
-          <a href="/vxml/add/fertilizer/"><button type="button" class="btn btn-info">Add Fertilizer</button></a>
+          <a href="/vxml/add/fertilizer/"><button type="button" class="btn btn-info"><i class="fas fa-plus"></i> Add Fertilizer</button></a>
       </div>
     </div>
 
@@ -55,7 +32,31 @@
                 <div class="col-lg-4 col-md-4 col-sm-6  col-sx-12">
                   <div class="card">
                      <div class="card-header">
-                         <img class="img-thumbnail" src="{{ fertilizer.crop_list.crop_img_url }}" alt="Card image cap">
+
+                          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                              <li data-target="#myCarousel" data-slide-to="1"></li>
+                              <li data-target="#myCarousel" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                              <div class="item active">
+                                  <img class="img-thumbnail" src="{{ fertilizer.crop_list.crop_img_url }}" alt="Card image cap">
+                              </div>
+
+                              <div class="item">
+                                  <img class="img-thumbnail" src="{{ fertilizer.weather_condition_list.weather_image_url }}" alt="Card image cap">
+                              </div>
+
+                              <div class="item">
+                                  <img class="img-thumbnail" src="{{ fertilizer.fertilizer_image_url }}" alt="Card image cap">
+                              </div>
+                            </div>
+                          </div>
+
                      </div>
                      <div class="card-body">
                           <div class="card-body">
@@ -78,19 +79,6 @@
 
 
 
-    <!--<div>-->
-        <!--<div class="pagination text-center">-->
-          <!--<a href="#">&laquo;</a>-->
-          <!--<a href="#">1</a>-->
-          <!--<a class="active" href="#">2</a>-->
-          <!--<a href="#">3</a>-->
-          <!--<a href="#">4</a>-->
-          <!--<a href="#">5</a>-->
-          <!--<a href="#">6</a>-->
-          <!--<a href="#">&raquo;</a>-->
-        <!--</div>-->
-
-     <!--</div>-->
 
 </body>
 

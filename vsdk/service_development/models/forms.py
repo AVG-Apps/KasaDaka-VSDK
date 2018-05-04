@@ -6,9 +6,6 @@ class FertilizerForm(ModelForm):
         model = Fertilizer
         fields = '__all__'
 
-        # fields = '__all__'
-        # exclude = ['fertilizer']
-
 class CropForm(ModelForm):
     class Meta:
         model = Crop

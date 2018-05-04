@@ -14,12 +14,11 @@ version="2.0">
     <choice dtmf="'1" next = "#fertilizersEN"/>
     <choice dtmf="'2" next = "ma-moissonFR.xml"/>
   </menu>
-    <!--Fertilizer form in English-->
+      <!--Fertilizer form in English-->
 
     <menu id="fertilizersEN" dtmf="true">
  		<!-- DTMF grammar and field that holds the value for crop-->
-
-  	<!-- Welcome message in English -->
+  	    <!-- Welcome message in English -->
   	<audio src = "https://django-static.vps.abaart.nl/group3/django/give-crop-and-weather-english.wav"/>
     <choice next = "#fertilizersEN"/>
     <choice next = "ma-moissonFR.xml"/>

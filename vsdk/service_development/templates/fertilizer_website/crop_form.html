@@ -1,11 +1,9 @@
 <html>
 
 <header>
-    <!--{% load static %}-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-    <!--<link rel="stylesheet" type="text/css" href="{% static 'fertilizerapp/style.css' %}" />-->
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </header>
 
 <body>
@@ -13,8 +11,11 @@
 
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h1 class="display-4">Add a crop</h1>
-        <p class="lead">To add a new crop you need to add the name and an url of the picture of the crop. </p>
+        <h1 class="display-4">Add new crop</h1>
+        <p class="lead">To add a new crop you need to add the name and an url of the picture of the crop into the form.
+            Please add the name, the audio file url, the image url of the crop.</p>
+          <p> Warning, it is important that the audio files are in WAVE format. The WAVE file must have a sample rate of 8KHZ, 16 bit, mono, codec: PCM 16 LE (s16I).
+              Otherwise the voice application cannot play the audio file.</p>
       </div>
     </div>
         <div class="container">
@@ -22,28 +23,36 @@
                 {% csrf_token %}
 
                 {{ form.non_field_errors}}
+                {% load widget_tweaks %}
 
-                <div class="">
+
+                <div class="form-group row">
                     {{form.crop_name.errors}}
                     <label for="{{ form.crop_name.id_for_label }}">Crop</label>
-                    {{ form.crop_name }}
+                    {{ form.crop_name|add_class:"form-control" }}
                 </div>
 
-                <div class="field_wrapper">
+                <div class="form-group row">
                     {{form.crop_img_url.errors}}
-                    <label for="{{ form.crop_img_url.id_for_label }}">Image URL</label>
-                    {{ form.crop_img_url }}
+                    <label for="{{ form.crop_img_url.id_for_label }}">URL image</label>
+                    {{ form.crop_img_url|add_class:"form-control" }}
                 </div>
 
-                <div class="field_wrapper">
+                <div class="form-group row">
                     {{form.crop_audio_url.errors}}
-                    <label for="{{ form.crop_audio_url.id_for_label }}">Crop URL audio</label>
-                    {{ form.crop_audio_url }}
+                    <label for="{{ form.crop_audio_url.id_for_label }}">URL audio</label>
+                    {{ form.crop_audio_url|add_class:"form-control" }}
                 </div>
-                <input type="submit" class="btn btn-success" value="Save">
+
+               <div class="form-group row">
+                    <input type="submit" class="btn btn-success" value="Submit">
+                </div>
+
             </form>
 
-            <a href="/vxml/add/fertilizer/"><button class="btn btn-info"> Go Back</button></a>
+            <div class="form-group row">
+                <a href="/vxml/add/fertilizer/"><button class="btn btn-info"><i class="fas fa-chevron-circle-left"></i> Go Back</button></a>
+            </div>
 
         </div>
 

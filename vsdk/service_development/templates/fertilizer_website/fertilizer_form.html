@@ -1,11 +1,10 @@
 <html>
 
 <header>
-    <!--{% load static %}-->
 
-    <!--<link rel="stylesheet" type="text/css" href="{% static 'fertilizerapp/style.css' %}" />-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </header>
 
 <body>
@@ -14,57 +13,68 @@
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
         <h1 class="display-4">Create or edit your fertilizer</h1>
-          <p class="lead">To add a new fertilizer into the database you need to add all the information in the form. </p>
-            <!--Warning, it is important that the audio files are clear and can be uploaded under the names entered.</p>-->
-          <a href="/vxml/add/crop/"><button type="button" class="btn btn-info">Add Crop</button></a>
-          <a href="/vxml/add/weather/"><button type="button" class="btn btn-info">Add Weather Condition</button></a>
+          <p class="lead">To add a new fertilizer into the database you need to add all the information in the form.
+              Please add the name, description, audio file url, the image url of the fertilizer and the related crop and weather condtion.</p>
+          <p> Warning, it is important that the audio files are in WAVE format. The WAVE file must have a sample rate of 8KHZ, 16 bit, mono, codec: PCM 16 LE (s16I).
+              Otherwise the voice application cannot play the audio file.</p>
+          <a href="/vxml/add/crop/"><button type="button" class="btn btn-info"><i class="fas fa-plus"></i> Add Crop</button></a>
+          <a href="/vxml/add/weather/"><button type="button" class="btn btn-info"><i class="fas fa-plus"></i> Add Weather Condition</button></a>
       </div>
     </div>
         <div class="container">
-
-
-
-
             <form method="POST" action="">
                     {% csrf_token %}
 
                     {{ form.non_field_errors}}
 
-                    <div class="field_wrapper">
+                    <div class="form-group row">
+                    {% load widget_tweaks %}
+
                         {{form.fertilizer_name.errors}}
                         <label for="{{ form.fertilizer_name.id_for_label}}">Fertilizer</label>
-                        {{ form.fertilizer_name }}
+                        {{ form.fertilizer_name|add_class:"form-control" }}
                     </div>
 
-                    <div class="field_wrapper">
+                    <div class="form-group row">
                         {{form.description.errors}}
                         <label for="{{ form.description.id_for_label }}">Description</label>
-                        {{ form.description }}
+                        {{ form.description|add_class:"form-control" }}
                     </div>
 
-                <div class="field_wrapper">
+                    <div class="form-group row">
+                        {{form.fertilizer_image_url.errors}}
+                        <label for="{{ form.fertilizer_image_url.id_for_label }}">URL image</label>
+                        {{ form.fertilizer_image_url|add_class:"form-control" }}
+                    </div>
+
+                    <div class="form-group row">
                         {{form.fertilizer_audio_url.errors}}
-                        <label for="{{ form.fertilizer_audio_url.id_for_label }}">Fertilzer URL audio</label>
-                        {{ form.fertilizer_audio_url }}
+                        <label for="{{ form.fertilizer_audio_url.id_for_label }}">URL audio</label>
+                        {{ form.fertilizer_audio_url|add_class:"form-control" }}
                     </div>
 
-                    <div class="field_wrapper">
+                    <div class="form-group row">
                         {{form.crop_list.errors}}
                         <label for="{{ form.crop_list.id_for_label}}">Crop</label>
-                        {{ form.crop_list }}
+                        {{ form.crop_list|add_class:"form-control" }}
                     </div>
 
-                    <div class="field_wrapper">
+                    <div class="form-group row">
                         {{form.weather_condition_list.errors}}
                         <label for="{{ form.weather_condition_list.id_for_label}}">Weather Condition</label>
-                        {{ form.weather_condition_list }}
+                        {{ form.weather_condition_list|add_class:"form-control" }}
                     </div>
 
 
+                    <div class="form-group row">
+                        <input type="submit" class="btn btn-success" value="Submit">
+                    </div>
 
-                <input type="submit" class="btn btn-success" value="Save">
             </form>
-            <a href="/vxml/fertilizer/"><button class="btn btn-info"> Go Back</button></a>
+
+            <div class="form-group row">
+                <a href="/vxml/fertilizer/"><button class="btn btn-info"><i class="fas fa-chevron-circle-left"></i> Go Back</button></a>
+            </div>
 
         </div>
 
