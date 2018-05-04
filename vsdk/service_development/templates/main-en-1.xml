@@ -41,24 +41,22 @@
             <filled>
                 <if cond="language_field == '1'">
                     <assign name="language_id" expr="'2'"/>
-                    <assign name="audio_url_crop" expr="'http://django-static.vps.abaart.nl/group3/django/corn-english.wav'"/>
                 <elseif cond="language_field == '2'" />
                     <assign name="language_id" expr="'3'"/>
-                    <assign name="audio_url_crop" expr="'http://django-static.vps.abaart.nl/group3/django/corn-english.wav'"/>
                     <else/>
                 <elseif cond="language_field == '3'" />
                     <assign name="language_id" expr="'4'"/>
-                    <assign name="audio_url_crop" expr="'http://django-static.vps.abaart.nl/group3/django/corn-english.wav'"/>
                     <else/>
                 </if>
-              <prompt>
-                you have chosen for the option <value expr="audio_url_crop"/>
-              </prompt>
 
                 <goto next="#submit_form"/>
             </filled>
-        </field>
+    
     </form>
+
+
+
+
     <form id="submit_form">
         <block>
             <assign name="redirect_url" expr="'/vxml/start/2/84'"/>
