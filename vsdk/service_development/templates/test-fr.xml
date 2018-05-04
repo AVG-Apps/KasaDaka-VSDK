@@ -10,6 +10,8 @@
     <!-- DTMF grammar and field that holds the value for crop-->
 
   <!-- For corn press 1, for cotton, press 2, for cocoa, press 3-->
-
+    <prompt>
     hello this is a test.
+
+    </prompt>
 </vxml>
