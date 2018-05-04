@@ -1,0 +1,66 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!--- <vxml version = "2.1" > -->
+<!DOCTYPE vxml SYSTEM "http://www.w3.org/TR/voicexml21/vxml.dtd">
+<vxml xmlns="http://www.w3.org/2001/vxml"
+  version="2.1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.w3.org/2001/vxml
+  http://www.w3.org/TR/2007/REC-voicexml21-20070619/vxml.xsd">
+<property name="inputmodes" value="dtmf" />
+
+<!-- Kasadaka VoiceXML File -->
+
+    <prompt>hello this is a test</prompt>
+
+</vxml>
+
+
+
+
+
+
+
+<!-- - <vxml version = "2.1" >  -->
+<vxml xmlns="http://www.w3.org/2001/vxml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://www.w3.org/2001/vxml http://www.w3.org/TR/2007/REC-voicexml21-20070619/vxml.xsd">
+<property name="inputmodes" value="dtmf"/>
+<!--  Kasadaka VoiceXML File  -->
+<form id="language_form">
+    <field name="language_field">
+        <prompt>
+            <audio src="http://django-static.vps.abaart.nl/group13/django/toselect_english.wav"/>
+            <audio src="http://django-static.vps.abaart.nl/group13/django/english_en.wav"/>
+            <audio src="http://django-static.vps.abaart.nl/group13/django/post_choice_option_en.wav"/>
+            <audio src="http://django-static.vps.abaart.nl/group13/django/1_en.wav"/>
+            <audio src="http://django-static.vps.abaart.nl/group13/django/toselect_french.wav"/>
+            <audio src="http://django-static.vps.abaart.nl/group13/django/french_fr.wav"/>
+            <audio src="http://django-static.vps.abaart.nl/group13/django/post_choice_option_fr.wav"/>
+            <audio src="http://django-static.vps.abaart.nl/group13/django/2_fr.wav"/>
+        </prompt>
+    <grammar xml:lang="en-US" root="MYRULE" mode="dtmf">
+        <rule id="MYRULE" scope="public">
+            <one-of>
+                <item>1</item>
+                <item>2</item>
+            </one-of>
+        </rule>
+    </grammar>
+        <filled>
+            <if cond="language_field == '1'">
+                <assign name="language_id" expr="'2'"/>
+                <elseif cond="language_field == '2'"/>
+                    <assign name="language_id" expr="'3'"/>
+                <else/>
+            </if>
+            <goto next="#submit_form"/>
+        </filled>
+    </field>
+</form>
+
+<form id="submit_form">
+    <block>
+        <assign name="redirect_url" expr="'/vxml/start/2/85'"/>
+        <submit next="/vxml/language_select/85" method="post" namelist="language_id redirect_url "/>
+    </block>
+    </form>
+</vxml>

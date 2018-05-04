@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--- <vxml version = "2.1" > -->
+<!DOCTYPE vxml SYSTEM "http://www.w3.org/TR/voicexml21/vxml.dtd">
+<vxml xmlns="http://www.w3.org/2001/vxml"
+  version="2.1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.w3.org/2001/vxml
+  http://www.w3.org/TR/2007/REC-voicexml21-20070619/vxml.xsd">
+    <property name="inputmodes" value="dtmf" />
+    <!-- Kasadaka VoiceXML File -->
+    <form id="language_form">
+        <field name="language_field">
+            <prompt>
+              <!-- Welcome message in English -->
+
+				<audio src = "https://django-static.vps.abaart.nl/group3/django/welcome-english.wav"/>
+
+
+				<!-- Welcome message in French -->
+				<audio src = "https://django-static.vps.abaart.nl/group3/django/welcome-french.wav.wav"/>
+
+
+              <!-- For english press 1, for french, press 2-->
+				<audio src = "https://django-static.vps.abaart.nl/group3/django/select-language-english.wav"/>
+				<audio src = "https://django-static.vps.abaart.nl/group3/django/for-english-press-1.wav"/>
+
+				<audio src = "https://django-static.vps.abaart.nl/group3/django/select-language-french.wav"/>
+				<audio src = "https://django-static.vps.abaart.nl/group3/django/appuyez-sur-2-pour-francais.wav"/>
+            </prompt>
+
+            <grammar xml:lang="en-US" root = "MYRULE" mode="dtmf">
+                <rule id="MYRULE" scope = "public">
+                    <one-of>
+                        <item>1</item>
+                        <item>2</item>
+                    </one-of>
+                </rule>
+            </grammar>
+            <filled>
+                <if cond="language_field == '1'">
+                    <assign name="language_id" expr="'2'"/>
+				<elseif cond="language_field == '2'" />
+                    <assign name="language_id" expr="'3'"/>
+                    <else/>
+                </if>
+                <goto next="#submit_form"/>
+            </filled>
+        </field>
+    </form>
+    <form id="submit_form">
+        <block>
+            <assign name="redirect_url" expr="'/vxml/start/2/84'"/>
+            <submit next="/vxml/language_select/84" method="post" namelist="language_id  redirect_url "/>
+        </block>
+    </form>
+</vxml>
