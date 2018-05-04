@@ -18,23 +18,23 @@
 
 		<field name="crop">
   <!-- Welcome message in English -->
-  <audio src = "https://django-static.vps.abaart.nl/group3/django/give-crop-and-weather-english.wav"/>
+    <audio src = "http://django-static.vps.abaart.nl/group3/django/give-crop-and-weather-english.wav"/>
 
   <!-- For corn press 1, for cotton, press 2, for cocoa, press 3-->
 
-      <audio src = "https://django-static.vps.abaart.nl/group3/django/select-crop-english.wav"/>
-      <audio src = "https://django-static.vps.abaart.nl/group3/django/for.wav"/>
-      <audio src = "https://django-static.vps.abaart.nl/group3/django/corn-english.wav"/>
-      <audio src = "https://django-static.vps.abaart.nl/group3/django/press.wav"/>
-      <audio src = "https://django-static.vps.abaart.nl/group3/django/1-english.wav"/>
-      <audio src = "https://django-static.vps.abaart.nl/group3/django/for.wav"/>
-      <audio src = "https://django-static.vps.abaart.nl/group3/django/cotton-english.wav"/>
-      <audio src = "https://django-static.vps.abaart.nl/group3/django/press.wav"/>
-      <audio src = "https://django-static.vps.abaart.nl/group3/django/2-english.wav"/>
-      <audio src = "https://django-static.vps.abaart.nl/group3/django/for.wav"/>
-      <audio src = "https://django-static.vps.abaart.nl/group3/django/cocoa-english.wav"/>
-      <audio src = "https://django-static.vps.abaart.nl/group3/django/press.wav"/>
-      <audio src = "https://django-static.vps.abaart.nl/group3/django/3-english.wav"/>
+      <audio src = "http://django-static.vps.abaart.nl/group3/django/select-crop-english.wav"/>
+      <audio src = "http://django-static.vps.abaart.nl/group3/django/for.wav"/>
+      <audio src = "http://django-static.vps.abaart.nl/group3/django/corn-english.wav"/>
+      <audio src = "http://django-static.vps.abaart.nl/group3/django/press.wav"/>
+      <audio src = "http://django-static.vps.abaart.nl/group3/django/1-english.wav"/>
+      <audio src = "http://django-static.vps.abaart.nl/group3/django/for.wav"/>
+      <audio src = "http://django-static.vps.abaart.nl/group3/django/cotton-english.wav"/>
+      <audio src = "http://django-static.vps.abaart.nl/group3/django/press.wav"/>
+      <audio src = "http://django-static.vps.abaart.nl/group3/django/2-english.wav"/>
+      <audio src = "http://django-static.vps.abaart.nl/group3/django/for.wav"/>
+      <audio src = "http://django-static.vps.abaart.nl/group3/django/cocoa-english.wav"/>
+      <audio src = "http://django-static.vps.abaart.nl/group3/django/press.wav"/>
+      <audio src = "http://django-static.vps.abaart.nl/group3/django/3-english.wav"/>
         
       <grammar xml:lang="en-US" root = "CROP_MENU" mode="dtmf">
         <rule id="CROP_MENU" scope = "public">
@@ -59,12 +59,12 @@
     <!--DTMF grammar and field that holds the value for weather-->
     <field name="weather">
     <!-- For wet press 1, for dry press 2 -->
-    <audio src = "https://django-static.vps.abaart.nl/group3/django/wet-english.wav"/>
-  <audio src = "https://django-static.vps.abaart.nl/group3/django/press.wav"/>
-  <audio src = "https://django-static.vps.abaart.nl/group3/django/1-english.wav"/>
-    <audio src = "https://django-static.vps.abaart.nl/group3/django/dry-english.wav"/>
-    <audio src = "https://django-static.vps.abaart.nl/group3/django/press.wav"/>
-    <audio src = "https://django-static.vps.abaart.nl/group3/django/2-english.wav"/>
+    <audio src = "http://django-static.vps.abaart.nl/group3/django/wet-english.wav"/>
+    <audio src = "http://django-static.vps.abaart.nl/group3/django/press.wav"/>
+    <audio src = "http://django-static.vps.abaart.nl/group3/django/1-english.wav"/>
+    <audio src = "http://django-static.vps.abaart.nl/group3/django/dry-english.wav"/>
+    <audio src = "http://django-static.vps.abaart.nl/group3/django/press.wav"/>
+    <audio src = "http://django-static.vps.abaart.nl/group3/django/2-english.wav"/>
       <grammar xml:lang="en-US" root = "WEATHER" mode="dtmf">
           <rule id="WEATHER">
             <one-of>

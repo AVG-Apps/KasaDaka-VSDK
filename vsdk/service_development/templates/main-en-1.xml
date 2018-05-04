@@ -11,15 +11,26 @@
     <form id="language_form">
         <field name="language_field">
             <prompt>
-                <audio src="http://django-static.vps.abaart.nl/group13/django/toselect_english.wav"/>
-                <audio src="http://django-static.vps.abaart.nl/group13/django/english_en.wav"/>
-                <audio src="http://django-static.vps.abaart.nl/group13/django/post_choice_option_en.wav"/>
-                <audio src="http://django-static.vps.abaart.nl/group13/django/1_en.wav"/>
-                <audio src="http://django-static.vps.abaart.nl/group13/django/toselect_french.wav"/>
-                <audio src="http://django-static.vps.abaart.nl/group13/django/french_fr.wav"/>
-                <audio src="http://django-static.vps.abaart.nl/group13/django/post_choice_option_fr.wav"/>
-                <audio src="http://django-static.vps.abaart.nl/group13/django/2_fr.wav"/>
+              <!-- Welcome message in English -->
+              <audio src = "http://django-static.vps.abaart.nl/group3/django/give-crop-and-weather-english.wav"/>
+
+              <!-- For corn press 1, for cotton, press 2, for cocoa, press 3-->
+
+                <audio src = "http://django-static.vps.abaart.nl/group3/django/select-crop-english.wav"/>
+                <audio src = "http://django-static.vps.abaart.nl/group3/django/for.wav"/>
+                <audio src = "http://django-static.vps.abaart.nl/group3/django/corn-english.wav"/>
+                <audio src = "http://django-static.vps.abaart.nl/group3/django/press.wav"/>
+                <audio src = "http://django-static.vps.abaart.nl/group3/django/1-english.wav"/>
+                <audio src = "http://django-static.vps.abaart.nl/group3/django/for.wav"/>
+                <audio src = "http://django-static.vps.abaart.nl/group3/django/cotton-english.wav"/>
+                <audio src = "http://django-static.vps.abaart.nl/group3/django/press.wav"/>
+                <audio src = "http://django-static.vps.abaart.nl/group3/django/2-english.wav"/>
+                <audio src = "http://django-static.vps.abaart.nl/group3/django/for.wav"/>
+                <audio src = "http://django-static.vps.abaart.nl/group3/django/cocoa-english.wav"/>
+                <audio src = "http://django-static.vps.abaart.nl/group3/django/press.wav"/>
+                <audio src = "http://django-static.vps.abaart.nl/group3/django/3-english.wav"/>
             </prompt>
+          
             <grammar xml:lang="en-US" root = "MYRULE" mode="dtmf">
                 <rule id="MYRULE" scope = "public">
                     <one-of>
