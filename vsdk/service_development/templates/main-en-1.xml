@@ -51,10 +51,8 @@
 
                 <goto next="#submit_form"/>
             </filled>
-    
+        </field>
     </form>
-
-
 
 
     <form id="submit_form">
