@@ -25,7 +25,7 @@ def fertilizer(request, id=id):
 def voice_app(request):
     latest_fertilizer_list = Fertilizer.objects.all()
     context = {'latest_fertilizer_list': latest_fertilizer_list}
-    return render(request, 'test-fr.xml', context,  content_type='text/xml')
+    return render(request, 'main-en-1.xml', context,  content_type='text/xml')
 
 
 #add new fertilizer to the the index page
