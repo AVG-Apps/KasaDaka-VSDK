@@ -9,21 +9,20 @@
     <!--Fertilizer form in English-->
     <!-- DTMF grammar and field that holds the value for crop-->
 
-      <audio src = "https://django-static.vps.abaart.nl/group3/django/give-crop-and-weather-french.wav"/>
   <!-- For corn press 1, for cotton, press 2, for cocoa, press 3-->
 
-      <audio src = "https://django-static.vps.abaart.nl/group3/django/select-crop-french.wav"/>
-      <audio src = "https://django-static.vps.abaart.nl/group3/django/pour.wav"/>
-      <audio src = "https://django-static.vps.abaart.nl/group3/django/corn-french.wav"/>
-      <audio src = "https://django-static.vps.abaart.nl/group3/django/appuyez-sur.wav"/>
-      <audio src = "https://django-static.vps.abaart.nl/group3/django/1-french.wav"/>
-      <audio src = "https://django-static.vps.abaart.nl/group3/django/pour.wav"/>
-      <audio src = "https://django-static.vps.abaart.nl/group3/django/cotton-french.wav"/>
-      <audio src = "https://django-static.vps.abaart.nl/group3/django/appuyez-sur.wav"/>
-      <audio src = "https://django-static.vps.abaart.nl/group3/django/2-french.wav"/>
-      <audio src = "https://django-static.vps.abaart.nl/group3/django/pour.wav"/>
-      <audio src = "https://django-static.vps.abaart.nl/group3/django/cocoa-french.wav"/>
-      <audio src = "https://django-static.vps.abaart.nl/group3/django/appuyez-sur.wav"/>
-      <audio src = "https://django-static.vps.abaart.nl/group3/django/3-french.wav"/>
+      <audio src = "http://django-static.vps.abaart.nl/group3/django/select-crop-french.wav"/>
+      <audio src = "http://django-static.vps.abaart.nl/group3/django/pour.wav"/>
+      <audio src = "http://django-static.vps.abaart.nl/group3/django/corn-french.wav"/>
+      <audio src = "http://django-static.vps.abaart.nl/group3/django/appuyez-sur.wav"/>
+      <audio src = "http://django-static.vps.abaart.nl/group3/django/1-french.wav"/>
+      <audio src = "http://django-static.vps.abaart.nl/group3/django/pour.wav"/>
+      <audio src = "http://django-static.vps.abaart.nl/group3/django/cotton-french.wav"/>
+      <audio src = "http://django-static.vps.abaart.nl/group3/django/appuyez-sur.wav"/>
+      <audio src = "http://django-static.vps.abaart.nl/group3/django/2-french.wav"/>
+      <audio src = "http://django-static.vps.abaart.nl/group3/django/pour.wav"/>
+      <audio src = "http://django-static.vps.abaart.nl/group3/django/cocoa-french.wav"/>
+      <audio src = "http://django-static.vps.abaart.nl/group3/django/appuyez-sur.wav"/>
+      <audio src = "http://django-static.vps.abaart.nl/group3/django/3-french.wav"/>
 
 </vxml>
