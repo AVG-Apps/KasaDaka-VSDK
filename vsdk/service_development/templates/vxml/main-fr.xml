@@ -93,7 +93,7 @@ version="2.0">
       </nomatch>
 
       <var name="weather"/>
-      <filled namelist="get_crop" mode="all">
+      <filled namelist="get_weather" mode="all">
 
         <if cond="get_weather==1">
           	<assign name="weather" expr="'dry'"/>

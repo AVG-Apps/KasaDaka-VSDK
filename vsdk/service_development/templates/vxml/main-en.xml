@@ -15,9 +15,8 @@
     <!--Fertilizer form in English-->
   <form id="fertilizersEN">
     <!-- DTMF grammar and field that holds the value for crop-->
-
 		<field name="crop">
-  <!-- Welcome message in English -->
+  <!-- Field for crop input -->
     <audio src = "http://django-static.vps.abaart.nl/group3/django/give-crop-and-weather-english.wav"/>
 
   <!-- For corn press 1, for cotton, press 2, for cocoa, press 3-->
