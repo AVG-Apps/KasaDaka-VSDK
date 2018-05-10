@@ -1,32 +1,36 @@
-from django.template import loader
-from django.http import Http404
+# from django.template import loader
+# from django.http import Http404
 from django.shortcuts import get_object_or_404, render, redirect
-from django.http import HttpResponseRedirect, HttpResponse
-from django.urls import reverse
+# from django.http import HttpResponseRedirect, HttpResponse
+# from django.urls import reverse
 
-from ..models.forms import FertilizerForm, CropForm, WeatherConditionForm
-from ..models.models import Fertilizer
+from ..models.forms import FertilizerForm, CropForm, WeatherConditionForm, TutorialsFrom
+from ..models.models import Fertilizer, Crop, Weather, Tutorials
 
-from . import base
+# from . import base
 
-#Render the Index page
+#Shows the Main page
 def main_page(request):
     latest_fertilizer_list = Fertilizer.objects.all()
     context = {'latest_fertilizer_list': latest_fertilizer_list}
     return render(request, 'fertilizer_website/main_page.html', context)
 
-#Render the Fertilizer page
+#Shows the Fertilizer detail page
 def fertilizer(request, id=id):
     fertilizer = Fertilizer.objects.get(id=id)
-    return render(request, 'fertilizer_website/detail.html', {'fertilizer': fertilizer})
+    crops = fertilizer.crops.all()
+    for crop in crops:
+        print (crop.audio_url)
+    # voices = fertilizer.voice_label.get_voice_fragment_url(0)
+    # print(voices)
+    return render(request, 'fertilizer_website/detail.html', {'fertilizer': fertilizer, 'crops': crops})
 
 
-#Render the voice XML application
+#Shows the voice XML application
 def voice_app(request):
     latest_fertilizer_list = Fertilizer.objects.all()
     context = {'latest_fertilizer_list': latest_fertilizer_list}
     return render(request, 'main-en-1.xml', context,  content_type='text/xml')
-
 
 #add new fertilizer to the the index page
 def add_fertilizer(request):
@@ -38,16 +42,7 @@ def add_fertilizer(request):
             return redirect('/vxml/fertilizer/' + str(fertilizer_item.id) + '/')
     else:
         form = FertilizerForm()
-    return render(request, 'fertilizer_website/fertilizer_form.html', {'form':form})
-
-#edit the fertilizer on the detail page
-def edit_fertilizer(request, id=None):
-    item = get_object_or_404(Fertilizer, id=id)
-    form = FertilizerForm(request.POST or None, instance=item)
-    if form.is_valid():
-        form.save()
-        return redirect('/vxml/fertilizer/' + str(item.id) + '/')
-    return render(request, 'fertilizer_website/fertilizer_form.html', {'form':form})
+    return render(request, 'fertilizer_website/fertilizer_form.html', {'fertilizer':form})
 
 #add new crop
 def add_crop(request):
@@ -59,7 +54,7 @@ def add_crop(request):
             return redirect('/vxml/add/crop/')
     else:
         form = CropForm()
-    return render(request, 'fertilizer_website/crop_form.html', {'form':form})
+    return render(request, 'fertilizer_website/crop_form.html', {'crop':form})
 
 
 #add new weather
@@ -72,4 +67,27 @@ def add_weather(request):
             return redirect('/vxml/add/weather/')
     else:
         form = WeatherConditionForm()
-    return render(request, 'fertilizer_website/weather_form.html', {'form':form})
+    return render(request, 'fertilizer_website/weather_form.html', {'weather':form})
+
+
+#add new tutorial
+def add_tutorial(request):
+    if request.method == "POST":
+        form = TutorialsFrom(request.POST)
+        if form.is_valid():
+            tutorial_item = form.save(commit=False)
+            tutorial_item.save()
+            return redirect('/vxml/add/tutorial/')
+    else:
+        form = TutorialsFrom()
+    return render(request, 'fertilizer_website/tutorial_form.html', {'tutorial':form})
+
+
+#edit the fertilizer on the detail page
+def edit_fertilizer(request, id=None):
+    item = get_object_or_404(Fertilizer, id=id)
+    form = FertilizerForm(request.POST or None, instance=item)
+    if form.is_valid():
+        form.save()
+        return redirect('/vxml/fertilizer/' + str(item.id) + '/')
+    return render(request, 'fertilizer_website/fertilizer_form.html', {'fertilizer':form})

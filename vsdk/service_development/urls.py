@@ -18,8 +18,11 @@ urlpatterns = [
     url(r'^add/fertilizer/$', views.add_fertilizer, name='add_fertilizer'),
     url(r'^add/crop/$', views.add_crop, name='add_crop'),
     url(r'^add/weather/$', views.add_weather, name='add_weather'),
+    url(r'^add/tutorial/$', views.add_tutorial, name='add_tutorial'),
+
     url(r'^fertilizer/(?P<id>\d+)/edit/$', views.edit_fertilizer, name='edit_fertilizer'),
     url(r'^fertilizer/(?P<id>\d+)/$', views.fertilizer, name='fertilizer'),
+
     url(r'^fertilizer/', views.main_page, name='main_page'),
 
     # urls of the own create xml files

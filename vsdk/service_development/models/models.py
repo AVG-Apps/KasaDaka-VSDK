@@ -3,34 +3,45 @@ from .voicelabel import VoiceLabel
 
 #Crop model with all attributes
 class Crop(models.Model):
-    crop_name = models.CharField(max_length=30)
-    crop_img_url = models.URLField()
-    crop_audio_url = models.URLField( null=True)
+    name = models.CharField(max_length=30)
+    img_url = models.URLField()
+    audio_url = models.URLField( null=True)
 
     def __str__(self):
-        return self.crop_name
+        return self.name
 
 #Weather model with all attributes
 class Weather(models.Model):
-    weather_condition = models.CharField(max_length=30)
-    weather_image_url = models.URLField(null=True)
-    weather_audio_url = models.URLField(null=True)
+    name = models.CharField(max_length=30)
+    image_url = models.URLField(null=True)
+    audio_url = models.URLField(null=True)
 
     def __str__(self):
-        return self.weather_condition
+        return self.name
+
+
+class Tutorials(models.Model):
+    name = models.CharField(max_length=30, default='', blank=True)
+    description = models.TextField(default='', blank=True)
+    voice_label = models.ManyToManyField(VoiceLabel, blank=True)
+
+
+    def __str__(self):
+        return self.name
 
 #Fertilizer model with all attributes
 class Fertilizer(models.Model):
-    fertilizer_name = models.CharField(max_length=30, default='', blank=True)
+    name = models.CharField(max_length=30, default='', blank=True)
     description = models.TextField(default='', blank=True)
-    fertilizer_image_url = models.URLField(null=True)
-    fertilizer_audio_url = models.URLField(null=True)
+    image_url = models.URLField(null=True)
 
-    weather_condition_list = models.ForeignKey('Weather', on_delete=models.CASCADE)
-    crop_list = models.ForeignKey('Crop', on_delete=models.CASCADE)
+    crops = models.ManyToManyField(Crop, blank=True)
+    weather_condition = models.ForeignKey('Weather', on_delete=models.CASCADE, null=True)
+
+    voice_label = models.ForeignKey(VoiceLabel, on_delete=models.CASCADE, null=True)
+    tutorial = models.ForeignKey(Tutorials, on_delete=models.CASCADE, null=True)
 
     def __str__(self):
-        return self.fertilizer_name
+        return self.name
 
-class widget_tweaks(models.Model):
-    pass
+

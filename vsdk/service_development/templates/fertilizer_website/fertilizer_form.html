@@ -19,62 +19,68 @@
               Otherwise the voice application cannot play the audio file.</p>
           <a href="/vxml/add/crop/"><button type="button" class="btn btn-info"><i class="fas fa-plus"></i> Add Crop</button></a>
           <a href="/vxml/add/weather/"><button type="button" class="btn btn-info"><i class="fas fa-plus"></i> Add Weather Condition</button></a>
+          <a href="/vxml/add/tutorial/"><button type="button" class="btn btn-info"><i class="fas fa-plus"></i> Add Tutorial</button></a>
       </div>
     </div>
         <div class="container">
             <form method="POST" action="">
                     {% csrf_token %}
 
-                    {{ form.non_field_errors}}
-
-                    <div class="form-group row">
+                    {{ fertilizer.non_field_errors}}
                     {% load widget_tweaks %}
 
-                        {{form.fertilizer_name.errors}}
-                        <label for="{{ form.fertilizer_name.id_for_label}}">Fertilizer</label>
-                        {{ form.fertilizer_name|add_class:"form-control" }}
+                    <div class="form-group row">
+
+                        {{fertilizer.name.errors}}
+                        <label for="{{ fertilizer.name.id_for_label}}">Fertilizer</label>
+                        {{ fertilizer.name|add_class:"form-control" }}
                     </div>
 
                     <div class="form-group row">
-                        {{form.description.errors}}
-                        <label for="{{ form.description.id_for_label }}">Description</label>
-                        {{ form.description|add_class:"form-control" }}
+                        {{fertilizer.description.errors}}
+                        <label for="{{ fertilizer.description.id_for_label }}">Description</label>
+                        {{ fertilizer.description|add_class:"form-control" }}
                     </div>
 
                     <div class="form-group row">
-                        {{form.fertilizer_image_url.errors}}
-                        <label for="{{ form.fertilizer_image_url.id_for_label }}">URL image</label>
-                        {{ form.fertilizer_image_url|add_class:"form-control" }}
+                        {{fertilizer.image_url.errors}}
+                        <label for="{{ fertilizer.image_url.id_for_label }}">URL image</label>
+                        {{ fertilizer.image_url|add_class:"form-control" }}
                     </div>
 
                     <div class="form-group row">
-                        {{form.fertilizer_audio_url.errors}}
-                        <label for="{{ form.fertilizer_audio_url.id_for_label }}">URL audio</label>
-                        {{ form.fertilizer_audio_url|add_class:"form-control" }}
+                        {{fertilizer.voice_label.errors}}
+                        <label for="{{ fertilizer.voice_label.id_for_label}}">Audio</label>
+                        {{ fertilizer.voice_label|add_class:"form-control" }}
                     </div>
 
                     <div class="form-group row">
-                        {{form.crop_list.errors}}
-                        <label for="{{ form.crop_list.id_for_label}}">Crop</label>
-                        {{ form.crop_list|add_class:"form-control" }}
+                        {{fertilizer.crops.errors}}
+                        <label for="{{ fertilizer.crop.id_for_label}}">Crop</label>
+                        {{ fertilizer.crops|add_class:"form-control" }}
                     </div>
 
                     <div class="form-group row">
-                        {{form.weather_condition_list.errors}}
-                        <label for="{{ form.weather_condition_list.id_for_label}}">Weather Condition</label>
-                        {{ form.weather_condition_list|add_class:"form-control" }}
+                        {{fertilizer.weather_condition.errors}}
+                        <label for="{{ fertilizer.weather_condition.id_for_label}}">Weather Condition</label>
+                        {{ fertilizer.weather_condition|add_class:"form-control" }}
                     </div>
 
+                    <div class="form-group row">
+                        {{fertilizer.tutorial.errors}}
+                        <label for="{{ fertilizer.tutorial.id_for_label}}">Tutorial</label>
+                        {{ fertilizer.tutorial|add_class:"form-control" }}
+                    </div>
+
+            </form>
 
                     <div class="form-group row">
                         <input type="submit" class="btn btn-success" value="Submit">
                     </div>
 
-            </form>
-
-            <div class="form-group row">
-                <a href="/vxml/fertilizer/"><button class="btn btn-info"><i class="fas fa-chevron-circle-left"></i> Go Back</button></a>
-            </div>
+                    <div class="form-group row">
+                        <a href="/vxml/fertilizer/"><button class="btn btn-info"><i class="fas fa-chevron-circle-left"></i> Go Back</button></a>
+                    </div>
 
         </div>
 

@@ -1,0 +1,60 @@
+<html>
+
+<header>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</header>
+
+<body>
+
+
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Add new tutorial</h1>
+        <p class="lead">To add a new language you need to add the name and an url of the picture of the  flag of the country into the form.
+            Please add the name, the audio file url, the image url of the language.</p>
+          <p> Warning, it is important that the audio files are in WAVE format. The WAVE file must have a sample rate of 8KHZ, 16 bit, mono, codec: PCM 16 LE (s16I).
+              Otherwise the voice application cannot play the audio file.</p>
+      </div>
+    </div>
+        <div class="container">
+            <form method="POST" action="">
+                {% csrf_token %}
+
+                {{ form.non_field_errors}}
+                {% load widget_tweaks %}
+
+                    <div class="form-group row">
+                        {{ tutorial.name.errors}}
+                        <label for="{{ tutorial.name.id_for_label}}">Fertilizer Tutorial</label>
+                        {{ tutorial.name|add_class:"form-control" }}
+                    </div>
+
+                    <div class="form-group row">
+                        {{tutorial.description.errors}}
+                        <label for="{{ tutorial.description.id_for_label }}">Description</label>
+                        {{ tutorial.description|add_class:"form-control" }}
+                    </div>
+
+                    <div class="form-group row">
+                        {{ tutorial.voice_label.errors}}
+                        <label for="{{ tutorial.voice_label.id_for_label}}">Audio</label>
+                        {{ tutorial.voice_label|add_class:"form-control" }}
+                    </div>
+
+            </form>
+
+            <div class="form-group row">
+                <input type="submit" class="btn btn-success" value="Submit">
+            </div>
+
+            <div class="form-group row">
+                <a href="/vxml/add/fertilizer/"><button class="btn btn-info"><i class="fas fa-chevron-circle-left"></i> Go Back</button></a>
+            </div>
+
+        </div>
+
+</body>
+
+</html>
