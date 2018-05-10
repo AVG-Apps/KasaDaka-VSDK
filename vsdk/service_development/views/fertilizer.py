@@ -6,6 +6,7 @@ from django.shortcuts import get_object_or_404, render, redirect
 
 from ..models.forms import FertilizerForm, CropForm, WeatherConditionForm, TutorialsFrom
 from ..models.models import Fertilizer, Crop, Weather, Tutorials
+from ..models.voicelabel import Language, VoiceLabel
 
 # from . import base
 
@@ -15,15 +16,28 @@ def main_page(request):
     context = {'latest_fertilizer_list': latest_fertilizer_list}
     return render(request, 'fertilizer_website/main_page.html', context)
 
+
 #Shows the Fertilizer detail page
 def fertilizer(request, id=id):
     fertilizer = Fertilizer.objects.get(id=id)
     crops = fertilizer.crops.all()
-    for crop in crops:
-        print (crop.audio_url)
-    # voices = fertilizer.voice_label.get_voice_fragment_url(0)
-    # print(voices)
-    return render(request, 'fertilizer_website/detail.html', {'fertilizer': fertilizer, 'crops': crops})
+    # weather = fertilizer.weather.all()
+    # tutorials = fertilizer.tutorials.all()
+
+    languages = Language.objects.filter(code="en")
+    for language in languages:
+        fertilizer_audio = fertilizer.voice_label.get_voice_fragment_url(language)
+
+        # fertilizer_audio = fertilizer.voice_label.get_voice_fragment_url(language)
+        # crops_audio = crops.voice_label.get_voice_fragment_url(language)
+        # weather_audio = weather.voice_label.get_voice_fragment_url(language)
+        # tutorials_audio = tutorials.voice_label.get_voice_fragment_url(language)
+
+    # 'crop': crops_audio, 'weather': weather_audio, 'tutorials': tutorials_audio
+    audio = {'fertilizer': fertilizer_audio, }
+
+
+    return render(request, 'fertilizer_website/detail.html', {'fertilizer': fertilizer, 'crops': crops, 'audio': audio})
 
 
 #Shows the voice XML application
@@ -34,9 +48,13 @@ def voice_app(request):
 
 #add new fertilizer to the the index page
 def add_fertilizer(request):
+    print('hallo')
+    print(request.method)
     if request.method == "POST":
+        print('is posted')
         form = FertilizerForm(request.POST)
         if form.is_valid():
+            print('is valid')
             fertilizer_item = form.save(commit=False)
             fertilizer_item.save()
             return redirect('/vxml/fertilizer/' + str(fertilizer_item.id) + '/')
