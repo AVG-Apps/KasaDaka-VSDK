@@ -31,41 +31,18 @@
                 {% for fertilizer in latest_fertilizer_list %}
                 <div class="col-lg-4 col-md-4 col-sm-6  col-sx-12">
                   <div class="card">
-                     <div class="card-header">
-
-                          <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                            <!-- Indicators -->
-                            <ol class="carousel-indicators">
-                              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                              <li data-target="#myCarousel" data-slide-to="1"></li>
-                              <li data-target="#myCarousel" data-slide-to="2"></li>
-                            </ol>
-
-                            <!-- Wrapper for slides -->
-                            <div class="carousel-inner">
-                              <div class="item active">
-                                  <img class="img-thumbnail" src="{{ fertilizer.crop_list.crop_img_url }}" alt="Card image cap">
-                              </div>
-
-                              <div class="item">
-                                  <img class="img-thumbnail" src="{{ fertilizer.weather_condition_list.weather_image_url }}" alt="Card image cap">
-                              </div>
-
-                              <div class="item">
-                                  <img class="img-thumbnail" src="{{ fertilizer.fertilizer_image_url }}" alt="Card image cap">
-                              </div>
+                        <div class="card-header">
+                            <div class="item active">
+                                <img class="img-thumbnail" data-src="holder.js/300x200" src="{{ fertilizer.image_url }}" alt="Card image cap">
                             </div>
-                          </div>
-
-                     </div>
-                     <div class="card-body">
+                        </div>
+                      <div class="card-body">
                           <div class="card-body">
-                              <h2 class="card-title mx-auto text-center">{{ fertilizer.fertilizer_name }}</h2>
-                              <h2 class="card-title mx-auto text-center">{{ fertilizer.crop_name }}</h2>
-                              <p class="card-text mx-auto text-center">{{ fertilizer.description|slice:"0:120" }}...</p>
+                                <h2 class="card-title mx-auto text-center">{{ fertilizer.name }}</h2>
+                                <p class="card-text mx-auto text-center">{{ fertilizer.description|slice:"0:120" }}...</p>
                           </div>
-                     </div>
-                      <a href="/vxml/fertilizer/{{ fertilizer.id }}/" class="btn btn-info">Read More...</a>
+                      </div>
+                  <a href="/vxml/fertilizer/{{ fertilizer.id }}/" class="btn btn-info">Read More...</a>
 
                   </div>
                 </div>
@@ -75,10 +52,6 @@
             <p>No Fertilizers available.</p>
         {% endif %}
     </div>
-
-
-
-
 
 </body>
 

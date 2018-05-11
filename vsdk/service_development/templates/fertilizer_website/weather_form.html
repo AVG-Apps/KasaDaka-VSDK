@@ -41,11 +41,11 @@
                     {{ weather.image_url|add_class:"form-control" }}
                 </div>
 
-                <div class="form-group row">
-                    {{weather.audio_url.errors}}
-                    <label for="{{ weather.audio_url.id_for_label }}">URL audiofile</label>
-                    {{ weather.audio_url|add_class:"form-control" }}
-                </div>
+                   <div class="form-group row">
+                        {{weather.voice_label.errors}}
+                        <label for="{{ weather.voice_label.id_for_label}}">Audio</label>
+                        {{ weather.voice_label|add_class:"form-control" }}
+                    </div>
 
                 <div class="form-group row">
                     <input type="submit" class="btn btn-success" value="Submit">

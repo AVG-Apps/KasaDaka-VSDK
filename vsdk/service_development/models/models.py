@@ -5,7 +5,7 @@ from .voicelabel import VoiceLabel
 class Crop(models.Model):
     name = models.CharField(max_length=30)
     img_url = models.URLField()
-    audio_url = models.URLField( null=True)
+    voice_label = models.ForeignKey(VoiceLabel, on_delete=models.CASCADE, null=True)
 
     def __str__(self):
         return self.name
@@ -14,7 +14,7 @@ class Crop(models.Model):
 class Weather(models.Model):
     name = models.CharField(max_length=30)
     image_url = models.URLField(null=True)
-    audio_url = models.URLField(null=True)
+    voice_label = models.ForeignKey(VoiceLabel, on_delete=models.CASCADE, null=True)
 
     def __str__(self):
         return self.name
