@@ -6,3 +6,6 @@ from .user import *
 from .voiceservice import *
 from .language import *
 from .fertilizer import *
+from .crop import *
+from .weather_condition import *
+from .tutorial import *
