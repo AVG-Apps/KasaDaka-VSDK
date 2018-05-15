@@ -23,17 +23,19 @@ urlpatterns = [
 
     url(r'^add/fertilizer/$', views.add_fertilizer, name='add_fertilizer'),
     url(r'^add/crop/$', views.add_crop, name='add_crop'),
-    url(r'^add/weather/$', views.add_weather, name='add_weather'),
     url(r'^add/tutorial/$', views.add_tutorial, name='add_tutorial'),
 
-    url(r'^fertilizer/(?P<id>\d+)/edit/$', views.edit_fertilizer, name='edit_fertilizer'),
-    url(r'^fertilizer/(?P<id>\d+)/delete/$', views.delete_fertilizer, name='delete_fertilizer'),
+    # url(r'^mamoisson/(?P<id>\d+)/edit/$', views.edit_fertilizer, name='edit_fertilizer'),
+    # url(r'^mamoisson/(?P<id>\d+)/delete/$', views.delete_fertilizer, name='delete_fertilizer'),
 
-    url(r'^fertilizer/(?P<id>\d+)/$', views.fertilizer, name='fertilizer'),
+    url(r'^mamoisson/crop/(?P<id>\d+)/edit/$', views.edit_crop, name='edit_crop'),
+    url(r'^mamoisson/crop/(?P<id>\d+)/delete/$', views.delete_fertilizer, name='delete_crop'),
 
-    url(r'^fertilizer/', views.main, name='main'),
+    url(r'^mamoisson/crop/(?P<id>\d+)/$', views.detail, name='detail'),
 
-    url(r'^fertilizer/team/$', views.team, name='team'),
+    url(r'^mamoisson/', views.main, name='main'),
+
+    url(r'^mamoisson/team/$', views.team, name='team'),
 
 
 

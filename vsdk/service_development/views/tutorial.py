@@ -6,9 +6,9 @@ from django.urls import reverse
 from django.views import generic
 
 
-from ..models.forms import FertilizerForm, CropForm, WeatherConditionForm, TutorialsFrom
-from ..models.models import Fertilizer, Crop, Weather, Tutorials
-from ..models.voicelabel import Language, VoiceLabel
+from ..models.forms import TutorialsFrom
+from ..models.models import Tutorials
+from ..models.voicelabel import Language
 
 
 #add new tutorial
@@ -21,4 +21,4 @@ def add_tutorial(request):
             return redirect('/vxml/add/tutorial/')
     else:
         form = TutorialsFrom()
-    return render(request, 'mamoisson/insert/tutorial.html', {'tutorial':form})
+    return render(request, 'mamoisson/add/tutorial.html', {'tutorial':form})

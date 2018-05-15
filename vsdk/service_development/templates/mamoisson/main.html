@@ -1,59 +1,43 @@
-<html>
 
-<header>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
+{% extends 'mamoisson/base.html' %}
 
 
-</header>
-
-<body>
+{% block content %}
 
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
         <h1 class="display-4">MaMoisson</h1>
-        <p class="lead">On this website you can add information about fertilizers for farmers who will be using the MaMoisson Voice Application.</p>
-          <a href="/vxml/add/fertilizer/"><button type="button" class="btn btn-info"><i class="fas fa-plus"></i> Add Fertilizer</button></a>
+        <p class="lead">On this website you can add information about crops for farmers who will be using the MaMoisson Voice Application.</p>
+          <a href="/vxml/add/crop/"><button type="button" class="btn btn-info"><i class="fas fa-plus"></i> Add Crop</button></a>
       </div>
     </div>
 
 
     <div class="container">
-            {% if latest_fertilizer_list %}
+            {% if latest_crop_list %}
             <div class="row">
-                {% for fertilizer in latest_fertilizer_list %}
+                {% for crop in latest_crop_list %}
                 <div class="col-lg-4 col-md-4 col-sm-6  col-sx-12">
                   <div class="card">
                         <div class="card-header">
                             <div class="item active">
-                                <img class="img-thumbnail" data-src="holder.js/300x200" src="{{ fertilizer.image_url }}" alt="Card image cap">
+                                <img class="img-thumbnail" data-src="holder.js/300x200" src="{{ crop.img_url }}" alt="Card image cap">
                             </div>
                         </div>
                       <div class="card-body">
                           <div class="card-body">
-                                <h2 class="card-title mx-auto text-center">{{ fertilizer.name }}</h2>
-                                <p class="card-text mx-auto text-center">{{ fertilizer.description|slice:"0:120" }}...</p>
+                                <h2 class="card-title mx-auto text-center">{{ crop.name }}</h2>
+                                <p class="card-text mx-auto text-center">{{ crop.description|slice:"0:120" }}...</p>
                           </div>
                       </div>
-                  <a href="/vxml/fertilizer/{{ fertilizer.id }}/" class="btn btn-info">Read More...</a>
+                  <a href="/vxml/mamoisson/crop/{{ crop.id }}/" class="btn btn-info">Read More...</a>
 
                   </div>
                 </div>
               {% endfor %}
             </div>
         {% else %}
-            <p>No Fertilizers available.</p>
+            <p>No Crops available.</p>
         {% endif %}
     </div>
-
-</body>
-
-
-</html>
+{% endblock %}

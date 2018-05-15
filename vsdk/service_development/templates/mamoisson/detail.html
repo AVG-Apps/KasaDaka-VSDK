@@ -1,30 +1,15 @@
-<html>
 
-<header>
-     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
-
-    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+{% extends 'mamoisson/base.html' %}
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
+{% block content %}
 
 
-<!--</header>-->
-</header>
-    <body>
 
     <div class="jumbotron jumbotron-fluid">
           <div class="container">
               <div class="row">
-                    <div class="col-lg-8">
+                    <div class="col-lg-6">
                           <div id="myCarousel" class="carousel slide" data-ride="carousel">
                             <!-- Indicators -->
                             <ol class="carousel-indicators">
@@ -37,24 +22,26 @@
                             <div class="carousel-inner">
 
                               <div class="item">
-                                  <img class="img-thumbnail d-block w-100" src="{{ fertilizer.weather_condition.image_url }}" alt="Card image cap">
-                                  <div class="carousel-caption d-none d-md-block">
-                                    <p>{{fertilizer.weather_condition.name|capfirst}}</p>
+                                  <div class="text-center">
+                                      <img class="img-thumbnail" width="570" height="345" src="{{ crop.weather_condition.image_url }}" alt="Card image cap">
+                                      <div class="carousel-caption d-none d-md-block">
+                                        <p>{{crop.weather_condition.name|capfirst}}</p>
+                                      </div>
                                   </div>
                               </div>
 
                               <div class="item active">
-                                  <img class="img-thumbnail" src="{{ fertilizer.image_url }}" alt="Card image cap">
+                                  <img class="img-thumbnail" width="570" height="345" src="{{ crop.img_url }}" alt="Card image cap">
                                   <div class="carousel-caption d-none d-md-block">
-                                    <p>{{fertilizer.name|capfirst}}</p>
+                                    <p>{{crop.name|capfirst}}</p>
                                   </div>
                               </div>
 
-                              {% for crop in crops %}
-                              <div class="item">
-                                  <img class="img-thumbnail" src="{{ crop.img_url }}" alt="Card image cap">
+                              {% for fertilizer in fertilizers %}
+                              <div class="text-center item">
+                                  <img class="img-thumbnail" width="570" height="345" src="{{ fertilizer.image_url }}" alt="Card image cap">
                                   <div class="carousel-caption d-none d-md-block">
-                                    <p>{{crop.name|capfirst}}</p>
+                                    <p>{{fertilizer.name|capfirst}}</p>
                                   </div>
                               </div>
                              {% endfor %}
@@ -74,16 +61,13 @@
 
 
                 <div class="col-lg-4">
-                    <h2  class="display-4">{{ fertilizer.name|capfirst }}</h2>
-                    <p class="card-text">{{ fertilizer.description }}</p>
-
                      <div class="card-head">
                          <ul class="list-group">
-                             <!--Fertilizer-->
-                             <h4  class="display-4">Fertilizer</h4>
-                              <li class="list-group-item">{{ fertilizer.name|capfirst }}
+                             <!--Crop-->
+                             <p>Crop</p>
+                              <li class="list-group-item">{{ crop.name|capfirst }}
 									<audio preload="auto" tabindex="0" controls="" >
-									<source src="{{ audio.fertilizer }}">
+									<source src="{{ audio.crop }}">
 									</audio>
                               </li>
                          </ul>
@@ -91,17 +75,18 @@
 
                     <!--Crops-->
                     <div class="card-body">
-                        <h4  class="display-4">
-                            Crops
-                            <a href="#" data-toggle="popover" data-placement="right" data-content="{{ fertilizer.name|capfirst }} is the best fertilizer for these crops">
+                        <p>
+                            Fertilizers
+                            <a href="#" data-toggle="popover" data-placement="right" data-content="{{ crop.name|capfirst }} is the best crop for these fertilizers">
                                 <i class="fas fa-info-circle"></i>
                             </a>
-                        </h4>
+                        </p>
                          <ul class="list-group">
-                             {% for crop in crops %}
-                                    {% for audio in audio.crops %}
-                                        {% if audio.name == crop.name %}
-                                <li class="list-group-item">{{ crop.name|capfirst }}
+
+                             {% for fertilizer in fertilizers %}
+                                    {% for audio in audio.fertilizers %}
+                                        {% if audio.name == fertilizer.name %}
+                                <li class="list-group-item">{{ fertilizer.name|capfirst }}
                                     <audio preload="auto" tabindex="0" controls="" >
 								        <source src="{{ audio.audio_url }}">
                                     </audio>
@@ -110,19 +95,18 @@
                              </li>
                              {% endfor %}
                         </ul>
-                    </div>
 
                     <!--Weather Conditions-->
-                    <div class="card-footer">
-                        <h4  class="display-4">
+                        <p>
                             Weather condition
-                            <a href="#" data-toggle="popover" data-placement="right" data-content="{{ fertilizer.name|capfirst }} is best fertilizer under the weather condition: {{ fertilizer.weather_condition.name|lower }}">
+                            <a href="#" data-toggle="popover" data-placement="right" data-content="{{ crop.name|capfirst }} is best crop under the weather condition: {{ crop.weather_condition.name|lower }}">
                                 <i class="fas fa-info-circle"></i>
                             </a>
-                        </h4>
+                        </p>
+
                          <ul class="list-group">
                             <li class="list-group-item">
-                                {{ fertilizer.weather_condition.name|capfirst }}
+                                {{ crop.weather_condition.name|capfirst }}
                                 <audio preload="auto" tabindex="0" controls="" >
                                     <source src="{{ audio.weather }}">
 								</audio>
@@ -131,10 +115,13 @@
                     </div>
                 </div>
               </div>
+        <h2>{{ crop.name }}</h2>
+              <p class="card-text">{{ crop.description }}</p>
 
-              <a href="/vxml/fertilizer/"><button type="button" class="btn btn-info"><i class="fas fa-chevron-circle-left"></i> Go Back</button></a>
-              <a href="/vxml/fertilizer/{{ fertilizer.id }}/edit/"> <button type="button" class="btn btn-warning">Edit</button></a>
-              <a href="/vxml/fertilizer/{{ fertilizer.id }}/delete/"> <button type="button" class="btn btn-danger">Delete</button></a>
+
+              <a href="/vxml/mamoisson/crop/"><button type="button" class="btn btn-info"><i class="fas fa-chevron-circle-left"></i> Go Back</button></a>
+              <a href="/vxml/mamoisson/crop/{{ crop.id }}/edit/"> <button type="button" class="btn btn-warning">Edit</button></a>
+              <a href="/vxml/mamoisson/crop/{{ crop.id }}/delete/"> <button type="button" class="btn btn-danger">Delete</button></a>
 
           </div>
 
@@ -142,11 +129,11 @@
 </div>
 
 <div class="container">
-        <h1>Tutorial of {{ fertilizer.name }}</h1>
+        <h1>Tutorial of {{ crop.name }}</h1>
         </br>
             <!--Tutorials-->
                     <div class="card-body">
-                        <h4  class="display-4">
+                        <p >
                          <ul class="list-group">
                              {% for audio in audio.tutorial %}
                                 <li class="list-group-item">{{ audio.name|capfirst }}
@@ -157,12 +144,5 @@
                              {% endfor %}
                         </ul>
                     </div>
-</div>
-    <script>
-        $(document).ready(function(){
-            $('[data-toggle="popover"]').popover();
-        });
-    </script>
-
-    </body>
-</html>
+        </div>
+{% endblock %}
