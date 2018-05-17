@@ -9,8 +9,8 @@ class Category(models.Model):
         return self.name
 
 class Tutorials(models.Model):
-    name = models.CharField(max_length=30, default='', blank=True, null=True)
-    voice_label = models.ManyToManyField(VoiceLabel, blank=True, null=True)
+    name = models.CharField(max_length=30, default='', blank=True)
+    voice_label = models.ManyToManyField(VoiceLabel, blank=True)
 
     def __str__(self):
         return self.name
