@@ -1,17 +1,15 @@
 from django.forms import ModelForm
 
-from .models import Fertilizer, Crop, Weather, Tutorials
+from .models import Fertilizer, Crop, Tutorials, Category
 
+class CategoryForm(ModelForm):
+    class Meta:
+        model = Category
+        fields = '__all__'
 
 class CropForm(ModelForm):
     class Meta:
         model = Crop
-        fields = '__all__'
-
-
-class WeatherConditionForm(ModelForm):
-    class Meta:
-        model = Weather
         fields = '__all__'
 
 

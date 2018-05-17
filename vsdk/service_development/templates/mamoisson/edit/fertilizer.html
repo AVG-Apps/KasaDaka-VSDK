@@ -1,0 +1,60 @@
+{% extends 'mamoisson/base.html' %}
+{% block content %}
+
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Edit Fertilizer</h1>
+          <p class="lead">To edit this fertilizer please fill in all the
+              information on the form.</p>
+      </div>
+    </div>
+        <div class="container">
+            <form method="POST" action="">
+                    {% csrf_token %}
+
+                    {{ fertilizer.non_field_errors}}
+                    {% load widget_tweaks %}
+
+                    <div class="form-group row">
+
+                        {{fertilizer.name.errors}}
+                        <label for="{{ fertilizer.name.id_for_label}}">Fertilizer</label>
+                        {{ fertilizer.name|add_class:"form-control" }}
+                    </div>
+
+                    <div class="form-group row">
+                        {{fertilizer.image_url.errors}}
+                        <label for="{{ fertilizer.image_url.id_for_label }}">URL image</label>
+                    <a href="#" data-toggle="popover" data-placement="right" data-content="Only images with 800*800 pixels">
+                        <i class="fas fa-info-circle"></i>
+                    </a>
+                        {{ fertilizer.image_url|add_class:"form-control" }}
+                    </div>
+
+                    <div class="form-group row">
+                        {{fertilizer.voice_label.errors}}
+                        <label for="{{ fertilizer.voice_label.id_for_label}}">Audio</label>
+                        <a href="#" data-toggle="popover" data-placement="right" data-content="
+                            The WAVE file must have a sample rate of 8KHZ, 16 bit, mono, codec: PCM 16 LE (s16I).
+                            Otherwise the voice application cannot play the audio file.">
+                        <i class="fas fa-info-circle"></i>
+                    </a>
+                        {{ fertilizer.voice_label|add_class:"form-control" }}
+                    <p><a href="/service_development/voicelabel/">Click on <i class="fas fa-plus-circle"></i> to add a voice label</a></p>
+                    </div>
+
+                        <input type="submit" class="btn btn-success" value="Submit">
+
+
+            </form>
+
+
+                    <div class="form-group row">
+                        <a href="/vxml/mamoisson/fertilizer/"><button class="btn btn-info"><i class="fas fa-chevron-circle-left"></i> Go Back</button></a>
+                    </div>
+
+
+
+        </div>
+
+{% endblock %}

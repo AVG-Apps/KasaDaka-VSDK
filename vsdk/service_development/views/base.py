@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404, get_list_or_404, redirect
 from django.http import HttpResponse
 
+from ..models.models import Crop
 
 def index(request):
     return HttpResponse('This is the VoiceXML generator')
@@ -31,3 +32,21 @@ def reverse_add_get_parameters(url_name, *args, **kwargs):
     url = reverse(url_name, args = args)
     params = urllib.parse.urlencode(kwargs)
     return url + "?%s" % params
+
+
+#===============================
+# WEBSITE MAMOISSON
+#===============================
+
+def main(request):
+    latest_crop_list = Crop.objects.all()
+    context = {'latest_crop_list': latest_crop_list}
+    return render(request, 'mamoisson/main.html', context)
+
+def team(request):
+    return render(request, 'mamoisson/team.html')
+
+def voice(request):
+    latest_crop_list = Crop.objects.all()
+    context = {'latest_crop_list': latest_crop_list}
+    return render(request, 'main-en-1.xml', context,  content_type='text/xml')

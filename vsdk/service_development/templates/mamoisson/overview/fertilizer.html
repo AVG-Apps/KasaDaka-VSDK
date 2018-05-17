@@ -1,0 +1,50 @@
+{% extends 'mamoisson/base.html' %}
+{% block content %}
+
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Fertilizers Overview</h1>
+          <p class="lead">Please, Choose the fertilizer which you want to edit.</p>
+          <a href="/vxml/mamoisson/fertilizer/add/"><button type="button" class="btn btn-info"><i class="fas fa-plus"></i> Add Fertilizer</button></a>
+
+      </div>
+    </div>
+        <div class="container">
+
+            {% if latest_fertilizer_list %}
+            <div class="row">
+                {% for fertilizer in latest_fertilizer_list %}
+                <div class="col-lg-4 col-md-4 col-sm-6  col-sx-12">
+
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="item">
+                                <h2 class="card-title mx-auto text-center">{{ fertilizer.name }}</h2>
+                            </div>
+                        </div>
+                      <div class="card-body">
+                          <div class="card-body">
+                              <img class="img-thumbnail" data-src="holder.js/150*150" src="{{ fertilizer.image_url }}" alt="Card image cap">
+                          </div>
+                      </div>
+                      <a href="/vxml/mamoisson/fertilizer/{{ fertilizer.id }}/edit/" class="btn btn-warning">
+                          <i class="fas fa-edit"></i>
+                      </a>
+                      <a href="/vxml/mamoisson/fertilizer/{{ fertilizer.id }}/delete/" class="btn btn-danger">
+                          <i class="fas fa-trash-alt"></i>
+                      </a>
+
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+        {% else %}
+            <p>No Fertilizers available.</p>
+        {% endif %}
+
+            <div class="form-group row">
+                <a href="/vxml/mamoisson/crop/add"><button class="btn btn-info"><i class="fas fa-chevron-circle-left"></i> Go Back</button></a>
+            </div>
+    </div>
+{% endblock %}

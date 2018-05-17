@@ -1,0 +1,48 @@
+{% extends 'mamoisson/base.html' %}
+{% block content %}
+
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Edit Tutorial</h1>
+        <p class="lead">Please add the name and the voicelabels of the tutorial</p>
+      </div>
+    </div>
+        <div class="container">
+            <form method="POST" action="">
+                {% csrf_token %}
+
+                {{ form.non_field_errors}}
+                {% load widget_tweaks %}
+
+                    <div class="form-group row">
+                        {{ tutorial.name.errors}}
+                        <label for="{{ tutorial.name.id_for_label}}">Fertilizer Tutorial</label>
+                        {{ tutorial.name|add_class:"form-control" }}
+                    </div>
+
+                    <div class="form-group row">
+                        {{ tutorial.voice_label.errors}}
+                        <label for="{{ tutorial.voice_label.id_for_label}}">Audio</label>
+                        <a href="#" data-toggle="popover" data-placement="right" data-content="
+                            The WAVE file must have a sample rate of 8KHZ, 16 bit, mono, codec: PCM 16 LE (s16I).
+                            Otherwise the voice application cannot play the audio file.">
+                        <i class="fas fa-info-circle"></i>
+                    </a>
+                        {{ tutorial.voice_label|add_class:"form-control" }}
+                    <p><a href="/service_development/voicelabel/">Click on <i class="fas fa-plus-circle"></i> to add a voice label</a></p>
+                    </div>
+
+                    <div class="form-group row">
+                        <input type="submit" class="btn btn-success" value="Submit">
+                    </div>
+            </form>
+
+
+
+            <div class="form-group row">
+                        <a href="/vxml/mamoisson/tutorial/"><button class="btn btn-info"><i class="fas fa-chevron-circle-left"></i> Go Back</button></a>
+            </div>
+
+        </div>
+
+{% endblock %}

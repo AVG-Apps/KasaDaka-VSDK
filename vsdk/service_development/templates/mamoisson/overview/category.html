@@ -1,0 +1,50 @@
+{% extends 'mamoisson/base.html' %}
+{% block content %}
+
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Categories Overview</h1>
+          <p class="lead">Please, Choose the category which you want to edit or delete.</p>
+          <a href="/vxml/mamoisson/category/add/"><button type="button" class="btn btn-info"><i class="fas fa-plus"></i> Add Category</button></a>
+
+      </div>
+    </div>
+    <div class="container">
+
+            {% if latest_category_list %}
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-6  col-sx-12">
+
+                <table style="width:100%">
+                  <tr>
+                      <th>Category</th>
+                      <th></th>
+                  </tr>
+                    {% for category in latest_category_list %}
+
+                      <tr>
+                          <td>{{ category.name }}</td>
+                          <td>
+                            <a href="/vxml/mamoisson/category/{{ category.id }}/edit/" class="btn btn-warning">
+                                <i class="fas fa-edit"></i>
+                            </a>
+                            <a href="/vxml/mamoisson/category/{{ category.id }}/delete/" class="btn btn-danger">
+                                <i class="fas fa-trash-alt"></i>
+                            </a>
+
+                          </td>
+                      </tr>
+                    {% endfor %}
+                </table>
+
+                </div>
+            </div>
+        {% else %}
+            <p>No Category available.</p>
+        {% endif %}
+
+            <div class="form-group row">
+                <a href="/vxml/mamoisson/crop/add"><button class="btn btn-info"><i class="fas fa-chevron-circle-left"></i> Go Back</button></a>
+            </div>
+    </div>
+{% endblock %}

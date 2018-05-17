@@ -1,93 +1,47 @@
-# from django.template import loader
-# from django.http import Http404
+from django.template import loader
+from django.http import Http404
 from django.shortcuts import get_object_or_404, render, redirect
-# from django.http import HttpResponseRedirect, HttpResponse
-# from django.urls import reverse
+from django.http import HttpResponseRedirect, HttpResponse
+from django.urls import reverse
+from django.views import generic
 
-from ..models.forms import FertilizerForm, CropForm, WeatherConditionForm, TutorialsFrom
-from ..models.models import Fertilizer, Crop, Weather, Tutorials
 
-# from . import base
+from ..models.forms import FertilizerForm
+from ..models.models import Fertilizer
+from ..models.voicelabel import Language
 
-#Shows the Main page
-def main_page(request):
+#SHOW OVERVIEW FERTILIZERS
+def overview_fertilizer(request, id=id):
     latest_fertilizer_list = Fertilizer.objects.all()
     context = {'latest_fertilizer_list': latest_fertilizer_list}
-    return render(request, 'fertilizer_website/main_page.html', context)
-
-#Shows the Fertilizer detail page
-def fertilizer(request, id=id):
-    fertilizer = Fertilizer.objects.get(id=id)
-    crops = fertilizer.crops.all()
-    for crop in crops:
-        print (crop.audio_url)
-    # voices = fertilizer.voice_label.get_voice_fragment_url(0)
-    # print(voices)
-    return render(request, 'fertilizer_website/detail.html', {'fertilizer': fertilizer, 'crops': crops})
+    return render(request, 'mamoisson/overview/fertilizer.html', context)
 
 
-#Shows the voice XML application
-def voice_app(request):
-    latest_fertilizer_list = Fertilizer.objects.all()
-    context = {'latest_fertilizer_list': latest_fertilizer_list}
-    return render(request, 'main-en-1.xml', context,  content_type='text/xml')
-
-#add new fertilizer to the the index page
+#ADD FERTILIZER
 def add_fertilizer(request):
     if request.method == "POST":
         form = FertilizerForm(request.POST)
         if form.is_valid():
             fertilizer_item = form.save(commit=False)
             fertilizer_item.save()
-            return redirect('/vxml/fertilizer/' + str(fertilizer_item.id) + '/')
+            return redirect('/vxml/mamoisson/fertilizer/')
     else:
         form = FertilizerForm()
-    return render(request, 'fertilizer_website/fertilizer_form.html', {'fertilizer':form})
-
-#add new crop
-def add_crop(request):
-    if request.method == "POST":
-        form = CropForm(request.POST)
-        if form.is_valid():
-            crop_item = form.save(commit=False)
-            crop_item.save()
-            return redirect('/vxml/add/crop/')
-    else:
-        form = CropForm()
-    return render(request, 'fertilizer_website/crop_form.html', {'crop':form})
+    return render(request, 'mamoisson/add/fertilizer.html', {'fertilizer':form})
 
 
-#add new weather
-def add_weather(request):
-    if request.method == "POST":
-        form = WeatherConditionForm(request.POST)
-        if form.is_valid():
-            weather_item = form.save(commit=False)
-            weather_item.save()
-            return redirect('/vxml/add/weather/')
-    else:
-        form = WeatherConditionForm()
-    return render(request, 'fertilizer_website/weather_form.html', {'weather':form})
-
-
-#add new tutorial
-def add_tutorial(request):
-    if request.method == "POST":
-        form = TutorialsFrom(request.POST)
-        if form.is_valid():
-            tutorial_item = form.save(commit=False)
-            tutorial_item.save()
-            return redirect('/vxml/add/tutorial/')
-    else:
-        form = TutorialsFrom()
-    return render(request, 'fertilizer_website/tutorial_form.html', {'tutorial':form})
-
-
-#edit the fertilizer on the detail page
+#EDIT FERTILIZER
 def edit_fertilizer(request, id=None):
     item = get_object_or_404(Fertilizer, id=id)
     form = FertilizerForm(request.POST or None, instance=item)
     if form.is_valid():
         form.save()
-        return redirect('/vxml/fertilizer/' + str(item.id) + '/')
-    return render(request, 'fertilizer_website/fertilizer_form.html', {'fertilizer':form})
+        return redirect('/vxml/mamoisson/fertilizer/')
+    return render(request, 'mamoisson/edit/fertilizer.html', {'fertilizer':form})
+
+
+#DELETE FERTILIZER
+def delete_fertilizer(request, id=id):
+    fertilizer = Fertilizer.objects.get(pk=id) #get the fertilizer which needed be deleted
+    fertilizer.delete()
+    return redirect('/vxml/mamoisson/fertilizer/')

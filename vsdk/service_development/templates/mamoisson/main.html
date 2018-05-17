@@ -1,0 +1,43 @@
+
+{% extends 'mamoisson/base.html' %}
+
+
+{% block content %}
+
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">MaMoisson</h1>
+        <p class="lead">On this website you can add information about crops for farmers who will be using the MaMoisson Voice Application.</p>
+          <a href="/vxml/mamoisson/crop/add/"><button type="button" class="btn btn-info"><i class="fas fa-plus"></i> Add Crop</button></a>
+      </div>
+    </div>
+
+
+    <div class="container">
+            {% if latest_crop_list %}
+            <div class="row">
+                {% for crop in latest_crop_list %}
+                <div class="col-lg-4 col-md-4 col-sm-6  col-sx-12">
+                  <div class="card">
+                        <div class="card-header">
+                            <div class="item active">
+                                <img class="img-thumbnail" data-src="holder.js/300x200" src="{{ crop.img_url }}" alt="Card image cap">
+                            </div>
+                        </div>
+                      <div class="card-body">
+                          <div class="card-body">
+                                <h2 class="card-title mx-auto text-center">{{ crop.name }}</h2>
+                                <p class="card-text mx-auto text-center">{{ crop.description|slice:"0:120" }}...</p>
+                          </div>
+                      </div>
+                  <a href="/vxml/mamoisson/crop/{{ crop.id }}/" class="btn btn-info">Read More...</a>
+
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+        {% else %}
+            <p>No Crops available.</p>
+        {% endif %}
+    </div>
+{% endblock %}
