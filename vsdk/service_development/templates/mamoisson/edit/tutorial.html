@@ -3,11 +3,8 @@
 
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h1 class="display-4">Add Tutorial</h1>
-        <p class="lead">To add a new tutorial you need to add the name of the crop and the voice labels of the tutorial.
-                Please add the voice labels of the tutorial in separate voice labels. For example, if the tutorial of cocao is divided
-              into different years and different phases then the voice label looks like this.</>
-          <p>Name: cocao-year1-planting</p>
+        <h1 class="display-4">Edit Tutorial</h1>
+        <p class="lead">Please add the name and the voicelabels of the tutorial</p>
       </div>
     </div>
         <div class="container">
@@ -22,7 +19,6 @@
                         <label for="{{ tutorial.name.id_for_label}}">Fertilizer Tutorial</label>
                         {{ tutorial.name|add_class:"form-control" }}
                     </div>
-
 
                     <div class="form-group row">
                         {{ tutorial.voice_label.errors}}

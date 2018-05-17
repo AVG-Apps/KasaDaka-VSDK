@@ -1,0 +1,33 @@
+{% extends 'mamoisson/base.html' %}
+{% block content %}
+
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Edit Category</h1>
+          <p class="lead">To edit a category you need to change the name of the category into the form.</p>
+      </div>
+    </div>
+        <div class="container">
+            <form method="POST" action="">
+                {% csrf_token %}
+
+                {{ form.non_field_errors}}
+                {% load widget_tweaks %}
+
+                <div class="form-group row">
+                    {{category.name.errors}}
+                    <label for="{{ category.name.id_for_label }}">Category name</label>
+                    {{ category.name|add_class:"form-control" }}
+                </div>
+
+                <div class="form-group row">
+                    <input type="submit" class="btn btn-success" value="Submit">
+                </div>
+
+            </form>
+
+            <div class="form-group row">
+                <a href="/vxml/mamoisson/category/"><button class="btn btn-info"><i class="fas fa-chevron-circle-left"></i> Go Back</button></a>
+            </div>
+        </div>
+{% endblock %}

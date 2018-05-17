@@ -1,7 +1,11 @@
 from django.forms import ModelForm
 
-from .models import Fertilizer, Crop, Tutorials
+from .models import Fertilizer, Crop, Tutorials, Category
 
+class CategoryForm(ModelForm):
+    class Meta:
+        model = Category
+        fields = '__all__'
 
 class CropForm(ModelForm):
     class Meta:

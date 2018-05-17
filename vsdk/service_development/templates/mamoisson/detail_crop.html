@@ -21,21 +21,13 @@
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner">
 
-                              <div class="item">
-                                  <div class="text-center">
-                                      <img class="img-thumbnail" width="570" height="345" src="{{ crop.weather_condition.image_url }}" alt="Card image cap">
-                                      <div class="carousel-caption d-none d-md-block">
-                                        <p>{{crop.weather_condition.name|capfirst}}</p>
-                                      </div>
-                                  </div>
-                              </div>
-
                               <div class="item active">
                                   <img class="img-thumbnail" width="570" height="345" src="{{ crop.img_url }}" alt="Card image cap">
                                   <div class="carousel-caption d-none d-md-block">
                                     <p>{{crop.name|capfirst}}</p>
                                   </div>
                               </div>
+
 
                               {% for fertilizer in fertilizers %}
                               <div class="text-center item">
@@ -60,11 +52,11 @@
                     </div>
 
 
-                <div class="col-lg-4">
+                <div class="col-lg-6">
                      <div class="card-head">
                          <ul class="list-group">
                              <!--Crop-->
-                             <p>Crop</p>
+                             <p class="card-text"><strong>{{ crop.name|capfirst }}: </strong>{{ category.name|capfirst }}</p>
                               <li class="list-group-item">{{ crop.name|capfirst }}
 									<audio preload="auto" tabindex="0" controls="" >
 									<source src="{{ audio.crop }}">
@@ -73,53 +65,35 @@
                          </ul>
                      </div>
 
-                    <!--Crops-->
+                    <!--Fertilizers-->
                     <div class="card-body">
                         <p>
-                            Fertilizers
-                            <a href="#" data-toggle="popover" data-placement="right" data-content="{{ crop.name|capfirst }} is the best crop for these fertilizers">
+                            <strong>Advised Fertilizers</strong>
+                            <a href="#" data-toggle="popover" data-placement="right" data-content="These are the best fertilizers to improve your harvest of {{ crop.name|capfirst }}">
                                 <i class="fas fa-info-circle"></i>
                             </a>
                         </p>
                          <ul class="list-group">
 
-                             {% for fertilizer in fertilizers %}
-                                    {% for audio in audio.fertilizers %}
-                                        {% if audio.name == fertilizer.name %}
-                                <li class="list-group-item">{{ fertilizer.name|capfirst }}
+                             {% for audio in audio.fertilizers %}
+                                <li class="list-group-item">{{ audio.name|capfirst }}
                                     <audio preload="auto" tabindex="0" controls="" >
 								        <source src="{{ audio.audio_url }}">
                                     </audio>
-                                        {% endif %}
-                                 {% endfor %}
-                             </li>
+                                </li>
                              {% endfor %}
+
                         </ul>
 
-                    <!--Weather Conditions-->
-                        <p>
-                            Weather condition
-                            <a href="#" data-toggle="popover" data-placement="right" data-content="{{ crop.name|capfirst }} is best crop under the weather condition: {{ crop.weather_condition.name|lower }}">
-                                <i class="fas fa-info-circle"></i>
-                            </a>
-                        </p>
-
-                         <ul class="list-group">
-                            <li class="list-group-item">
-                                {{ crop.weather_condition.name|capfirst }}
-                                <audio preload="auto" tabindex="0" controls="" >
-                                    <source src="{{ audio.weather }}">
-								</audio>
-                             </li>
-                        </ul>
                     </div>
                 </div>
               </div>
         <h2>{{ crop.name }}</h2>
-              <p class="card-text">{{ crop.description }}</p>
+              <p class="card-text">{{ crop.name|capfirst }} is part of the category {{ category.name|capfirst }}.
+                  {{ crop.description }}</p>
 
 
-              <a href="/vxml/mamoisson/crop/"><button type="button" class="btn btn-info"><i class="fas fa-chevron-circle-left"></i> Go Back</button></a>
+              <a href="/vxml/mamoisson/"><button type="button" class="btn btn-info"><i class="fas fa-chevron-circle-left"></i> Go Back</button></a>
               <a href="/vxml/mamoisson/crop/{{ crop.id }}/edit/"> <button type="button" class="btn btn-warning">Edit</button></a>
               <a href="/vxml/mamoisson/crop/{{ crop.id }}/delete/"> <button type="button" class="btn btn-danger">Delete</button></a>
 

@@ -6,7 +6,7 @@ from django.utils.safestring import mark_safe
 
 from vsdk import settings
 from .models import *
-from .models.models import Fertilizer, Crop, Tutorials
+from .models.models import Fertilizer, Crop, Tutorials, Category
 
 
 def format_validation_result(obj):
@@ -201,3 +201,4 @@ admin.site.register(Record)
 admin.site.register(Fertilizer)
 admin.site.register(Crop)
 admin.site.register(Tutorials)
+admin.site.register(Category)
