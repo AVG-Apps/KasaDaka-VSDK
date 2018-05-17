@@ -1847,7 +1847,7 @@
   "fields": {
     "service": 2,
     "creation_date": "2018-05-04T10:45:10.299Z",
-    "modification_date": "2018-05-04T11:31:39.406Z",
+    "modification_date": "2018-05-17T09:30:02.981Z",
     "name": "Language options",
     "description": "",
     "voice_label": 8
@@ -1859,10 +1859,10 @@
   "fields": {
     "service": 2,
     "creation_date": "2018-05-04T10:45:10.309Z",
-    "modification_date": "2018-05-04T11:31:39.413Z",
+    "modification_date": "2018-05-17T09:30:02.985Z",
     "name": "English",
     "description": "",
-    "voice_label": 26
+    "voice_label": 4
   }
 },
 {
@@ -1871,10 +1871,10 @@
   "fields": {
     "service": 2,
     "creation_date": "2018-05-04T10:45:10.314Z",
-    "modification_date": "2018-05-04T11:31:39.418Z",
+    "modification_date": "2018-05-17T09:30:02.985Z",
     "name": "French",
     "description": "",
-    "voice_label": 26
+    "voice_label": 7
   }
 },
 {
@@ -1907,7 +1907,7 @@
   "fields": {
     "service": 2,
     "creation_date": "2018-05-04T10:50:09.911Z",
-    "modification_date": "2018-05-04T10:50:09.911Z",
+    "modification_date": "2018-05-17T09:13:56.902Z",
     "name": "Give crop",
     "description": "",
     "voice_label": 44
@@ -2214,6 +2214,138 @@
   }
 },
 {
+  "model": "service_development.voiceservicesubelement",
+  "pk": 47,
+  "fields": {
+    "service": 2,
+    "creation_date": "2018-05-17T09:21:44.459Z",
+    "modification_date": "2018-05-17T09:30:45.747Z",
+    "name": "Choose type of crop",
+    "description": "",
+    "voice_label": 30
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 48,
+  "fields": {
+    "service": 2,
+    "creation_date": "2018-05-17T09:21:44.483Z",
+    "modification_date": "2018-05-17T09:30:45.755Z",
+    "name": "Cash (non-food)",
+    "description": "",
+    "voice_label": 31
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 49,
+  "fields": {
+    "service": 2,
+    "creation_date": "2018-05-17T09:21:44.487Z",
+    "modification_date": "2018-05-17T09:30:45.787Z",
+    "name": "Vegetable",
+    "description": "",
+    "voice_label": 31
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 50,
+  "fields": {
+    "service": 2,
+    "creation_date": "2018-05-17T09:21:44.583Z",
+    "modification_date": "2018-05-17T09:30:45.791Z",
+    "name": "Fruit",
+    "description": "",
+    "voice_label": 31
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 51,
+  "fields": {
+    "service": 2,
+    "creation_date": "2018-05-17T09:25:16.651Z",
+    "modification_date": "2018-05-17T09:31:48.443Z",
+    "name": "Select cash crop",
+    "description": "",
+    "voice_label": 31
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 52,
+  "fields": {
+    "service": 2,
+    "creation_date": "2018-05-17T09:25:16.659Z",
+    "modification_date": "2018-05-17T09:25:16.659Z",
+    "name": "cocoa",
+    "description": "",
+    "voice_label": 29
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 53,
+  "fields": {
+    "service": 2,
+    "creation_date": "2018-05-17T09:26:35.581Z",
+    "modification_date": "2018-05-17T09:31:14.285Z",
+    "name": "Select vegetable crop",
+    "description": "",
+    "voice_label": 44
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 54,
+  "fields": {
+    "service": 2,
+    "creation_date": "2018-05-17T09:26:35.609Z",
+    "modification_date": "2018-05-17T09:31:14.293Z",
+    "name": "Cassava",
+    "description": "",
+    "voice_label": 48
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 55,
+  "fields": {
+    "service": 2,
+    "creation_date": "2018-05-17T09:28:30.627Z",
+    "modification_date": "2018-05-17T09:31:25.914Z",
+    "name": "Select fruit crop",
+    "description": "",
+    "voice_label": 30
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 56,
+  "fields": {
+    "service": 2,
+    "creation_date": "2018-05-17T09:28:30.675Z",
+    "modification_date": "2018-05-17T09:28:30.675Z",
+    "name": "Mango",
+    "description": "",
+    "voice_label": 49
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 57,
+  "fields": {
+    "service": 2,
+    "creation_date": "2018-05-17T09:28:30.675Z",
+    "modification_date": "2018-05-17T09:28:30.675Z",
+    "name": "Okra",
+    "description": "",
+    "voice_label": 47
+  }
+},
+{
   "model": "service_development.voiceserviceelement",
   "pk": 2,
   "fields": {}
@@ -2349,6 +2481,26 @@
   "fields": {}
 },
 {
+  "model": "service_development.voiceserviceelement",
+  "pk": 47,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 51,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 53,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 55,
+  "fields": {}
+},
+{
   "model": "service_development.voiceservice",
   "pk": 1,
   "fields": {
@@ -2375,7 +2527,7 @@
     "name": "DetermineFertilizer",
     "description": "The user is asked to select first a language, then a crop and then the weather condition. An appropriate fertilizer is provided.",
     "creation_date": "2018-05-04T10:33:09.229Z",
-    "modification_date": "2018-05-04T11:32:47.574Z",
+    "modification_date": "2018-05-17T09:16:25.383Z",
     "active": true,
     "_start_element": 8,
     "registration": "preferred",
@@ -2440,6 +2592,26 @@
   "fields": {}
 },
 {
+  "model": "service_development.choice",
+  "pk": 47,
+  "fields": {}
+},
+{
+  "model": "service_development.choice",
+  "pk": 51,
+  "fields": {}
+},
+{
+  "model": "service_development.choice",
+  "pk": 53,
+  "fields": {}
+},
+{
+  "model": "service_development.choice",
+  "pk": 55,
+  "fields": {}
+},
+{
   "model": "service_development.choiceoption",
   "pk": 3,
   "fields": {
@@ -2500,7 +2672,7 @@
   "pk": 17,
   "fields": {
     "parent": 16,
-    "_redirect": 19
+    "_redirect": 47
   }
 },
 {
@@ -2508,7 +2680,7 @@
   "pk": 18,
   "fields": {
     "parent": 16,
-    "_redirect": 19
+    "_redirect": 47
   }
 },
 {
@@ -2581,6 +2753,62 @@
   "fields": {
     "parent": 43,
     "_redirect": 38
+  }
+},
+{
+  "model": "service_development.choiceoption",
+  "pk": 48,
+  "fields": {
+    "parent": 47,
+    "_redirect": 51
+  }
+},
+{
+  "model": "service_development.choiceoption",
+  "pk": 49,
+  "fields": {
+    "parent": 47,
+    "_redirect": 53
+  }
+},
+{
+  "model": "service_development.choiceoption",
+  "pk": 50,
+  "fields": {
+    "parent": 47,
+    "_redirect": 55
+  }
+},
+{
+  "model": "service_development.choiceoption",
+  "pk": 52,
+  "fields": {
+    "parent": 51,
+    "_redirect": 39
+  }
+},
+{
+  "model": "service_development.choiceoption",
+  "pk": 54,
+  "fields": {
+    "parent": 53,
+    "_redirect": 33
+  }
+},
+{
+  "model": "service_development.choiceoption",
+  "pk": 56,
+  "fields": {
+    "parent": 55,
+    "_redirect": 43
+  }
+},
+{
+  "model": "service_development.choiceoption",
+  "pk": 57,
+  "fields": {
+    "parent": 55,
+    "_redirect": 42
   }
 },
 {
