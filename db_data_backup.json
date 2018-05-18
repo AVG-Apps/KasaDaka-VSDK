@@ -313,14 +313,6 @@
 },
 {
   "model": "service_development.voicelabel",
-  "pk": 43,
-  "fields": {
-    "name": "select-language",
-    "description": null
-  }
-},
-{
-  "model": "service_development.voicelabel",
   "pk": 44,
   "fields": {
     "name": "select-crop",
@@ -465,17 +457,121 @@
 },
 {
   "model": "service_development.voicelabel",
-  "pk": 62,
+  "pk": 63,
   "fields": {
-    "name": "planting-flowering-options",
+    "name": "select-age",
     "description": null
   }
 },
 {
   "model": "service_development.voicelabel",
-  "pk": 63,
+  "pk": 64,
   "fields": {
-    "name": "select-age",
+    "name": "Yes",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 65,
+  "fields": {
+    "name": "No",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 66,
+  "fields": {
+    "name": "To Repeat",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 67,
+  "fields": {
+    "name": "Go Back",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 68,
+  "fields": {
+    "name": "Fruit",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 69,
+  "fields": {
+    "name": "Costs subscription",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 70,
+  "fields": {
+    "name": "Costs",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 71,
+  "fields": {
+    "name": "cashcrop",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 72,
+  "fields": {
+    "name": "Banana",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 73,
+  "fields": {
+    "name": "Advice Mango 3",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 74,
+  "fields": {
+    "name": "Advice Mango 4",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 75,
+  "fields": {
+    "name": "Advice Mango 5",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 76,
+  "fields": {
+    "name": "Advice Mango 6",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 77,
+  "fields": {
+    "name": "Advice Mango 7",
     "description": null
   }
 },
@@ -1256,7 +1352,7 @@
   "fields": {
     "parent": 32,
     "language": 2,
-    "audio": "dry-english_UgKOuLY.wav"
+    "audio": "dry-english_Qrc4AwN.wav"
   }
 },
 {
@@ -1265,7 +1361,7 @@
   "fields": {
     "parent": 32,
     "language": 3,
-    "audio": "dry-french_vurciYM.wav"
+    "audio": "dry-french_hLm4Gnr.wav"
   }
 },
 {
@@ -1337,7 +1433,7 @@
   "fields": {
     "parent": 36,
     "language": 3,
-    "audio": "asasa-wure_B6fXQ0G.wav"
+    "audio": "asasa-wure_IfFbsrc.wav"
   }
 },
 {
@@ -1450,24 +1546,6 @@
 },
 {
   "model": "service_development.voicefragment",
-  "pk": 109,
-  "fields": {
-    "parent": 43,
-    "language": 2,
-    "audio": "select-language-english.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 110,
-  "fields": {
-    "parent": 43,
-    "language": 3,
-    "audio": "select-weather-french_lCcNPVB.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
   "pk": 111,
   "fields": {
     "parent": 44,
@@ -1535,7 +1613,7 @@
   "fields": {
     "parent": 50,
     "language": 2,
-    "audio": "thanks-english.wav"
+    "audio": "nice-day-english_wVR5pYF.wav"
   }
 },
 {
@@ -1544,7 +1622,7 @@
   "fields": {
     "parent": 50,
     "language": 3,
-    "audio": "thanks-french.wav"
+    "audio": "nice-day-french_Wtsxmtd.wav"
   }
 },
 {
@@ -1652,16 +1730,7 @@
   "fields": {
     "parent": 61,
     "language": 2,
-    "audio": "planting-flowering.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 132,
-  "fields": {
-    "parent": 62,
-    "language": 2,
-    "audio": "planting-flowering-options.wav"
+    "audio": "planting-flowering-english_Ys9BqW4.wav"
   }
 },
 {
@@ -1670,7 +1739,340 @@
   "fields": {
     "parent": 63,
     "language": 2,
-    "audio": "select-age-tree-english.wav"
+    "audio": "select-age-tree-english_kvfLkDm.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 134,
+  "fields": {
+    "parent": 59,
+    "language": 3,
+    "audio": "3-split-french_T5GJOaq.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 135,
+  "fields": {
+    "parent": 45,
+    "language": 3,
+    "audio": "flowering-french_QGuUkGi.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 136,
+  "fields": {
+    "parent": 46,
+    "language": 3,
+    "audio": "planting-french_iKPj9Kw.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 137,
+  "fields": {
+    "parent": 47,
+    "language": 3,
+    "audio": "okra-french_AKgyFQq.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 138,
+  "fields": {
+    "parent": 48,
+    "language": 3,
+    "audio": "cassave-french_jkw0yJu.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 139,
+  "fields": {
+    "parent": 49,
+    "language": 3,
+    "audio": "mango-french_LuaqGCP.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 140,
+  "fields": {
+    "parent": 52,
+    "language": 3,
+    "audio": "advice-okra-flowering-french_kOOrIHL.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 141,
+  "fields": {
+    "parent": 53,
+    "language": 3,
+    "audio": "advice-okra-planting-french_7m1aVtX.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 142,
+  "fields": {
+    "parent": 54,
+    "language": 3,
+    "audio": "advice-mango-1-french_QfuyyAW.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 143,
+  "fields": {
+    "parent": 55,
+    "language": 3,
+    "audio": "advice-mango-2-french_wvG3sDi.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 144,
+  "fields": {
+    "parent": 57,
+    "language": 3,
+    "audio": "advice-cassava-french_E5sFkcO.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 145,
+  "fields": {
+    "parent": 61,
+    "language": 3,
+    "audio": "planting-flowering-french_ZCDQcMR.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 146,
+  "fields": {
+    "parent": 63,
+    "language": 3,
+    "audio": "select-age-tree-french_6ltEcva.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 147,
+  "fields": {
+    "parent": 64,
+    "language": 2,
+    "audio": "yes-english_VTBdVtV.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 148,
+  "fields": {
+    "parent": 64,
+    "language": 3,
+    "audio": "yes-french_4UoX1yH.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 149,
+  "fields": {
+    "parent": 65,
+    "language": 2,
+    "audio": "no-english_1obPkBf.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 150,
+  "fields": {
+    "parent": 65,
+    "language": 3,
+    "audio": "no-french_FX4bBbb.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 151,
+  "fields": {
+    "parent": 66,
+    "language": 2,
+    "audio": "to-repeat-english_IWIIgxp.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 152,
+  "fields": {
+    "parent": 66,
+    "language": 3,
+    "audio": "to-repeat-french_lbCQpvj.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 153,
+  "fields": {
+    "parent": 67,
+    "language": 2,
+    "audio": "go-back-english_DY1fjAk.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 154,
+  "fields": {
+    "parent": 67,
+    "language": 3,
+    "audio": "go-back-french_EcsW563.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 155,
+  "fields": {
+    "parent": 68,
+    "language": 2,
+    "audio": "fruit-english_XOD6kdg.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 156,
+  "fields": {
+    "parent": 68,
+    "language": 3,
+    "audio": "fruit-french_XnFwxLJ.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 157,
+  "fields": {
+    "parent": 69,
+    "language": 2,
+    "audio": "costs-subscription-english_mVoYzBK.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 158,
+  "fields": {
+    "parent": 69,
+    "language": 3,
+    "audio": "costs-subscription-french_zrq81Wu.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 159,
+  "fields": {
+    "parent": 70,
+    "language": 2,
+    "audio": "costs-english_pMG3T2U.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 160,
+  "fields": {
+    "parent": 70,
+    "language": 3,
+    "audio": "costs-french_Gk0CRaL.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 161,
+  "fields": {
+    "parent": 71,
+    "language": 2,
+    "audio": "cashcrop-english_QHiEft9.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 162,
+  "fields": {
+    "parent": 71,
+    "language": 3,
+    "audio": "cashcrop-french_XFByNuv.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 163,
+  "fields": {
+    "parent": 72,
+    "language": 2,
+    "audio": "banana-english_I65Fol2.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 164,
+  "fields": {
+    "parent": 72,
+    "language": 3,
+    "audio": "banana-french_oZ14oM5.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 165,
+  "fields": {
+    "parent": 73,
+    "language": 2,
+    "audio": "advice-mango-3-english_gVwagRS.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 166,
+  "fields": {
+    "parent": 74,
+    "language": 2,
+    "audio": "advice-mango-4-english_dm1luBg.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 167,
+  "fields": {
+    "parent": 75,
+    "language": 2,
+    "audio": "advice-mango-5-english_5Um1QRP.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 168,
+  "fields": {
+    "parent": 76,
+    "language": 2,
+    "audio": "advice-mango-6-english_LWUGOlw.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 169,
+  "fields": {
+    "parent": 77,
+    "language": 2,
+    "audio": "advice-mango-7-english_AvddkFC.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 170,
+  "fields": {
+    "parent": 77,
+    "language": 3,
+    "audio": "advice-mango-7-french_xkLccYR.wav"
   }
 },
 {
@@ -1754,7 +2156,7 @@
     "modification_date": "2018-05-04T11:07:05.240Z",
     "name": "Choose language",
     "description": "Two options for the language are provided.",
-    "voice_label": 43
+    "voice_label": null
   }
 },
 {
@@ -2111,10 +2513,10 @@
   "fields": {
     "service": 2,
     "creation_date": "2018-05-15T09:49:25.500Z",
-    "modification_date": "2018-05-15T09:49:25.500Z",
+    "modification_date": "2018-05-18T18:55:28.369Z",
     "name": "Advice mango 3",
     "description": "",
-    "voice_label": 56
+    "voice_label": 77
   }
 },
 {
@@ -2123,10 +2525,10 @@
   "fields": {
     "service": 2,
     "creation_date": "2018-05-15T09:55:02.071Z",
-    "modification_date": "2018-05-15T09:55:02.071Z",
+    "modification_date": "2018-05-18T18:49:52.584Z",
     "name": "Choose phase",
     "description": "",
-    "voice_label": 62
+    "voice_label": 61
   }
 },
 {
@@ -2219,7 +2621,7 @@
   "fields": {
     "service": 2,
     "creation_date": "2018-05-17T09:21:44.459Z",
-    "modification_date": "2018-05-17T09:30:45.747Z",
+    "modification_date": "2018-05-18T18:43:32.705Z",
     "name": "Choose type of crop",
     "description": "",
     "voice_label": 30
@@ -2255,10 +2657,10 @@
   "fields": {
     "service": 2,
     "creation_date": "2018-05-17T09:21:44.583Z",
-    "modification_date": "2018-05-17T09:30:45.791Z",
+    "modification_date": "2018-05-18T18:43:32.708Z",
     "name": "Fruit",
     "description": "",
-    "voice_label": 31
+    "voice_label": 68
   }
 },
 {
@@ -2267,10 +2669,10 @@
   "fields": {
     "service": 2,
     "creation_date": "2018-05-17T09:25:16.651Z",
-    "modification_date": "2018-05-17T09:31:48.443Z",
+    "modification_date": "2018-05-18T18:41:41.172Z",
     "name": "Select cash crop",
     "description": "",
-    "voice_label": 31
+    "voice_label": 71
   }
 },
 {
@@ -2343,6 +2745,42 @@
     "name": "Okra",
     "description": "",
     "voice_label": 47
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 58,
+  "fields": {
+    "service": 2,
+    "creation_date": "2018-05-18T18:37:20.319Z",
+    "modification_date": "2018-05-18T18:38:27.258Z",
+    "name": "Welcome",
+    "description": "Welcome Message",
+    "voice_label": 40
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 59,
+  "fields": {
+    "service": 2,
+    "creation_date": "2018-05-18T18:37:50.968Z",
+    "modification_date": "2018-05-18T18:38:40.806Z",
+    "name": "Costs prepaid",
+    "description": "",
+    "voice_label": 70
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 60,
+  "fields": {
+    "service": 2,
+    "creation_date": "2018-05-18T18:38:17.983Z",
+    "modification_date": "2018-05-18T18:38:17.983Z",
+    "name": "Costs subscription",
+    "description": "",
+    "voice_label": 69
   }
 },
 {
@@ -2501,6 +2939,21 @@
   "fields": {}
 },
 {
+  "model": "service_development.voiceserviceelement",
+  "pk": 58,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 59,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 60,
+  "fields": {}
+},
+{
   "model": "service_development.voiceservice",
   "pk": 1,
   "fields": {
@@ -2524,17 +2977,18 @@
   "model": "service_development.voiceservice",
   "pk": 2,
   "fields": {
-    "name": "DetermineFertilizer",
+    "name": "MaMoisson",
     "description": "The user is asked to select first a language, then a crop and then the weather condition. An appropriate fertilizer is provided.",
     "creation_date": "2018-05-04T10:33:09.229Z",
-    "modification_date": "2018-05-17T09:16:25.383Z",
+    "modification_date": "2018-05-18T18:35:16.815Z",
     "active": true,
     "_start_element": 8,
     "registration": "preferred",
     "registration_language": false,
     "registration_name": false,
     "supported_languages": [
-      2
+      2,
+      3
     ]
   }
 },
@@ -2961,6 +3415,30 @@
   "fields": {
     "final_element": false,
     "_redirect": 39
+  }
+},
+{
+  "model": "service_development.messagepresentation",
+  "pk": 58,
+  "fields": {
+    "final_element": false,
+    "_redirect": 59
+  }
+},
+{
+  "model": "service_development.messagepresentation",
+  "pk": 59,
+  "fields": {
+    "final_element": false,
+    "_redirect": 60
+  }
+},
+{
+  "model": "service_development.messagepresentation",
+  "pk": 60,
+  "fields": {
+    "final_element": false,
+    "_redirect": 8
   }
 }
 ]
