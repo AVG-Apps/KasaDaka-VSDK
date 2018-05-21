@@ -14,6 +14,7 @@ from ..models.voicelabel import Language
 #SHOW OVERVIEW TUTORIALS
 def overview_tutorial(request, id=id):
     latest_tutorial_list = Tutorials.objects.all()
+    print(latest_tutorial_list)
     context = {'latest_tutorial_list': latest_tutorial_list}
     return render(request, 'mamoisson/overview/tutorial.html', context)
 

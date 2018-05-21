@@ -1,6 +1,6 @@
 from django.forms import ModelForm
 
-from .models import Fertilizer, Crop, Tutorials, Category
+from .models import Crop, Category, Fertilizer, Tutorials
 
 class CategoryForm(ModelForm):
     class Meta:

@@ -6,7 +6,7 @@ from django.utils.safestring import mark_safe
 
 from vsdk import settings
 from .models import *
-from .models.models import Fertilizer, Crop, Tutorials, Category
+from .models.models import Crop, Category, Tutorials, Fertilizer
 
 
 def format_validation_result(obj):
@@ -198,7 +198,7 @@ admin.site.register(VoiceLabel, VoiceLabelAdmin)
 admin.site.register(SpokenUserInput, SpokenUserInputAdmin)
 admin.site.register(UserInputCategory)
 admin.site.register(Record)
-admin.site.register(Fertilizer)
 admin.site.register(Crop)
-admin.site.register(Tutorials)
 admin.site.register(Category)
+admin.site.register(Fertilizer)
+admin.site.register(Tutorials)

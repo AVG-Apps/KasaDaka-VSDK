@@ -11,10 +11,9 @@ from ..models.models import Crop
 from ..models.voicelabel import Language
 
 #get all the audio data
-def get_audio_data(crop, fertilizers, tutorial, language_code):
+def get_audio_data(crop, tutorial, language_code):
     languages = Language.objects.filter(code=language_code)
     tutorial_audio = []
-    fertilizers_audio = []
     for language in languages:
         crop_audio = crop.voice_label.get_voice_fragment_url(language)              #audio for crop
 
@@ -26,19 +25,10 @@ def get_audio_data(crop, fertilizers, tutorial, language_code):
                 'audio_url'  :  audio.get_voice_fragment_url(language)
             })
 
-        #Dict. for crop audio
-        for audio in fertilizers:
-            fertilizers_audio.append({
-                'voice_label':  audio.voice_label,
-                'name'       :  audio.voice_label.name,
-                'audio_url'  :  audio.voice_label.get_voice_fragment_url(language)
-            })
 
     audio_urls = {'crop': crop_audio,
-             'fertilizers': fertilizers_audio,
              'tutorial': tutorial_audio
              }
-    print (fertilizers_audio)
     return audio_urls
 
 

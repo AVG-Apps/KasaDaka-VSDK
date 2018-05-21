@@ -75,13 +75,7 @@
                         </p>
                          <ul class="list-group">
 
-                             {% for audio in audio.fertilizers %}
-                                <li class="list-group-item">{{ audio.name|capfirst }}
-                                    <audio preload="auto" tabindex="0" controls="" >
-								        <source src="{{ audio.audio_url }}">
-                                    </audio>
-                                </li>
-                             {% endfor %}
+                                <li class="list-group-item">{{ audio.name|capfirst }}</li>
 
                         </ul>
 
