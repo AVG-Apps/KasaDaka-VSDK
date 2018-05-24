@@ -52,35 +52,29 @@
                     </div>
 
 
-                <div class="col-lg-6">
-                     <div class="card-head">
-                         <ul class="list-group">
-                             <!--Crop-->
-                             <p class="card-text"><strong>{{ crop.name|capfirst }}: </strong>{{ category.name|capfirst }}</p>
-                              <li class="list-group-item">{{ crop.name|capfirst }}
-									<audio preload="auto" tabindex="0" controls="" >
-									<source src="{{ audio.crop }}">
-									</audio>
-                              </li>
-                         </ul>
-                     </div>
-
+                <div class="col-lg-4">
                     <!--Fertilizers-->
-                    <div class="card-body">
-                        <p>
+                    <div class="card-head">
+                        <p class="text-center">
                             <strong>Advised Fertilizers</strong>
                             <a href="#" data-toggle="popover" data-placement="right" data-content="These are the best fertilizers to improve your harvest of {{ crop.name|capfirst }}">
                                 <i class="fas fa-info-circle"></i>
                             </a>
                         </p>
                          <ul class="list-group">
-
-                                <li class="list-group-item">{{ audio.name|capfirst }}</li>
+                             {% for fertilizer in fertilizers %}
+                                <li class="list-group-item">
+                                    <h5><i class="fas fa-dot-circle"></i> {{ fertilizer.name|capfirst }}</h5>
+                                </li>
+                             {% endfor %}
 
                         </ul>
 
                     </div>
                 </div>
+                  <div class="col-lg-2">
+
+                  </div>
               </div>
         <h2>{{ crop.name }}</h2>
               <p class="card-text">{{ crop.name|capfirst }} is part of the category {{ category.name|capfirst }}.
@@ -97,7 +91,7 @@
 </div>
 
 <div class="container">
-        <h1>Tutorial of {{ crop.name }}</h1>
+        <h1>Advice for {{ crop.name }}</h1>
         </br>
             <!--Tutorials-->
                     <div class="card-body">

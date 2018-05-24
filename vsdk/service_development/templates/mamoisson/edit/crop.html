@@ -5,7 +5,7 @@
       <div class="container">
         <h1 class="display-4">Edit crop</h1>
           <p class="lead">To edit this crop you need to add all the information in the form.
-              Please add the name, description, voice label of the crop and the related category, fertilizers and tutorial.</p>
+              Please add the name, description, the related category, fertilizers and tutorial.</p>
 
            <!--<a href="/vxml/add/fertilizer/"><button type="button" class="btn btn-info"><i class="fas fa-plus"></i> Add Fertilizer</button></a>-->
           <!--<a href="/vxml/add/category/"><button type="button" class="btn btn-info"><i class="fas fa-plus"></i> Add Category</button></a>-->
@@ -42,17 +42,17 @@
                     {{ crop.img_url|add_class:"form-control" }}
                 </div>
 
-                <div class="form-group row">
-                    {{crop.voice_label.errors}}
-                    <label for="{{ crop.voice_label.id_for_label}}">Audio</label>
-                    <a href="#" data-toggle="popover" data-placement="right" data-content="
-                    The WAVE file must have a sample rate of 8KHZ, 16 bit, mono, codec: PCM 16 LE (s16I).
-                    Otherwise the voice application cannot play the audio file.">
-                        <i class="fas fa-info-circle"></i>
-                    </a>
-                    {{ crop.voice_label|add_class:"form-control" }}
-                    <p><a href="/service_development/voicelabel/">Click on <i class="fas fa-plus-circle"></i> to add a voice label</a></p>
-                </div>
+                <!--<div class="form-group row">-->
+                    <!--{{crop.voice_label.errors}}-->
+                    <!--<label for="{{ crop.voice_label.id_for_label}}">Audio</label>-->
+                    <!--<a href="#" data-toggle="popover" data-placement="right" data-content="-->
+                    <!--The WAVE file must have a sample rate of 8KHZ, 16 bit, mono, codec: PCM 16 LE (s16I).-->
+                    <!--Otherwise the voice application cannot play the audio file.">-->
+                        <!--<i class="fas fa-info-circle"></i>-->
+                    <!--</a>-->
+                    <!--{{ crop.voice_label|add_class:"form-control" }}-->
+                    <!--<p><a href="/service_development/voicelabel/">Click on <i class="fas fa-plus-circle"></i> to add a voice label</a></p>-->
+                <!--</div>-->
 
 
                 <div class="form-group row">

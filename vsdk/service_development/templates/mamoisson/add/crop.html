@@ -5,7 +5,7 @@
       <div class="container">
         <h1 class="display-4">Add Crop</h1>
           <p class="lead">To add a new crop into the database you need to add all the information in the form.
-              Please add the name, description, voice label of the crop and the related category, fertilizers and tutorial.</p>
+              Please add the name, description, the related category, fertilizers and tutorial.</p>
 
            <!--<a href="/vxml/add/fertilizer/"><button type="button" class="btn btn-info"><i class="fas fa-plus"></i> Add Fertilizer</button></a>-->
           <!--<a href="/vxml/add/category/"><button type="button" class="btn btn-info"><i class="fas fa-plus"></i> Add Category</button></a>-->
@@ -36,23 +36,23 @@
                 <div class="form-group row">
                     {{crop.img_url.errors}}
                     <label for="{{ crop.img_url.id_for_label }}">URL image</label>
-                    <a href="#" data-toggle="popover" data-placement="right" data-content="Only images with 800*800 pixels">
-                        <i class="fas fa-info-circle"></i>
+                    <!--<a href="#" data-toggle="popover" data-placement="right" data-content="Only images with 800*800 pixels">-->
+                        <!--<i class="fas fa-info-circle"></i>-->
                     </a>
                     {{ crop.img_url|add_class:"form-control" }}
                 </div>
 
-                <div class="form-group row">
-                    {{crop.voice_label.errors}}
-                    <label for="{{ crop.voice_label.id_for_label}}">Audio</label>
-                    <a href="#" data-toggle="popover" data-placement="right" data-content="
-                    The WAVE file must have a sample rate of 8KHZ, 16 bit, mono, codec: PCM 16 LE (s16I).
-                    Otherwise the voice application cannot play the audio file.">
-                        <i class="fas fa-info-circle"></i>
-                    </a>
-                    {{ crop.voice_label|add_class:"form-control" }}
-                    <p><a href="/service_development/voicelabel/">Click on <i class="fas fa-plus-circle"></i> to add a voice label</a></p>
-                </div>
+                <!--<div class="form-group row">-->
+                    <!--{{crop.voice_label.errors}}-->
+                    <!--<label for="{{ crop.voice_label.id_for_label}}">Audio</label>-->
+                    <!--<a href="#" data-toggle="popover" data-placement="right" data-content="-->
+                    <!--The WAVE file must have a sample rate of 8KHZ, 16 bit, mono, codec: PCM 16 LE (s16I).-->
+                    <!--Otherwise the voice application cannot play the audio file.">-->
+                        <!--<i class="fas fa-info-circle"></i>-->
+                    <!--</a>-->
+                    <!--{{ crop.voice_label|add_class:"form-control" }}-->
+                    <!--<p><a href="/service_development/voicelabel/">Click on <i class="fas fa-plus-circle"></i> to add a voice label</a></p>-->
+                <!--</div>-->
 
 
                 <div class="form-group row">
@@ -86,7 +86,6 @@
             <div class="form-group row">
                 <a href="/vxml/mamoisson/"><button class="btn btn-info"><i class="fas fa-chevron-circle-left"></i> Go Back</button></a>
             </div>
-
         </div>
 
 {% endblock %}

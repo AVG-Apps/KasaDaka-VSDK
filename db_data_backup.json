@@ -195,71 +195,79 @@
   "model": "service_development.voicelabel",
   "pk": 26,
   "fields": {
-    "name": "Wet",
-    "description": null
+    "name": "Cocao",
+    "description": "Crop coacao"
   }
 },
 {
   "model": "service_development.voicelabel",
-  "pk": 29,
+  "pk": 27,
   "fields": {
-    "name": "Cocoa",
-    "description": null
+    "name": "Cotton",
+    "description": "Crop cotton"
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 28,
+  "fields": {
+    "name": "Corn",
+    "description": "Crop corn"
   }
 },
 {
   "model": "service_development.voicelabel",
   "pk": 30,
   "fields": {
-    "name": "Corn",
-    "description": null
+    "name": "Two",
+    "description": "Number two"
   }
 },
 {
   "model": "service_development.voicelabel",
   "pk": 31,
   "fields": {
-    "name": "Cotton",
-    "description": null
+    "name": "Three",
+    "description": "Number three"
   }
 },
 {
   "model": "service_development.voicelabel",
   "pk": 32,
   "fields": {
-    "name": "Dry",
-    "description": null
+    "name": "One",
+    "description": "First number"
   }
 },
 {
   "model": "service_development.voicelabel",
   "pk": 33,
   "fields": {
-    "name": "For-language-press-button",
-    "description": "english 1, french 2"
+    "name": "Ammonium Sulphate",
+    "description": null
   }
 },
 {
   "model": "service_development.voicelabel",
   "pk": 34,
   "fields": {
-    "name": "fertilizer-or-howto",
-    "description": null
+    "name": "Asasa Wure",
+    "description": "Fertilizer"
   }
 },
 {
   "model": "service_development.voicelabel",
   "pk": 35,
   "fields": {
-    "name": "ammonium-sulphate",
-    "description": null
+    "name": "Dry",
+    "description": "Weather Condition"
   }
 },
 {
   "model": "service_development.voicelabel",
   "pk": 36,
   "fields": {
-    "name": "asasa-wure",
+    "name": "Give crop & weather cond.",
     "description": null
   }
 },
@@ -267,15 +275,15 @@
   "model": "service_development.voicelabel",
   "pk": 37,
   "fields": {
-    "name": "give-crop-weather",
-    "description": null
+    "name": "Inoculcant",
+    "description": "Fertilizer"
   }
 },
 {
   "model": "service_development.voicelabel",
   "pk": 38,
   "fields": {
-    "name": "inoculant",
+    "name": "Please try Again",
     "description": null
   }
 },
@@ -283,7 +291,7 @@
   "model": "service_development.voicelabel",
   "pk": 39,
   "fields": {
-    "name": "please-try-again",
+    "name": "Select crop",
     "description": null
   }
 },
@@ -291,7 +299,7 @@
   "model": "service_development.voicelabel",
   "pk": 40,
   "fields": {
-    "name": "welcome",
+    "name": "Select weather condition",
     "description": null
   }
 },
@@ -299,7 +307,7 @@
   "model": "service_development.voicelabel",
   "pk": 41,
   "fields": {
-    "name": "sorry",
+    "name": "Select language",
     "description": null
   }
 },
@@ -307,7 +315,15 @@
   "model": "service_development.voicelabel",
   "pk": 42,
   "fields": {
-    "name": "select-weather",
+    "name": "Sorry",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 43,
+  "fields": {
+    "name": "Welcome",
     "description": null
   }
 },
@@ -315,7 +331,7 @@
   "model": "service_development.voicelabel",
   "pk": 44,
   "fields": {
-    "name": "select-crop",
+    "name": "Wet",
     "description": null
   }
 },
@@ -323,255 +339,7 @@
   "model": "service_development.voicelabel",
   "pk": 45,
   "fields": {
-    "name": "flowering",
-    "description": null
-  }
-},
-{
-  "model": "service_development.voicelabel",
-  "pk": 46,
-  "fields": {
-    "name": "planting",
-    "description": null
-  }
-},
-{
-  "model": "service_development.voicelabel",
-  "pk": 47,
-  "fields": {
-    "name": "okra",
-    "description": null
-  }
-},
-{
-  "model": "service_development.voicelabel",
-  "pk": 48,
-  "fields": {
-    "name": "cassava",
-    "description": null
-  }
-},
-{
-  "model": "service_development.voicelabel",
-  "pk": 49,
-  "fields": {
-    "name": "mango",
-    "description": null
-  }
-},
-{
-  "model": "service_development.voicelabel",
-  "pk": 50,
-  "fields": {
-    "name": "thanks for using MaMoisson",
-    "description": null
-  }
-},
-{
-  "model": "service_development.voicelabel",
-  "pk": 51,
-  "fields": {
-    "name": "have a nice day",
-    "description": null
-  }
-},
-{
-  "model": "service_development.voicelabel",
-  "pk": 52,
-  "fields": {
-    "name": "advice-okra-flowering",
-    "description": null
-  }
-},
-{
-  "model": "service_development.voicelabel",
-  "pk": 53,
-  "fields": {
-    "name": "Advice Okra Planting",
-    "description": null
-  }
-},
-{
-  "model": "service_development.voicelabel",
-  "pk": 54,
-  "fields": {
-    "name": "Advice Mango Year 1",
-    "description": null
-  }
-},
-{
-  "model": "service_development.voicelabel",
-  "pk": 55,
-  "fields": {
-    "name": "Advice Mango Year 2",
-    "description": null
-  }
-},
-{
-  "model": "service_development.voicelabel",
-  "pk": 56,
-  "fields": {
-    "name": "advice-mango-3",
-    "description": null
-  }
-},
-{
-  "model": "service_development.voicelabel",
-  "pk": 57,
-  "fields": {
-    "name": "advice-cassava",
-    "description": null
-  }
-},
-{
-  "model": "service_development.voicelabel",
-  "pk": 58,
-  "fields": {
-    "name": "2-split-application",
-    "description": null
-  }
-},
-{
-  "model": "service_development.voicelabel",
-  "pk": 59,
-  "fields": {
-    "name": "3-split-application",
-    "description": null
-  }
-},
-{
-  "model": "service_development.voicelabel",
-  "pk": 60,
-  "fields": {
-    "name": "tomato",
-    "description": null
-  }
-},
-{
-  "model": "service_development.voicelabel",
-  "pk": 61,
-  "fields": {
-    "name": "select-planting-flowering",
-    "description": null
-  }
-},
-{
-  "model": "service_development.voicelabel",
-  "pk": 63,
-  "fields": {
-    "name": "select-age",
-    "description": null
-  }
-},
-{
-  "model": "service_development.voicelabel",
-  "pk": 64,
-  "fields": {
-    "name": "Yes",
-    "description": null
-  }
-},
-{
-  "model": "service_development.voicelabel",
-  "pk": 65,
-  "fields": {
-    "name": "No",
-    "description": null
-  }
-},
-{
-  "model": "service_development.voicelabel",
-  "pk": 66,
-  "fields": {
-    "name": "To Repeat",
-    "description": null
-  }
-},
-{
-  "model": "service_development.voicelabel",
-  "pk": 67,
-  "fields": {
-    "name": "Go Back",
-    "description": null
-  }
-},
-{
-  "model": "service_development.voicelabel",
-  "pk": 68,
-  "fields": {
-    "name": "Fruit",
-    "description": null
-  }
-},
-{
-  "model": "service_development.voicelabel",
-  "pk": 69,
-  "fields": {
-    "name": "Costs subscription",
-    "description": null
-  }
-},
-{
-  "model": "service_development.voicelabel",
-  "pk": 70,
-  "fields": {
-    "name": "Costs",
-    "description": null
-  }
-},
-{
-  "model": "service_development.voicelabel",
-  "pk": 71,
-  "fields": {
-    "name": "cashcrop",
-    "description": null
-  }
-},
-{
-  "model": "service_development.voicelabel",
-  "pk": 72,
-  "fields": {
-    "name": "Banana",
-    "description": null
-  }
-},
-{
-  "model": "service_development.voicelabel",
-  "pk": 73,
-  "fields": {
-    "name": "Advice Mango Year 3",
-    "description": null
-  }
-},
-{
-  "model": "service_development.voicelabel",
-  "pk": 74,
-  "fields": {
-    "name": "Advice Mango Year 4",
-    "description": null
-  }
-},
-{
-  "model": "service_development.voicelabel",
-  "pk": 75,
-  "fields": {
-    "name": "Advice Mango Year 5",
-    "description": null
-  }
-},
-{
-  "model": "service_development.voicelabel",
-  "pk": 76,
-  "fields": {
-    "name": "Advice Mango Year 6",
-    "description": null
-  }
-},
-{
-  "model": "service_development.voicelabel",
-  "pk": 77,
-  "fields": {
-    "name": "Advice Mango Year 7",
+    "name": "Cocoa",
     "description": null
   }
 },
@@ -1280,7 +1048,7 @@
   "fields": {
     "parent": 26,
     "language": 2,
-    "audio": "wet-english.wav"
+    "audio": "cocoa-english_8C7pbgD.wav"
   }
 },
 {
@@ -1289,25 +1057,43 @@
   "fields": {
     "parent": 26,
     "language": 3,
-    "audio": "wet-french.wav"
+    "audio": "cocoa-french_6l2Zwrh.wav"
   }
 },
 {
   "model": "service_development.voicefragment",
-  "pk": 81,
+  "pk": 77,
   "fields": {
-    "parent": 29,
+    "parent": 27,
     "language": 2,
-    "audio": "cocoa-english.wav"
+    "audio": "cotton-english_bxdddML.wav"
   }
 },
 {
   "model": "service_development.voicefragment",
-  "pk": 82,
+  "pk": 78,
   "fields": {
-    "parent": 29,
+    "parent": 27,
     "language": 3,
-    "audio": "cocoa-french.wav"
+    "audio": "cotton-french_TyV77mL.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 79,
+  "fields": {
+    "parent": 28,
+    "language": 2,
+    "audio": "corn-english_LRV2xa5.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 80,
+  "fields": {
+    "parent": 28,
+    "language": 3,
+    "audio": "corn-french_vQlVyXK.wav"
   }
 },
 {
@@ -1316,7 +1102,7 @@
   "fields": {
     "parent": 30,
     "language": 2,
-    "audio": "corn-english.wav"
+    "audio": "2_-_english.wav"
   }
 },
 {
@@ -1325,7 +1111,7 @@
   "fields": {
     "parent": 30,
     "language": 3,
-    "audio": "corn-french.wav"
+    "audio": "2_-_french.wav"
   }
 },
 {
@@ -1334,7 +1120,7 @@
   "fields": {
     "parent": 31,
     "language": 2,
-    "audio": "cotton-english.wav"
+    "audio": "3_-_english.wav"
   }
 },
 {
@@ -1343,7 +1129,7 @@
   "fields": {
     "parent": 31,
     "language": 3,
-    "audio": "cotton-french.wav"
+    "audio": "3_-_french.wav"
   }
 },
 {
@@ -1352,7 +1138,7 @@
   "fields": {
     "parent": 32,
     "language": 2,
-    "audio": "dry-english_Qrc4AwN.wav"
+    "audio": "1-english.wav"
   }
 },
 {
@@ -1361,7 +1147,7 @@
   "fields": {
     "parent": 32,
     "language": 3,
-    "audio": "dry-french_hLm4Gnr.wav"
+    "audio": "1-french.wav"
   }
 },
 {
@@ -1370,7 +1156,7 @@
   "fields": {
     "parent": 33,
     "language": 2,
-    "audio": "for-english-press-1.wav"
+    "audio": "ammonium-sulphate-english.wav"
   }
 },
 {
@@ -1379,7 +1165,7 @@
   "fields": {
     "parent": 33,
     "language": 3,
-    "audio": "appuyez-sur-2-pour-francais.wav"
+    "audio": "ammonium-sulphate-french.wav"
   }
 },
 {
@@ -1388,7 +1174,7 @@
   "fields": {
     "parent": 34,
     "language": 2,
-    "audio": "fertilizer-or-howto-english.wav"
+    "audio": "asasa-wure.wav"
   }
 },
 {
@@ -1397,7 +1183,7 @@
   "fields": {
     "parent": 34,
     "language": 3,
-    "audio": "fertilizer-or-howto-french.wav"
+    "audio": "appuyez-sur.wav"
   }
 },
 {
@@ -1406,7 +1192,7 @@
   "fields": {
     "parent": 35,
     "language": 2,
-    "audio": "ammonium-sulphate-english.wav"
+    "audio": "dry-english.wav"
   }
 },
 {
@@ -1415,7 +1201,7 @@
   "fields": {
     "parent": 35,
     "language": 3,
-    "audio": "ammonium-sulphate-french.wav"
+    "audio": "dry-french.wav"
   }
 },
 {
@@ -1424,7 +1210,7 @@
   "fields": {
     "parent": 36,
     "language": 2,
-    "audio": "asasa-wure.wav"
+    "audio": "give-crop-and-weather-english.wav"
   }
 },
 {
@@ -1433,7 +1219,7 @@
   "fields": {
     "parent": 36,
     "language": 3,
-    "audio": "asasa-wure_IfFbsrc.wav"
+    "audio": "give-crop-and-weather-french.wav"
   }
 },
 {
@@ -1442,7 +1228,7 @@
   "fields": {
     "parent": 37,
     "language": 2,
-    "audio": "give-crop-and-weather-english.wav"
+    "audio": "inoculant-english.wav"
   }
 },
 {
@@ -1451,7 +1237,7 @@
   "fields": {
     "parent": 37,
     "language": 3,
-    "audio": "give-crop-and-weather-french.wav"
+    "audio": "inoculant-french.wav"
   }
 },
 {
@@ -1460,7 +1246,7 @@
   "fields": {
     "parent": 38,
     "language": 2,
-    "audio": "inoculant-english.wav"
+    "audio": "please-try-again-english.wav"
   }
 },
 {
@@ -1469,7 +1255,7 @@
   "fields": {
     "parent": 38,
     "language": 3,
-    "audio": "inoculant-french.wav"
+    "audio": "please-try-again-french.wav"
   }
 },
 {
@@ -1478,7 +1264,7 @@
   "fields": {
     "parent": 39,
     "language": 2,
-    "audio": "please-try-again-english.wav"
+    "audio": "select-crop-english.wav"
   }
 },
 {
@@ -1487,7 +1273,7 @@
   "fields": {
     "parent": 39,
     "language": 3,
-    "audio": "please-try-again-french.wav"
+    "audio": "select-crop-french.wav"
   }
 },
 {
@@ -1496,7 +1282,7 @@
   "fields": {
     "parent": 40,
     "language": 2,
-    "audio": "welcome-english.wav"
+    "audio": "select-weather-english.wav"
   }
 },
 {
@@ -1505,7 +1291,7 @@
   "fields": {
     "parent": 40,
     "language": 3,
-    "audio": "welcome-french.wav"
+    "audio": "select-weather-french.wav"
   }
 },
 {
@@ -1514,7 +1300,7 @@
   "fields": {
     "parent": 41,
     "language": 2,
-    "audio": "sorry-english.wav"
+    "audio": "select-language-english.wav"
   }
 },
 {
@@ -1523,7 +1309,7 @@
   "fields": {
     "parent": 41,
     "language": 3,
-    "audio": "sorry-french.wav"
+    "audio": "select-language-french.wav"
   }
 },
 {
@@ -1532,7 +1318,7 @@
   "fields": {
     "parent": 42,
     "language": 2,
-    "audio": "select-weather-english.wav"
+    "audio": "sorry-english.wav"
   }
 },
 {
@@ -1541,7 +1327,25 @@
   "fields": {
     "parent": 42,
     "language": 3,
-    "audio": "select-weather-french.wav"
+    "audio": "sorry-french.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 109,
+  "fields": {
+    "parent": 43,
+    "language": 2,
+    "audio": "welcome-english.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 110,
+  "fields": {
+    "parent": 43,
+    "language": 3,
+    "audio": "welcome-french.wav"
   }
 },
 {
@@ -1550,7 +1354,7 @@
   "fields": {
     "parent": 44,
     "language": 2,
-    "audio": "select-crop-english.wav"
+    "audio": "wet-english.wav"
   }
 },
 {
@@ -1559,7 +1363,7 @@
   "fields": {
     "parent": 44,
     "language": 3,
-    "audio": "select-language-french.wav"
+    "audio": "wet-french.wav"
   }
 },
 {
@@ -1568,511 +1372,16 @@
   "fields": {
     "parent": 45,
     "language": 2,
-    "audio": "flowering-english.wav"
+    "audio": "cocoa-english.wav"
   }
 },
 {
   "model": "service_development.voicefragment",
   "pk": 114,
   "fields": {
-    "parent": 46,
-    "language": 2,
-    "audio": "planting-english.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 115,
-  "fields": {
-    "parent": 47,
-    "language": 2,
-    "audio": "okra-english.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 116,
-  "fields": {
-    "parent": 48,
-    "language": 2,
-    "audio": "cassave-english.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 117,
-  "fields": {
-    "parent": 49,
-    "language": 2,
-    "audio": "mango-english.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 118,
-  "fields": {
-    "parent": 50,
-    "language": 2,
-    "audio": "nice-day-english_wVR5pYF.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 119,
-  "fields": {
-    "parent": 50,
-    "language": 3,
-    "audio": "nice-day-french_Wtsxmtd.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 120,
-  "fields": {
-    "parent": 51,
-    "language": 2,
-    "audio": "nice-day-english.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 121,
-  "fields": {
-    "parent": 51,
-    "language": 3,
-    "audio": "nice-day-french.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 122,
-  "fields": {
-    "parent": 52,
-    "language": 2,
-    "audio": "advice-okra-flowering.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 123,
-  "fields": {
-    "parent": 53,
-    "language": 2,
-    "audio": "advice-okra-planting.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 124,
-  "fields": {
-    "parent": 54,
-    "language": 2,
-    "audio": "advice-mango-1-english.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 125,
-  "fields": {
-    "parent": 55,
-    "language": 2,
-    "audio": "advice-mango-2-english.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 126,
-  "fields": {
-    "parent": 56,
-    "language": 2,
-    "audio": "advice-mango-3-english.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 127,
-  "fields": {
-    "parent": 57,
-    "language": 2,
-    "audio": "advice-cassava-english.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 128,
-  "fields": {
-    "parent": 58,
-    "language": 2,
-    "audio": "2-split-english.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 129,
-  "fields": {
-    "parent": 59,
-    "language": 2,
-    "audio": "3-split-english.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 130,
-  "fields": {
-    "parent": 60,
-    "language": 2,
-    "audio": "tomato-english.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 131,
-  "fields": {
-    "parent": 61,
-    "language": 2,
-    "audio": "planting-flowering-english_Ys9BqW4.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 133,
-  "fields": {
-    "parent": 63,
-    "language": 2,
-    "audio": "select-age-tree-english_kvfLkDm.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 134,
-  "fields": {
-    "parent": 59,
-    "language": 3,
-    "audio": "3-split-french_T5GJOaq.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 135,
-  "fields": {
     "parent": 45,
     "language": 3,
-    "audio": "flowering-french_QGuUkGi.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 136,
-  "fields": {
-    "parent": 46,
-    "language": 3,
-    "audio": "planting-french_iKPj9Kw.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 137,
-  "fields": {
-    "parent": 47,
-    "language": 3,
-    "audio": "okra-french_AKgyFQq.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 138,
-  "fields": {
-    "parent": 48,
-    "language": 3,
-    "audio": "cassave-french_jkw0yJu.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 139,
-  "fields": {
-    "parent": 49,
-    "language": 3,
-    "audio": "mango-french_LuaqGCP.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 140,
-  "fields": {
-    "parent": 52,
-    "language": 3,
-    "audio": "advice-okra-flowering-french_kOOrIHL.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 141,
-  "fields": {
-    "parent": 53,
-    "language": 3,
-    "audio": "advice-okra-planting-french_7m1aVtX.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 142,
-  "fields": {
-    "parent": 54,
-    "language": 3,
-    "audio": "advice-mango-1-french_QfuyyAW.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 143,
-  "fields": {
-    "parent": 55,
-    "language": 3,
-    "audio": "advice-mango-2-french_wvG3sDi.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 144,
-  "fields": {
-    "parent": 57,
-    "language": 3,
-    "audio": "advice-cassava-french_E5sFkcO.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 145,
-  "fields": {
-    "parent": 61,
-    "language": 3,
-    "audio": "planting-flowering-french_ZCDQcMR.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 146,
-  "fields": {
-    "parent": 63,
-    "language": 3,
-    "audio": "select-age-tree-french_6ltEcva.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 147,
-  "fields": {
-    "parent": 64,
-    "language": 2,
-    "audio": "yes-english_VTBdVtV.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 148,
-  "fields": {
-    "parent": 64,
-    "language": 3,
-    "audio": "yes-french_4UoX1yH.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 149,
-  "fields": {
-    "parent": 65,
-    "language": 2,
-    "audio": "no-english_1obPkBf.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 150,
-  "fields": {
-    "parent": 65,
-    "language": 3,
-    "audio": "no-french_FX4bBbb.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 151,
-  "fields": {
-    "parent": 66,
-    "language": 2,
-    "audio": "to-repeat-english_IWIIgxp.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 152,
-  "fields": {
-    "parent": 66,
-    "language": 3,
-    "audio": "to-repeat-french_lbCQpvj.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 153,
-  "fields": {
-    "parent": 67,
-    "language": 2,
-    "audio": "go-back-english_DY1fjAk.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 154,
-  "fields": {
-    "parent": 67,
-    "language": 3,
-    "audio": "go-back-french_EcsW563.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 155,
-  "fields": {
-    "parent": 68,
-    "language": 2,
-    "audio": "fruit-english_XOD6kdg.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 156,
-  "fields": {
-    "parent": 68,
-    "language": 3,
-    "audio": "fruit-french_XnFwxLJ.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 157,
-  "fields": {
-    "parent": 69,
-    "language": 2,
-    "audio": "costs-subscription-english_mVoYzBK.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 158,
-  "fields": {
-    "parent": 69,
-    "language": 3,
-    "audio": "costs-subscription-french_zrq81Wu.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 159,
-  "fields": {
-    "parent": 70,
-    "language": 2,
-    "audio": "costs-english_pMG3T2U.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 160,
-  "fields": {
-    "parent": 70,
-    "language": 3,
-    "audio": "costs-french_Gk0CRaL.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 161,
-  "fields": {
-    "parent": 71,
-    "language": 2,
-    "audio": "select-crop-english_ZEXyJSu.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 162,
-  "fields": {
-    "parent": 71,
-    "language": 3,
-    "audio": "select-crop-french_F4XDDji.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 163,
-  "fields": {
-    "parent": 72,
-    "language": 2,
-    "audio": "banana-english_I65Fol2.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 164,
-  "fields": {
-    "parent": 72,
-    "language": 3,
-    "audio": "banana-french_oZ14oM5.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 165,
-  "fields": {
-    "parent": 73,
-    "language": 2,
-    "audio": "advice-mango-3-english_gVwagRS.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 166,
-  "fields": {
-    "parent": 74,
-    "language": 2,
-    "audio": "advice-mango-4-english_dm1luBg.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 167,
-  "fields": {
-    "parent": 75,
-    "language": 2,
-    "audio": "advice-mango-5-english_5Um1QRP.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 168,
-  "fields": {
-    "parent": 76,
-    "language": 2,
-    "audio": "advice-mango-6-english_LWUGOlw.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 169,
-  "fields": {
-    "parent": 77,
-    "language": 2,
-    "audio": "advice-mango-7-english_AvddkFC.wav"
-  }
-},
-{
-  "model": "service_development.voicefragment",
-  "pk": 170,
-  "fields": {
-    "parent": 77,
-    "language": 3,
-    "audio": "advice-mango-7-french_xkLccYR.wav"
+    "audio": "cocoa-french.wav"
   }
 },
 {
@@ -2149,26 +1458,14 @@
 },
 {
   "model": "service_development.voiceservicesubelement",
-  "pk": 8,
-  "fields": {
-    "service": 2,
-    "creation_date": "2018-05-04T10:37:51.968Z",
-    "modification_date": "2018-05-04T11:07:05.240Z",
-    "name": "Choose language",
-    "description": "Two options for the language are provided.",
-    "voice_label": null
-  }
-},
-{
-  "model": "service_development.voiceservicesubelement",
   "pk": 16,
   "fields": {
     "service": 2,
-    "creation_date": "2018-05-04T10:45:10.299Z",
-    "modification_date": "2018-05-17T09:30:02.981Z",
-    "name": "Language options",
-    "description": "",
-    "voice_label": 8
+    "creation_date": "2018-05-04T13:51:58.886Z",
+    "modification_date": "2018-05-04T13:51:58.886Z",
+    "name": "Asasa Wure",
+    "description": "Fertilizer",
+    "voice_label": 34
   }
 },
 {
@@ -2176,11 +1473,11 @@
   "pk": 17,
   "fields": {
     "service": 2,
-    "creation_date": "2018-05-04T10:45:10.309Z",
-    "modification_date": "2018-05-17T09:30:02.985Z",
-    "name": "English",
-    "description": "",
-    "voice_label": 4
+    "creation_date": "2018-05-04T13:52:23.869Z",
+    "modification_date": "2018-05-04T13:52:23.869Z",
+    "name": "Inoculcant",
+    "description": "Fertilizer",
+    "voice_label": 37
   }
 },
 {
@@ -2188,11 +1485,11 @@
   "pk": 18,
   "fields": {
     "service": 2,
-    "creation_date": "2018-05-04T10:45:10.314Z",
-    "modification_date": "2018-05-17T09:30:02.985Z",
-    "name": "French",
-    "description": "",
-    "voice_label": 7
+    "creation_date": "2018-05-04T13:53:39.132Z",
+    "modification_date": "2018-05-04T13:54:01.082Z",
+    "name": "Ammomium Sulphate",
+    "description": "Fertilizer",
+    "voice_label": 33
   }
 },
 {
@@ -2200,11 +1497,23 @@
   "pk": 19,
   "fields": {
     "service": 2,
-    "creation_date": "2018-05-04T10:48:32.329Z",
-    "modification_date": "2018-05-04T10:50:21.377Z",
-    "name": "Give crop and weather",
+    "creation_date": "2018-05-04T13:58:52.574Z",
+    "modification_date": "2018-05-04T13:59:38.717Z",
+    "name": "Choose Weather Condition Cocao",
     "description": "",
-    "voice_label": 37
+    "voice_label": 40
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 20,
+  "fields": {
+    "service": 2,
+    "creation_date": "2018-05-04T13:58:52.579Z",
+    "modification_date": "2018-05-04T13:58:52.579Z",
+    "name": "Dry",
+    "description": "Weather Condition",
+    "voice_label": 35
   }
 },
 {
@@ -2212,11 +1521,119 @@
   "pk": 21,
   "fields": {
     "service": 2,
-    "creation_date": "2018-05-04T10:50:09.911Z",
-    "modification_date": "2018-05-17T09:13:56.902Z",
-    "name": "Give crop",
-    "description": "",
+    "creation_date": "2018-05-04T13:58:52.581Z",
+    "modification_date": "2018-05-04T13:58:52.581Z",
+    "name": "Wet",
+    "description": "Weather Condition",
     "voice_label": 44
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 22,
+  "fields": {
+    "service": 2,
+    "creation_date": "2018-05-04T14:00:25.342Z",
+    "modification_date": "2018-05-04T14:00:25.342Z",
+    "name": "Choose Weather Condition Cotton",
+    "description": "",
+    "voice_label": 40
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 23,
+  "fields": {
+    "service": 2,
+    "creation_date": "2018-05-04T14:00:25.345Z",
+    "modification_date": "2018-05-04T14:00:25.345Z",
+    "name": "Dry",
+    "description": "Weather Condition",
+    "voice_label": 35
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 24,
+  "fields": {
+    "service": 2,
+    "creation_date": "2018-05-04T14:00:25.347Z",
+    "modification_date": "2018-05-04T14:00:25.347Z",
+    "name": "Wet",
+    "description": "Weather Condition",
+    "voice_label": 44
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 25,
+  "fields": {
+    "service": 2,
+    "creation_date": "2018-05-04T14:01:11.271Z",
+    "modification_date": "2018-05-04T14:02:42.920Z",
+    "name": "Choose Weather Condition Corn",
+    "description": "",
+    "voice_label": 40
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 26,
+  "fields": {
+    "service": 2,
+    "creation_date": "2018-05-04T14:01:11.274Z",
+    "modification_date": "2018-05-04T14:01:11.274Z",
+    "name": "Dry",
+    "description": "Weather Condition",
+    "voice_label": 35
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 27,
+  "fields": {
+    "service": 2,
+    "creation_date": "2018-05-04T14:01:11.277Z",
+    "modification_date": "2018-05-04T14:01:11.277Z",
+    "name": "Wet",
+    "description": "Weather Condition",
+    "voice_label": 44
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 28,
+  "fields": {
+    "service": 2,
+    "creation_date": "2018-05-04T14:02:21.966Z",
+    "modification_date": "2018-05-04T14:02:52.952Z",
+    "name": "Choose Crop",
+    "description": "",
+    "voice_label": 39
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 29,
+  "fields": {
+    "service": 2,
+    "creation_date": "2018-05-04T14:02:21.969Z",
+    "modification_date": "2018-05-04T14:02:21.969Z",
+    "name": "Cocao",
+    "description": "Crop",
+    "voice_label": 26
+  }
+},
+{
+  "model": "service_development.voiceservicesubelement",
+  "pk": 30,
+  "fields": {
+    "service": 2,
+    "creation_date": "2018-05-04T14:02:21.970Z",
+    "modification_date": "2018-05-04T14:02:21.970Z",
+    "name": "Cotton",
+    "description": "Crop",
+    "voice_label": 27
   }
 },
 {
@@ -2224,11 +1641,11 @@
   "pk": 31,
   "fields": {
     "service": 2,
-    "creation_date": "2018-05-14T13:50:38.256Z",
-    "modification_date": "2018-05-14T13:51:11.183Z",
-    "name": "Final message part 1",
-    "description": "",
-    "voice_label": 50
+    "creation_date": "2018-05-04T14:02:21.971Z",
+    "modification_date": "2018-05-04T14:02:21.971Z",
+    "name": "Corn",
+    "description": "Crop",
+    "voice_label": 28
   }
 },
 {
@@ -2236,443 +1653,11 @@
   "pk": 32,
   "fields": {
     "service": 2,
-    "creation_date": "2018-05-14T13:51:00.290Z",
-    "modification_date": "2018-05-14T13:51:00.290Z",
-    "name": "Final message part 2",
-    "description": "",
-    "voice_label": 51
-  }
-},
-{
-  "model": "service_development.voiceservicesubelement",
-  "pk": 33,
-  "fields": {
-    "service": 2,
-    "creation_date": "2018-05-14T13:52:08.811Z",
-    "modification_date": "2018-05-14T13:52:08.811Z",
-    "name": "Advice cassava",
-    "description": "",
-    "voice_label": 57
-  }
-},
-{
-  "model": "service_development.voiceservicesubelement",
-  "pk": 34,
-  "fields": {
-    "service": 2,
-    "creation_date": "2018-05-14T13:59:23.530Z",
-    "modification_date": "2018-05-14T13:59:23.530Z",
-    "name": "Advice okra flowering",
-    "description": "",
-    "voice_label": 52
-  }
-},
-{
-  "model": "service_development.voiceservicesubelement",
-  "pk": 35,
-  "fields": {
-    "service": 2,
-    "creation_date": "2018-05-14T14:04:19.193Z",
-    "modification_date": "2018-05-14T14:04:19.193Z",
-    "name": "Advice okra planting",
-    "description": "",
-    "voice_label": 53
-  }
-},
-{
-  "model": "service_development.voiceservicesubelement",
-  "pk": 36,
-  "fields": {
-    "service": 2,
-    "creation_date": "2018-05-15T09:48:39.722Z",
-    "modification_date": "2018-05-19T17:56:22.951Z",
-    "name": "Advice Mango Year 1",
-    "description": "",
-    "voice_label": 54
-  }
-},
-{
-  "model": "service_development.voiceservicesubelement",
-  "pk": 37,
-  "fields": {
-    "service": 2,
-    "creation_date": "2018-05-15T09:49:04.684Z",
-    "modification_date": "2018-05-19T17:56:37.074Z",
-    "name": "Advice Mango Year 2",
-    "description": "",
-    "voice_label": 55
-  }
-},
-{
-  "model": "service_development.voiceservicesubelement",
-  "pk": 38,
-  "fields": {
-    "service": 2,
-    "creation_date": "2018-05-15T09:49:25.500Z",
-    "modification_date": "2018-05-19T17:56:42.780Z",
-    "name": "Advice Mango Year 3",
-    "description": "",
-    "voice_label": 73
-  }
-},
-{
-  "model": "service_development.voiceservicesubelement",
-  "pk": 39,
-  "fields": {
-    "service": 2,
-    "creation_date": "2018-05-15T09:55:02.071Z",
-    "modification_date": "2018-05-19T17:44:42.118Z",
-    "name": "Choose phase Okra",
-    "description": "",
-    "voice_label": 61
-  }
-},
-{
-  "model": "service_development.voiceservicesubelement",
-  "pk": 40,
-  "fields": {
-    "service": 2,
-    "creation_date": "2018-05-15T09:55:02.115Z",
-    "modification_date": "2018-05-15T09:55:02.116Z",
-    "name": "Planting",
-    "description": "",
-    "voice_label": 46
-  }
-},
-{
-  "model": "service_development.voiceservicesubelement",
-  "pk": 41,
-  "fields": {
-    "service": 2,
-    "creation_date": "2018-05-15T09:55:02.117Z",
-    "modification_date": "2018-05-15T09:55:02.117Z",
-    "name": "Flowering",
-    "description": "",
-    "voice_label": 45
-  }
-},
-{
-  "model": "service_development.voiceservicesubelement",
-  "pk": 42,
-  "fields": {
-    "service": 2,
-    "creation_date": "2018-05-15T09:55:52.422Z",
-    "modification_date": "2018-05-15T09:55:52.422Z",
-    "name": "Please select your phase",
-    "description": "",
-    "voice_label": 61
-  }
-},
-{
-  "model": "service_development.voiceservicesubelement",
-  "pk": 43,
-  "fields": {
-    "service": 2,
-    "creation_date": "2018-05-15T10:00:06.092Z",
-    "modification_date": "2018-05-21T08:41:08.736Z",
-    "name": "Choose age in years mango",
-    "description": "",
-    "voice_label": 63
-  }
-},
-{
-  "model": "service_development.voiceservicesubelement",
-  "pk": 44,
-  "fields": {
-    "service": 2,
-    "creation_date": "2018-05-15T10:00:06.111Z",
-    "modification_date": "2018-05-19T17:52:10.782Z",
-    "name": "One Year",
-    "description": "",
-    "voice_label": 11
-  }
-},
-{
-  "model": "service_development.voiceservicesubelement",
-  "pk": 45,
-  "fields": {
-    "service": 2,
-    "creation_date": "2018-05-15T10:00:06.111Z",
-    "modification_date": "2018-05-19T17:52:10.783Z",
-    "name": "Two Years",
-    "description": "",
-    "voice_label": 12
-  }
-},
-{
-  "model": "service_development.voiceservicesubelement",
-  "pk": 46,
-  "fields": {
-    "service": 2,
-    "creation_date": "2018-05-15T10:00:06.127Z",
-    "modification_date": "2018-05-19T17:52:10.784Z",
-    "name": "Three Years",
-    "description": "",
-    "voice_label": 13
-  }
-},
-{
-  "model": "service_development.voiceservicesubelement",
-  "pk": 47,
-  "fields": {
-    "service": 2,
-    "creation_date": "2018-05-17T09:21:44.459Z",
-    "modification_date": "2018-05-18T18:43:32.705Z",
-    "name": "Choose type of crop",
-    "description": "",
-    "voice_label": 30
-  }
-},
-{
-  "model": "service_development.voiceservicesubelement",
-  "pk": 48,
-  "fields": {
-    "service": 2,
-    "creation_date": "2018-05-17T09:21:44.483Z",
-    "modification_date": "2018-05-17T09:30:45.755Z",
-    "name": "Cash (non-food)",
-    "description": "",
-    "voice_label": 31
-  }
-},
-{
-  "model": "service_development.voiceservicesubelement",
-  "pk": 49,
-  "fields": {
-    "service": 2,
-    "creation_date": "2018-05-17T09:21:44.487Z",
-    "modification_date": "2018-05-17T09:30:45.787Z",
-    "name": "Vegetable",
-    "description": "",
-    "voice_label": 31
-  }
-},
-{
-  "model": "service_development.voiceservicesubelement",
-  "pk": 50,
-  "fields": {
-    "service": 2,
-    "creation_date": "2018-05-17T09:21:44.583Z",
-    "modification_date": "2018-05-18T18:43:32.708Z",
-    "name": "Fruit",
-    "description": "",
-    "voice_label": 68
-  }
-},
-{
-  "model": "service_development.voiceservicesubelement",
-  "pk": 51,
-  "fields": {
-    "service": 2,
-    "creation_date": "2018-05-17T09:25:16.651Z",
-    "modification_date": "2018-05-19T17:34:22.511Z",
-    "name": "Select cash crop",
-    "description": "",
-    "voice_label": 71
-  }
-},
-{
-  "model": "service_development.voiceservicesubelement",
-  "pk": 52,
-  "fields": {
-    "service": 2,
-    "creation_date": "2018-05-17T09:25:16.659Z",
-    "modification_date": "2018-05-17T09:25:16.659Z",
-    "name": "cocoa",
-    "description": "",
-    "voice_label": 29
-  }
-},
-{
-  "model": "service_development.voiceservicesubelement",
-  "pk": 53,
-  "fields": {
-    "service": 2,
-    "creation_date": "2018-05-17T09:26:35.581Z",
-    "modification_date": "2018-05-17T09:31:14.285Z",
-    "name": "Select vegetable crop",
-    "description": "",
-    "voice_label": 44
-  }
-},
-{
-  "model": "service_development.voiceservicesubelement",
-  "pk": 54,
-  "fields": {
-    "service": 2,
-    "creation_date": "2018-05-17T09:26:35.609Z",
-    "modification_date": "2018-05-17T09:31:14.293Z",
-    "name": "Cassava",
-    "description": "",
-    "voice_label": 48
-  }
-},
-{
-  "model": "service_development.voiceservicesubelement",
-  "pk": 55,
-  "fields": {
-    "service": 2,
-    "creation_date": "2018-05-17T09:28:30.627Z",
-    "modification_date": "2018-05-21T08:43:27.782Z",
-    "name": "Select fruit crop",
-    "description": "",
-    "voice_label": 30
-  }
-},
-{
-  "model": "service_development.voiceservicesubelement",
-  "pk": 56,
-  "fields": {
-    "service": 2,
-    "creation_date": "2018-05-17T09:28:30.675Z",
-    "modification_date": "2018-05-17T09:28:30.675Z",
-    "name": "Mango",
-    "description": "",
-    "voice_label": 49
-  }
-},
-{
-  "model": "service_development.voiceservicesubelement",
-  "pk": 57,
-  "fields": {
-    "service": 2,
-    "creation_date": "2018-05-17T09:28:30.675Z",
-    "modification_date": "2018-05-17T09:28:30.675Z",
-    "name": "Okra",
-    "description": "",
-    "voice_label": 47
-  }
-},
-{
-  "model": "service_development.voiceservicesubelement",
-  "pk": 58,
-  "fields": {
-    "service": 2,
-    "creation_date": "2018-05-18T18:37:20.319Z",
-    "modification_date": "2018-05-18T18:38:27.258Z",
+    "creation_date": "2018-05-04T14:03:40.319Z",
+    "modification_date": "2018-05-04T14:04:19.841Z",
     "name": "Welcome",
-    "description": "Welcome Message",
-    "voice_label": 40
-  }
-},
-{
-  "model": "service_development.voiceservicesubelement",
-  "pk": 59,
-  "fields": {
-    "service": 2,
-    "creation_date": "2018-05-18T18:37:50.968Z",
-    "modification_date": "2018-05-18T18:38:40.806Z",
-    "name": "Costs prepaid",
     "description": "",
-    "voice_label": 70
-  }
-},
-{
-  "model": "service_development.voiceservicesubelement",
-  "pk": 60,
-  "fields": {
-    "service": 2,
-    "creation_date": "2018-05-18T18:38:17.983Z",
-    "modification_date": "2018-05-18T18:38:17.983Z",
-    "name": "Costs subscription",
-    "description": "",
-    "voice_label": 69
-  }
-},
-{
-  "model": "service_development.voiceservicesubelement",
-  "pk": 64,
-  "fields": {
-    "service": 2,
-    "creation_date": "2018-05-19T17:52:10.785Z",
-    "modification_date": "2018-05-21T08:41:08.746Z",
-    "name": "Four Years",
-    "description": "",
-    "voice_label": 14
-  }
-},
-{
-  "model": "service_development.voiceservicesubelement",
-  "pk": 65,
-  "fields": {
-    "service": 2,
-    "creation_date": "2018-05-19T17:52:10.786Z",
-    "modification_date": "2018-05-21T08:41:08.748Z",
-    "name": "Five Years",
-    "description": "",
-    "voice_label": 15
-  }
-},
-{
-  "model": "service_development.voiceservicesubelement",
-  "pk": 66,
-  "fields": {
-    "service": 2,
-    "creation_date": "2018-05-19T17:52:10.787Z",
-    "modification_date": "2018-05-21T08:41:08.749Z",
-    "name": "Six Years",
-    "description": "",
-    "voice_label": 16
-  }
-},
-{
-  "model": "service_development.voiceservicesubelement",
-  "pk": 67,
-  "fields": {
-    "service": 2,
-    "creation_date": "2018-05-19T17:52:10.788Z",
-    "modification_date": "2018-05-21T08:41:08.750Z",
-    "name": "Seven Years",
-    "description": "",
-    "voice_label": 17
-  }
-},
-{
-  "model": "service_development.voiceservicesubelement",
-  "pk": 68,
-  "fields": {
-    "service": 2,
-    "creation_date": "2018-05-19T17:52:55.984Z",
-    "modification_date": "2018-05-19T17:56:47.820Z",
-    "name": "Advice Mango Year 4",
-    "description": "",
-    "voice_label": 74
-  }
-},
-{
-  "model": "service_development.voiceservicesubelement",
-  "pk": 69,
-  "fields": {
-    "service": 2,
-    "creation_date": "2018-05-19T17:53:09.197Z",
-    "modification_date": "2018-05-19T17:56:53.371Z",
-    "name": "Advice Mango Year 5",
-    "description": "",
-    "voice_label": 75
-  }
-},
-{
-  "model": "service_development.voiceservicesubelement",
-  "pk": 70,
-  "fields": {
-    "service": 2,
-    "creation_date": "2018-05-19T17:53:27.014Z",
-    "modification_date": "2018-05-19T17:56:58.977Z",
-    "name": "Advice Mango Year 6",
-    "description": "",
-    "voice_label": 76
-  }
-},
-{
-  "model": "service_development.voiceservicesubelement",
-  "pk": 71,
-  "fields": {
-    "service": 2,
-    "creation_date": "2018-05-19T17:53:56.698Z",
-    "modification_date": "2018-05-19T17:57:04.437Z",
-    "name": "Advice Mango Year 7",
-    "description": "",
-    "voice_label": 77
+    "voice_label": 43
   }
 },
 {
@@ -2697,12 +1682,17 @@
 },
 {
   "model": "service_development.voiceserviceelement",
-  "pk": 8,
+  "pk": 16,
   "fields": {}
 },
 {
   "model": "service_development.voiceserviceelement",
-  "pk": 16,
+  "pk": 17,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 18,
   "fields": {}
 },
 {
@@ -2712,117 +1702,22 @@
 },
 {
   "model": "service_development.voiceserviceelement",
-  "pk": 21,
+  "pk": 22,
   "fields": {}
 },
 {
   "model": "service_development.voiceserviceelement",
-  "pk": 31,
+  "pk": 25,
+  "fields": {}
+},
+{
+  "model": "service_development.voiceserviceelement",
+  "pk": 28,
   "fields": {}
 },
 {
   "model": "service_development.voiceserviceelement",
   "pk": 32,
-  "fields": {}
-},
-{
-  "model": "service_development.voiceserviceelement",
-  "pk": 33,
-  "fields": {}
-},
-{
-  "model": "service_development.voiceserviceelement",
-  "pk": 34,
-  "fields": {}
-},
-{
-  "model": "service_development.voiceserviceelement",
-  "pk": 35,
-  "fields": {}
-},
-{
-  "model": "service_development.voiceserviceelement",
-  "pk": 36,
-  "fields": {}
-},
-{
-  "model": "service_development.voiceserviceelement",
-  "pk": 37,
-  "fields": {}
-},
-{
-  "model": "service_development.voiceserviceelement",
-  "pk": 38,
-  "fields": {}
-},
-{
-  "model": "service_development.voiceserviceelement",
-  "pk": 39,
-  "fields": {}
-},
-{
-  "model": "service_development.voiceserviceelement",
-  "pk": 42,
-  "fields": {}
-},
-{
-  "model": "service_development.voiceserviceelement",
-  "pk": 43,
-  "fields": {}
-},
-{
-  "model": "service_development.voiceserviceelement",
-  "pk": 47,
-  "fields": {}
-},
-{
-  "model": "service_development.voiceserviceelement",
-  "pk": 51,
-  "fields": {}
-},
-{
-  "model": "service_development.voiceserviceelement",
-  "pk": 53,
-  "fields": {}
-},
-{
-  "model": "service_development.voiceserviceelement",
-  "pk": 55,
-  "fields": {}
-},
-{
-  "model": "service_development.voiceserviceelement",
-  "pk": 58,
-  "fields": {}
-},
-{
-  "model": "service_development.voiceserviceelement",
-  "pk": 59,
-  "fields": {}
-},
-{
-  "model": "service_development.voiceserviceelement",
-  "pk": 60,
-  "fields": {}
-},
-{
-  "model": "service_development.voiceserviceelement",
-  "pk": 68,
-  "fields": {}
-},
-{
-  "model": "service_development.voiceserviceelement",
-  "pk": 69,
-  "fields": {}
-},
-{
-  "model": "service_development.voiceserviceelement",
-  "pk": 70,
-  "fields": {}
-},
-{
-  "model": "service_development.voiceserviceelement",
-  "pk": 71,
   "fields": {}
 },
 {
@@ -2850,16 +1745,17 @@
   "pk": 2,
   "fields": {
     "name": "MaMoisson",
-    "description": "The user is asked to select first a language, then a crop and then the weather condition. An appropriate fertilizer is provided.",
-    "creation_date": "2018-05-04T10:33:09.229Z",
-    "modification_date": "2018-05-21T08:41:53.037Z",
-    "active": true,
-    "_start_element": 8,
+    "description": "Fertilizer Education System",
+    "creation_date": "2018-05-03T09:17:34.744Z",
+    "modification_date": "2018-05-04T13:57:23.390Z",
+    "active": false,
+    "_start_element": null,
     "registration": "preferred",
-    "registration_language": false,
+    "registration_language": true,
     "registration_name": false,
     "supported_languages": [
-      2
+      2,
+      3
     ]
   }
 },
@@ -2883,37 +1779,22 @@
 },
 {
   "model": "service_development.choice",
-  "pk": 16,
+  "pk": 19,
   "fields": {}
 },
 {
   "model": "service_development.choice",
-  "pk": 39,
+  "pk": 22,
   "fields": {}
 },
 {
   "model": "service_development.choice",
-  "pk": 43,
+  "pk": 25,
   "fields": {}
 },
 {
   "model": "service_development.choice",
-  "pk": 47,
-  "fields": {}
-},
-{
-  "model": "service_development.choice",
-  "pk": 51,
-  "fields": {}
-},
-{
-  "model": "service_development.choice",
-  "pk": 53,
-  "fields": {}
-},
-{
-  "model": "service_development.choice",
-  "pk": 55,
+  "pk": 28,
   "fields": {}
 },
 {
@@ -2934,146 +1815,74 @@
 },
 {
   "model": "service_development.choiceoption",
-  "pk": 17,
+  "pk": 20,
   "fields": {
-    "parent": 16,
-    "_redirect": 47
+    "parent": 19,
+    "_redirect": 16
   }
 },
 {
   "model": "service_development.choiceoption",
-  "pk": 18,
+  "pk": 21,
   "fields": {
-    "parent": 16,
-    "_redirect": 47
+    "parent": 19,
+    "_redirect": 17
   }
 },
 {
   "model": "service_development.choiceoption",
-  "pk": 40,
+  "pk": 23,
   "fields": {
-    "parent": 39,
-    "_redirect": 35
+    "parent": 22,
+    "_redirect": 18
   }
 },
 {
   "model": "service_development.choiceoption",
-  "pk": 41,
+  "pk": 24,
   "fields": {
-    "parent": 39,
-    "_redirect": 34
+    "parent": 22,
+    "_redirect": 17
   }
 },
 {
   "model": "service_development.choiceoption",
-  "pk": 44,
+  "pk": 26,
   "fields": {
-    "parent": 43,
-    "_redirect": 36
+    "parent": 25,
+    "_redirect": 18
   }
 },
 {
   "model": "service_development.choiceoption",
-  "pk": 45,
+  "pk": 27,
   "fields": {
-    "parent": 43,
-    "_redirect": 37
+    "parent": 25,
+    "_redirect": 17
   }
 },
 {
   "model": "service_development.choiceoption",
-  "pk": 46,
+  "pk": 29,
   "fields": {
-    "parent": 43,
-    "_redirect": 38
+    "parent": 28,
+    "_redirect": 19
   }
 },
 {
   "model": "service_development.choiceoption",
-  "pk": 48,
+  "pk": 30,
   "fields": {
-    "parent": 47,
-    "_redirect": 51
+    "parent": 28,
+    "_redirect": 22
   }
 },
 {
   "model": "service_development.choiceoption",
-  "pk": 49,
+  "pk": 31,
   "fields": {
-    "parent": 47,
-    "_redirect": 53
-  }
-},
-{
-  "model": "service_development.choiceoption",
-  "pk": 50,
-  "fields": {
-    "parent": 47,
-    "_redirect": 55
-  }
-},
-{
-  "model": "service_development.choiceoption",
-  "pk": 52,
-  "fields": {
-    "parent": 51,
-    "_redirect": 39
-  }
-},
-{
-  "model": "service_development.choiceoption",
-  "pk": 54,
-  "fields": {
-    "parent": 53,
-    "_redirect": 33
-  }
-},
-{
-  "model": "service_development.choiceoption",
-  "pk": 56,
-  "fields": {
-    "parent": 55,
-    "_redirect": 43
-  }
-},
-{
-  "model": "service_development.choiceoption",
-  "pk": 57,
-  "fields": {
-    "parent": 55,
-    "_redirect": 42
-  }
-},
-{
-  "model": "service_development.choiceoption",
-  "pk": 64,
-  "fields": {
-    "parent": 43,
-    "_redirect": 68
-  }
-},
-{
-  "model": "service_development.choiceoption",
-  "pk": 65,
-  "fields": {
-    "parent": 43,
-    "_redirect": 69
-  }
-},
-{
-  "model": "service_development.choiceoption",
-  "pk": 66,
-  "fields": {
-    "parent": 43,
-    "_redirect": 70
-  }
-},
-{
-  "model": "service_development.choiceoption",
-  "pk": 67,
-  "fields": {
-    "parent": 43,
-    "_redirect": 71
+    "parent": 28,
+    "_redirect": 25
   }
 },
 {
@@ -3102,240 +1911,164 @@
 },
 {
   "model": "service_development.messagepresentation",
-  "pk": 8,
+  "pk": 16,
   "fields": {
-    "final_element": false,
-    "_redirect": 16
+    "final_element": true,
+    "_redirect": 6
   }
 },
 {
   "model": "service_development.messagepresentation",
-  "pk": 19,
+  "pk": 17,
   "fields": {
-    "final_element": false,
-    "_redirect": 21
+    "final_element": true,
+    "_redirect": 6
   }
 },
 {
   "model": "service_development.messagepresentation",
-  "pk": 21,
+  "pk": 18,
   "fields": {
-    "final_element": false,
-    "_redirect": null
-  }
-},
-{
-  "model": "service_development.messagepresentation",
-  "pk": 31,
-  "fields": {
-    "final_element": false,
-    "_redirect": 32
+    "final_element": true,
+    "_redirect": 6
   }
 },
 {
   "model": "service_development.messagepresentation",
   "pk": 32,
   "fields": {
-    "final_element": true,
-    "_redirect": null
-  }
-},
-{
-  "model": "service_development.messagepresentation",
-  "pk": 33,
-  "fields": {
     "final_element": false,
-    "_redirect": 31
-  }
-},
-{
-  "model": "service_development.messagepresentation",
-  "pk": 34,
-  "fields": {
-    "final_element": false,
-    "_redirect": 31
-  }
-},
-{
-  "model": "service_development.messagepresentation",
-  "pk": 35,
-  "fields": {
-    "final_element": false,
-    "_redirect": 31
-  }
-},
-{
-  "model": "service_development.messagepresentation",
-  "pk": 36,
-  "fields": {
-    "final_element": false,
-    "_redirect": 31
-  }
-},
-{
-  "model": "service_development.messagepresentation",
-  "pk": 37,
-  "fields": {
-    "final_element": false,
-    "_redirect": 31
-  }
-},
-{
-  "model": "service_development.messagepresentation",
-  "pk": 38,
-  "fields": {
-    "final_element": false,
-    "_redirect": 31
-  }
-},
-{
-  "model": "service_development.messagepresentation",
-  "pk": 42,
-  "fields": {
-    "final_element": false,
-    "_redirect": 39
-  }
-},
-{
-  "model": "service_development.messagepresentation",
-  "pk": 58,
-  "fields": {
-    "final_element": false,
-    "_redirect": 59
-  }
-},
-{
-  "model": "service_development.messagepresentation",
-  "pk": 59,
-  "fields": {
-    "final_element": false,
-    "_redirect": 60
-  }
-},
-{
-  "model": "service_development.messagepresentation",
-  "pk": 60,
-  "fields": {
-    "final_element": false,
-    "_redirect": 8
-  }
-},
-{
-  "model": "service_development.messagepresentation",
-  "pk": 68,
-  "fields": {
-    "final_element": false,
-    "_redirect": 31
-  }
-},
-{
-  "model": "service_development.messagepresentation",
-  "pk": 69,
-  "fields": {
-    "final_element": false,
-    "_redirect": 31
-  }
-},
-{
-  "model": "service_development.messagepresentation",
-  "pk": 70,
-  "fields": {
-    "final_element": false,
-    "_redirect": 31
-  }
-},
-{
-  "model": "service_development.messagepresentation",
-  "pk": 71,
-  "fields": {
-    "final_element": false,
-    "_redirect": 31
+    "_redirect": 28
   }
 },
 {
   "model": "service_development.category",
-  "pk": 1,
+  "pk": 6,
   "fields": {
     "name": "Fruit"
   }
 },
 {
   "model": "service_development.category",
-  "pk": 2,
+  "pk": 7,
   "fields": {
-    "name": "Vegatable"
+    "name": "Vegetable"
   }
 },
 {
   "model": "service_development.category",
-  "pk": 3,
+  "pk": 8,
   "fields": {
-    "name": "Cash Crops (Non-Food)"
-  }
-},
-{
-  "model": "service_development.tutorials",
-  "pk": 1,
-  "fields": {
-    "name": "Mango",
-    "description": "",
-    "voice_label": []
+    "name": "Non - Food"
   }
 },
 {
   "model": "service_development.tutorials",
   "pk": 2,
   "fields": {
-    "name": "Cassave",
-    "description": "",
-    "voice_label": []
+    "name": "Mango",
+    "voice_label": [
+      1,
+      2,
+      3
+    ]
   }
 },
 {
   "model": "service_development.tutorials",
   "pk": 3,
   "fields": {
-    "name": "Okra",
-    "description": "",
-    "voice_label": []
+    "name": "Cassave",
+    "voice_label": [
+      1,
+      2,
+      3
+    ]
   }
 },
 {
   "model": "service_development.tutorials",
   "pk": 4,
   "fields": {
-    "name": "",
-    "description": "",
-    "voice_label": []
+    "name": "Cocao",
+    "voice_label": [
+      1,
+      2,
+      3
+    ]
   }
 },
 {
-  "model": "service_development.fertilizer",
-  "pk": 1,
+  "model": "service_development.tutorials",
+  "pk": 5,
   "fields": {
-    "name": "Inoculant",
-    "image_url": "https://smhttp-ssl-17653.nexcesscdn.net/media/catalog/product/cache/1/thumbnail/9df78eab33525d08d6e5fb8d27136e95/i/s/iso709-1.jpg",
-    "description": "",
-    "voice_label": 38
+    "name": "Okra",
+    "voice_label": [
+      2,
+      3,
+      4
+    ]
   }
 },
 {
   "model": "service_development.fertilizer",
-  "pk": 2,
+  "pk": 4,
   "fields": {
     "name": "Asasa Wure",
     "image_url": "http://www.qdsalus.com/upfile/article/2017040515462009f1.jpg",
-    "description": "",
-    "voice_label": 36
+    "voice_label": 34
   }
 },
 {
   "model": "service_development.fertilizer",
-  "pk": 3,
+  "pk": 5,
   "fields": {
-    "name": "Ammonium Sulfate",
+    "name": "Inoculant",
+    "image_url": "https://smhttp-ssl-17653.nexcesscdn.net/media/catalog/product/cache/1/thumbnail/9df78eab33525d08d6e5fb8d27136e95/i/s/iso709-1.jpg",
+    "voice_label": 37
+  }
+},
+{
+  "model": "service_development.fertilizer",
+  "pk": 6,
+  "fields": {
+    "name": "Ammonium Sulphate",
     "image_url": "http://imgs.snapexport.com/201605/30/1b3205cc35f13e2a2dc5c56f76192a7a.jpg",
-    "description": "",
-    "voice_label": 35
+    "voice_label": 33
+  }
+},
+{
+  "model": "service_development.crop",
+  "pk": 5,
+  "fields": {
+    "name": "Cocao",
+    "description": "Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia.",
+    "img_url": "https://thumbs.dreamstime.com/b/cocao-pod-cocao-beans-wooden-table-68307058.jpg",
+    "category": 6,
+    "voice_label": 26,
+    "tutorial": 4,
+    "fertilizers": [
+      4,
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "service_development.crop",
+  "pk": 6,
+  "fields": {
+    "name": "Cassave",
+    "description": "Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia.",
+    "img_url": "http://images.smulweb.nl/wiki/87/high_res/cassave-large.jpg",
+    "category": 7,
+    "voice_label": 27,
+    "tutorial": 3,
+    "fertilizers": [
+      4,
+      5,
+      6
+    ]
   }
 }
+]
