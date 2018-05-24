@@ -46,6 +46,9 @@ def main(request):
 def team(request):
     return render(request, 'mamoisson/team.html')
 
+def yb_tutorials(request):
+    return render(request, 'mamoisson/yb_tutorials.html')
+
 def voice(request):
     latest_crop_list = Crop.objects.all()
     context = {'latest_crop_list': latest_crop_list}
