@@ -17,6 +17,8 @@ urlpatterns = [
     # urls of the own create xml files
     url(r'^voice_app/', views.voice, name='voice'),
 
+
+
     # urls of the web interface
 
     #TUTORIALS URLS
@@ -46,6 +48,8 @@ urlpatterns = [
     #MAIN PAGES
     url(r'^$', views.main, name='main'),
     url(r'^team/$', views.team, name='team'),
-    url(r'^voice_tutorials/$', views.yb_tutorials, name='yb_tutorials'),
+
+
+
 ]
 

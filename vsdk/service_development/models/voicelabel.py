@@ -24,7 +24,7 @@ class VoiceLabel(models.Model):
     is_valid.short_description = _('Is valid')
 
     def validator(self, language):
-        errors = []        
+        errors = []
         if len(self.voicefragment_set.filter(language = language)) > 0:
             errors.extend(self.voicefragment_set.filter(language=language)[0].validator())
         else:
@@ -189,8 +189,8 @@ class VoiceFragment(models.Model):
         new_file_name = self.audio.path[:-4] + "_conv.wav"
         subprocess.getoutput("sox -S %s -r 8k -b 16 -c 1 -e signed-integer %s"% (self.audio.path, new_file_name))
         self.audio = basename(new_file_name)
-        
-        
+
+
 
 
     def save(self, *args, **kwargs):
@@ -198,7 +198,7 @@ class VoiceFragment(models.Model):
         from vsdk import settings
         if  settings.KASADAKA:
             format_correct = validate_audio_file_format(self.audio)
-            if not format_correct: 
+            if not format_correct:
                 self.convert_wav_to_correct_format()
         super(VoiceFragment, self).save(*args, **kwargs)
 

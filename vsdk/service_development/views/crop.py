@@ -11,11 +11,10 @@ from ..models.models import Crop
 from ..models.voicelabel import Language
 
 #get all the audio data
-def get_audio_data(crop, tutorial, language_code):
+def get_audio_data(tutorial, language_code):
     languages = Language.objects.filter(code=language_code)
     tutorial_audio = []
     for language in languages:
-        crop_audio = crop.voice_label.get_voice_fragment_url(language)              #audio for crop
 
         #Dict. for turorial audio
         for audio in tutorial:
@@ -26,7 +25,7 @@ def get_audio_data(crop, tutorial, language_code):
             })
 
 
-    audio_urls = {'crop': crop_audio,
+    audio_urls = {
              'tutorial': tutorial_audio
              }
     return audio_urls
@@ -43,7 +42,7 @@ def detail_crop(request, id=id):
     language_code = "en" #which language of the audio files
 
     #get all elements which has voices labels
-    audio = get_audio_data(crop, fertilizers, tutorial, language_code)
+    audio = get_audio_data(tutorial, language_code)
     print(fertilizers)
     return render(request, 'mamoisson/detail_crop.html', {'crop': crop, 'fertilizers': fertilizers, 'category':category, 'audio': audio})
 

@@ -15,7 +15,6 @@ class Tutorials(models.Model):
     def __str__(self):
         return self.name
 
-#Fertilizer model with all attributes
 class Fertilizer(models.Model):
     name = models.CharField(max_length=30, default='', blank=True)
     image_url = models.URLField(null=True)
@@ -23,8 +22,6 @@ class Fertilizer(models.Model):
     def __str__(self):
         return self.name
 
-
-#Crop model with all attributes
 class Crop(models.Model):
     name = models.CharField(max_length=30)
     description = models.TextField(default='', blank=True)
@@ -32,8 +29,6 @@ class Crop(models.Model):
 
     fertilizers = models.ManyToManyField(Fertilizer)
     category = models.ForeignKey(Category, on_delete=models.CASCADE, null=True)
-
-    voice_label = models.ForeignKey(VoiceLabel, on_delete=models.CASCADE)
     tutorial = models.ForeignKey(Tutorials, on_delete=models.CASCADE)
 
     def __str__(self):
