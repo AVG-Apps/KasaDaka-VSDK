@@ -17,8 +17,6 @@ urlpatterns = [
     # urls of the own create xml files
     url(r'^voice_app/', views.voice, name='voice'),
 
-
-
     # urls of the web interface
 
     #TUTORIALS URLS
