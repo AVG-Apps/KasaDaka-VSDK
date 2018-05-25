@@ -200,6 +200,78 @@
   }
 },
 {
+  "model": "service_development.voicelabel",
+  "pk": 37,
+  "fields": {
+    "name": "Advice Mango Year 1",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 38,
+  "fields": {
+    "name": "Advice Mango Year 2",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 39,
+  "fields": {
+    "name": "Advice Mango Year 3",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 40,
+  "fields": {
+    "name": "Advice Mango Year 4",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 41,
+  "fields": {
+    "name": "Advice Mango Year 5",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 42,
+  "fields": {
+    "name": "Advice Mango Year 6",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 43,
+  "fields": {
+    "name": "Advice Okra Flowering",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 44,
+  "fields": {
+    "name": "Advice Okra Planting",
+    "description": null
+  }
+},
+{
+  "model": "service_development.voicelabel",
+  "pk": 45,
+  "fields": {
+    "name": "Advice Mango Year 7",
+    "description": null
+  }
+},
+{
   "model": "service_development.language",
   "pk": 1,
   "fields": {
@@ -917,6 +989,168 @@
   }
 },
 {
+  "model": "service_development.voicefragment",
+  "pk": 97,
+  "fields": {
+    "parent": 37,
+    "language": 2,
+    "audio": "advice-mango-1-english_rYU4QLn.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 98,
+  "fields": {
+    "parent": 37,
+    "language": 3,
+    "audio": "advice-mango-1-french_u6xtZay.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 99,
+  "fields": {
+    "parent": 38,
+    "language": 2,
+    "audio": "advice-mango-2-english_Keozg3g.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 100,
+  "fields": {
+    "parent": 38,
+    "language": 3,
+    "audio": "advice-mango-2-french_00b52VG.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 101,
+  "fields": {
+    "parent": 39,
+    "language": 2,
+    "audio": "advice-mango-3-english_lLWTtSc.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 102,
+  "fields": {
+    "parent": 39,
+    "language": 3,
+    "audio": "advice-mango-7-french_FLNAD22.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 103,
+  "fields": {
+    "parent": 40,
+    "language": 2,
+    "audio": "advice-mango-4-english_DPZO6wq.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 104,
+  "fields": {
+    "parent": 40,
+    "language": 3,
+    "audio": "advice-mango-7-french_MC8zNo5.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 105,
+  "fields": {
+    "parent": 41,
+    "language": 2,
+    "audio": "advice-mango-5-english_fREfLy1.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 106,
+  "fields": {
+    "parent": 41,
+    "language": 3,
+    "audio": "advice-mango-7-french_bmgBxVA.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 107,
+  "fields": {
+    "parent": 42,
+    "language": 2,
+    "audio": "advice-mango-6-english_v0UaoXb.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 108,
+  "fields": {
+    "parent": 42,
+    "language": 3,
+    "audio": "advice-mango-7-french_znPlYSz.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 109,
+  "fields": {
+    "parent": 43,
+    "language": 2,
+    "audio": "advice-okra-flowering_QG7zyjb.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 110,
+  "fields": {
+    "parent": 43,
+    "language": 3,
+    "audio": "advice-okra-flowering-french_jCuanVx.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 111,
+  "fields": {
+    "parent": 44,
+    "language": 2,
+    "audio": "advice-okra-planting_tVK8sMc.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 112,
+  "fields": {
+    "parent": 44,
+    "language": 3,
+    "audio": "advice-okra-planting-french_dKHJOHB.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 113,
+  "fields": {
+    "parent": 45,
+    "language": 2,
+    "audio": "advice-mango-7-english_MXnjya3.wav"
+  }
+},
+{
+  "model": "service_development.voicefragment",
+  "pk": 114,
+  "fields": {
+    "parent": 45,
+    "language": 3,
+    "audio": "advice-mango-7-french_tX9pLYr.wav"
+  }
+},
+{
   "model": "service_development.voiceservicesubelement",
   "pk": 2,
   "fields": {
@@ -1112,7 +1346,10 @@
   "pk": 3,
   "fields": {
     "name": "Okra",
-    "voice_label": []
+    "voice_label": [
+      43,
+      44
+    ]
   }
 },
 {
@@ -1120,7 +1357,9 @@
   "pk": 4,
   "fields": {
     "name": "Cassava",
-    "voice_label": []
+    "voice_label": [
+      36
+    ]
   }
 },
 {
@@ -1128,7 +1367,15 @@
   "pk": 5,
   "fields": {
     "name": "Mango",
-    "voice_label": []
+    "voice_label": [
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      45
+    ]
   }
 },
 {
@@ -1148,6 +1395,38 @@
   }
 },
 {
+  "model": "service_development.fertilizer",
+  "pk": 3,
+  "fields": {
+    "name": "Ammonium Nitrate",
+    "image_url": "https://sc01.alicdn.com/kf/HTB1lw9QRXXXXXbIapXXq6xXFXXXQ/230516308/HTB1lw9QRXXXXXbIapXXq6xXFXXXQ.jpg"
+  }
+},
+{
+  "model": "service_development.fertilizer",
+  "pk": 4,
+  "fields": {
+    "name": "Potassium Nitrate (KNO3)",
+    "image_url": "https://sc01.alicdn.com/kf/HTB1oJxsIpXXXXcPXXXXq6xXFXXXC/222468602/HTB1oJxsIpXXXXcPXXXXq6xXFXXXC.jpg"
+  }
+},
+{
+  "model": "service_development.fertilizer",
+  "pk": 5,
+  "fields": {
+    "name": "Cattle Manure",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPCEiFw04rxYzWzmmTqFtWh4_2v04Wm-_0SI18gntqrJnJQMqvuQ"
+  }
+},
+{
+  "model": "service_development.fertilizer",
+  "pk": 6,
+  "fields": {
+    "name": "Mineral Fertilizer",
+    "image_url": "http://transtrade-rk.com.ua/wp-content/uploads/2015/06/Mineral-fertilizers.png"
+  }
+},
+{
   "model": "service_development.crop",
   "pk": 2,
   "fields": {
@@ -1158,6 +1437,38 @@
     "tutorial": 5,
     "fertilizers": [
       2
+    ]
+  }
+},
+{
+  "model": "service_development.crop",
+  "pk": 3,
+  "fields": {
+    "name": "Okra",
+    "description": "Fertilizer Application: As a general rule, apply NPK 15-15-15 at 220 kg/ha at planting. During flowering apply 110-150 kg/ha of Sulphate of Ammonia or 75 kg of Urea.",
+    "img_url": "http://upload.evocdn.co.uk/fruitnet/uploads/asset_image/2_1203972_e.jpg",
+    "category": 2,
+    "tutorial": 3,
+    "fertilizers": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "service_development.crop",
+  "pk": 4,
+  "fields": {
+    "name": "Cassava",
+    "description": "Application rates are 68 kg N/ha, 45 kg P2 O5 /ha (Phosporus pentoxide) and 68 kg K2 O/ha (Potessium oxide). Those are the recommended average rate of fertilizers required by the crop. Using the recommended technology an achievable yield of 28 tonnes/ha may be obtained (MOFA, 2003). \r\nFor low rates of application, surface application is more effective than incorporation.\r\n\r\nFertilizers:\r\nAmmonium nitrate (AN) and potassium nitrate (KNO3 ) gave higher yields than urea and AS cattle manure and mineral fertilizer",
+    "img_url": "http://images.smulweb.nl/wiki/87/high_res/cassave-large.jpg",
+    "category": 2,
+    "tutorial": 4,
+    "fertilizers": [
+      3,
+      4,
+      5,
+      6
     ]
   }
 }
