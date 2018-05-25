@@ -48,7 +48,7 @@ urlpatterns = [
     #MAIN PAGES
     url(r'^$', views.main, name='main'),
     url(r'^team/$', views.team, name='team'),
-    url(r'^tutorials_app/$', views.team, name='team'),
+    url(r'^tutorials_app/$', views.yb_tutorials, name='yb_tutorials'),
 
 ]
 
